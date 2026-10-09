@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ремонт компьютеров и ноутбуков в Казани | О'Сервис, Роторная 1м</title>
+<meta name="description" content="Ремонт ноутбуков, ПК и телефонов в Казани. Диагностика от 300 руб., установка Windows, сборка ПК. Рейтинг 5.0 в 2ГИС. Роторная, 1м, Приволжский район.">
+<!-- ДЕМО: убрать noindex перед запуском боевого сайта -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0e1622">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="О'Сервис: ремонт компьютеров и ноутбуков в Казани">
+<meta property="og:description" content="Диагностика от 300 руб., честные цены, рейтинг 5.0 в 2ГИС. Роторная, 1м.">
+<!-- TODO: og:image (1200x630) и og:url после выбора домена -->
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1622'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23ef3b33' stroke-width='8'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ComputerStore",
+  "additionalType": "https://schema.org/LocalBusiness",
+  "name": "О'Сервис",
+  "description": "Ремонт компьютеров, ноутбуков и телефонов в Казани",
+  "telephone": "+79872283374",
+  "priceRange": "от 300 руб.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Роторная улица, 1м",
+    "addressLocality": "Казань",
+    "addressRegion": "Республика Татарстан",
+    "postalCode": "420059",
+    "addressCountry": "RU"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00",
+    "closes": "19:30"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "18",
+    "bestRating": "5"
+  },
+  "sameAs": [
+    "https://2gis.ru/kazan/firm/70000001105330081",
+    "https://t.me/oo1337",
+    "https://wa.me/79010084344"
+  ]
+}
+</script>
+
+<style>
+:root{
+  --bg:#0e1622;
+  --bg-2:#142032;
+  --bg-3:#1b2a40;
+  --line:rgba(255,255,255,.09);
+  --text:#eef2f7;
+  --muted:#a6b3c5;
+  --red:#e0342b;
+  --red-hover:#c92a22;
+  --red-soft:#ff6b62;
+  --card:#ffffff;
+  --card-2:#f4f6fa;
+  --ink:#111a27;
+  --ink-muted:#556275;
+  --ok:#3ccf7e;
+  --radius:18px;
+  --radius-sm:12px;
+  --shadow:0 18px 40px -18px rgba(3,8,18,.55);
+  --font:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{line-height:1.15;margin:0;letter-spacing:-.02em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 16px}
+@media (min-width:768px){.wrap{padding:0 28px}}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid #ffb23f;outline-offset:3px;border-radius:6px}
+.ico{width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* Демо-плашка */
+.demo-bar{background:#ffb23f;color:#2a1a00;font-size:13px;font-weight:600;text-align:center;padding:7px 16px}
+
+/* Кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;border:0;font:inherit;font-weight:700;font-size:16px;text-decoration:none;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s;white-space:nowrap}
+.btn .ico{width:20px;height:20px}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -10px rgba(224,52,43,.8)}
+.btn-red:hover{background:var(--red-hover);transform:translateY(-1px)}
+.btn-ghost{background:rgba(255,255,255,.07);color:var(--text);border:1px solid var(--line)}
+.btn-ghost:hover{background:rgba(255,255,255,.13)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#22324a}
+.btn-sm{min-height:44px;padding:10px 18px;font-size:15px}
+
+/* Шапка */
+.header{position:sticky;top:0;z-index:50;background:rgba(14,22,34,.86);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.header .wrap{display:flex;align-items:center;gap:16px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:21px;letter-spacing:-.02em}
+.logo-mark{width:34px;height:34px;border-radius:10px;background:#fff;display:grid;place-items:center}
+/* TODO: заменить .logo-mark на файл логотипа владельца (белый круг с техникой) */
+.logo-mark span{width:18px;height:18px;border-radius:50%;border:4px solid var(--red)}
+.logo b{color:var(--red-soft)}
+.nav{display:none;margin-left:auto;gap:4px}
+.nav a{padding:10px 12px;border-radius:10px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+.nav a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.header-call{margin-left:auto}
+.header-call .num{display:none}
+@media (min-width:980px){
+  .nav{display:flex}
+  .header-call{margin-left:12px}
+  .header-call .num{display:inline}
+  .header-call .lbl{display:none}
+}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:44px 0 56px}
+.hero::before{content:"";position:absolute;inset:-30% -10% auto auto;width:720px;height:720px;background:radial-gradient(closest-side,rgba(224,52,43,.28),transparent 70%);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:auto auto -40% -20%;width:680px;height:680px;background:radial-gradient(closest-side,rgba(72,120,200,.22),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:40px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--muted)}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.status.open i{background:var(--ok);box-shadow:0 0 0 4px rgba(60,207,126,.18)}
+.status.open{color:#d6f5e3}
+.hero h1{font-size:clamp(32px,7.4vw,58px);font-weight:800;margin:18px 0 16px}
+.hero h1 em{font-style:normal;color:var(--red-soft)}
+.hero-sub{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:560px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 26px}
+.hero-cta .btn{flex:1 1 200px}
+@media (min-width:560px){.hero-cta .btn{flex:0 0 auto}}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:12px;background:var(--bg-2);border:1px solid var(--line);font-size:14px;font-weight:600}
+.chips .ico{width:18px;height:18px;color:var(--red-soft)}
+.chips .star{color:#ffc53d}
+.hero-visual{position:relative;aspect-ratio:5/4;border-radius:28px;background:linear-gradient(150deg,#1d2d46,#121d2e 60%);border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}
+.hero-visual svg{width:100%;height:100%}
+.hero-visual .ph-note{position:absolute;left:14px;bottom:14px;font-size:12px;color:var(--muted);background:rgba(14,22,34,.75);padding:5px 10px;border-radius:8px}
+.rating-float{position:absolute;right:14px;top:14px;background:#fff;color:var(--ink);border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px}
+.rating-float strong{font-size:28px;font-weight:800;line-height:1}
+.rating-float small{display:block;font-size:12px;color:var(--ink-muted);font-weight:600}
+.stars{display:flex;gap:2px;color:#ffb400}
+.stars svg{width:14px;height:14px;fill:currentColor}
+@media (min-width:900px){
+  .hero{padding:72px 0 88px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;gap:56px}
+}
+
+/* Секции */
+.section{padding:64px 0}
+.section.light{background:var(--card-2);color:var(--ink)}
+.section-head{max-width:640px;margin-bottom:32px}
+.kicker{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--red-soft);margin-bottom:10px}
+.light .kicker{color:#c42a22}
+.section h2{font-size:clamp(28px,5vw,42px);font-weight:800}
+.section-head p{margin-top:12px;color:var(--muted);font-size:17px}
+.light .section-head p{color:var(--ink-muted)}
+@media (min-width:900px){.section{padding:96px 0}}
+
+/* Услуги */
+.services{display:grid;gap:14px;grid-template-columns:1fr;padding:0;margin:0;list-style:none}
+@media (min-width:600px){.services{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.services{grid-template-columns:repeat(4,1fr)}}
+.svc{background:var(--card);border-radius:var(--radius);padding:22px;border:1px solid #e3e8ef;transition:transform .25s,box-shadow .25s,border-color .25s;display:flex;flex-direction:column;gap:10px}
+.svc:hover{transform:translateY(-3px);box-shadow:0 18px 36px -20px rgba(17,26,39,.35);border-color:#d3dae4}
+.svc-ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#fdecea;color:var(--red)}
+.svc h3{font-size:18px;font-weight:700}
+.svc p{color:var(--ink-muted);font-size:15px}
+.svc .from{margin-top:auto;padding-top:6px;font-weight:700;font-size:15px;color:var(--ink)}
+
+/* Цены */
+.prices{display:grid;gap:28px;align-items:start}
+@media (min-width:900px){.prices{grid-template-columns:1.25fr .75fr;gap:40px}}
+.price-list{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:8px 22px;margin:0;list-style:none}
+.price-list li{display:flex;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.price-list li:last-child{border-bottom:0}
+.price-list .name{flex:1;font-weight:600}
+.price-list .dots{flex:1;border-bottom:2px dotted rgba(255,255,255,.14);transform:translateY(-4px);min-width:16px;display:none}
+@media (min-width:600px){.price-list .dots{display:block}.price-list .name{flex:0 1 auto}}
+.price-list .val{font-weight:800;white-space:nowrap;font-size:17px}
+.price-list .val small{font-weight:600;color:var(--muted);font-size:14px;margin-right:4px}
+.price-aside{background:linear-gradient(160deg,#25395a,#18263b);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.price-aside h3{font-size:22px;margin-bottom:10px}
+.price-aside p{color:var(--muted);margin-bottom:20px}
+.price-aside .btn{width:100%}
+.fine{margin-top:14px;font-size:13px;color:var(--muted)}
+
+/* Как работаем */
+.steps{display:grid;gap:14px;counter-reset:s;padding:0;margin:0;list-style:none}
+@media (min-width:700px){.steps{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{position:relative;background:var(--card);border:1px solid #e3e8ef;border-radius:var(--radius);padding:24px 22px 22px}
+.step::before{counter-increment:s;content:"0" counter(s);display:block;font-size:40px;font-weight:800;color:var(--red);line-height:1;margin-bottom:16px;letter-spacing:-.04em}
+.step h3{font-size:18px;margin-bottom:8px}
+.step p{color:var(--ink-muted);font-size:15px}
+
+/* Фото-заглушки */
+.gallery{display:grid;gap:14px;grid-template-columns:1fr 1fr;margin-top:40px}
+@media (min-width:900px){.gallery{grid-template-columns:2fr 1fr 1fr}}
+.ph{position:relative;border-radius:var(--radius);aspect-ratio:16/10;overflow:hidden;background:linear-gradient(140deg,#dfe5ee,#c9d2df);display:grid;place-items:center;color:#7d8aa0}
+.ph:first-child{grid-column:1/-1}
+@media (min-width:900px){.ph:first-child{grid-column:auto;grid-row:span 1}}
+.ph .ico{width:44px;height:44px;stroke-width:1.4}
+.ph span{position:absolute;left:12px;bottom:12px;font-size:12px;font-weight:600;background:rgba(255,255,255,.85);color:#3c495c;padding:4px 9px;border-radius:7px}
+
+/* Отзывы */
+.reviews-top{display:grid;gap:20px;align-items:center;background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+@media (min-width:860px){.reviews-top{grid-template-columns:auto 1fr auto;gap:32px;padding:28px 32px}}
+.big-rating{display:flex;align-items:center;gap:16px}
+.big-rating strong{font-size:56px;font-weight:800;line-height:1;letter-spacing:-.04em}
+.big-rating .stars svg{width:20px;height:20px}
+.big-rating small{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+.reviews-top p{color:var(--muted)}
+.review-links{display:flex;flex-wrap:wrap;gap:10px}
+.review-cards{display:grid;gap:14px;margin-top:16px}
+@media (min-width:800px){.review-cards{grid-template-columns:repeat(3,1fr)}}
+.rcard{border:1.5px dashed rgba(255,255,255,.18);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:12px;min-height:180px}
+.rcard .tag{align-self:flex-start;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.07);color:var(--muted)}
+.rcard .lines i{display:block;height:10px;border-radius:5px;background:rgba(255,255,255,.08);margin-bottom:9px}
+.rcard .lines i:nth-child(2){width:88%}
+.rcard .lines i:nth-child(3){width:64%}
+.rcard p{font-size:14px;color:var(--muted);margin-top:auto}
+
+/* Контакты */
+.contacts{display:grid;gap:16px}
+@media (min-width:900px){.contacts{grid-template-columns:1fr 1fr;gap:24px}}
+.ccard{background:var(--card);color:var(--ink);border-radius:var(--radius);padding:26px;border:1px solid #e3e8ef}
+.crow{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #edf0f4}
+.crow:first-of-type{padding-top:0}
+.crow:last-of-type{border-bottom:0}
+.crow .ico{color:var(--red);margin-top:2px}
+.crow small{display:block;color:var(--ink-muted);font-size:13px;font-weight:600}
+.crow a,.crow strong{font-weight:700;font-size:17px;text-decoration:none}
+.crow a:hover{color:var(--red)}
+.ccard .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.ccard .btns .btn{flex:1 1 160px}
+.map-card{position:relative;border-radius:var(--radius);overflow:hidden;min-height:300px;background:#dfe6ef;display:flex;align-items:flex-end;text-decoration:none;color:var(--ink)}
+.map-card svg.map{position:absolute;inset:0;width:100%;height:100%}
+.map-card .pin{position:absolute;left:50%;top:44%;transform:translate(-50%,-100%);color:var(--red)}
+.map-card .pin svg{width:48px;height:48px;filter:drop-shadow(0 6px 8px rgba(0,0,0,.25))}
+.map-card .map-label{position:relative;margin:16px;background:#fff;border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 10px 24px -12px rgba(0,0,0,.35);width:calc(100% - 32px)}
+.map-card .map-label b{display:block}
+.map-card .map-label small{color:var(--ink-muted)}
+.map-card .map-label .ico{margin-left:auto;color:var(--red)}
+.map-card:hover .map-label{box-shadow:0 14px 30px -12px rgba(0,0,0,.45)}
+
+/* Форма */
+.form-wrap{display:grid;gap:28px;align-items:center}
+@media (min-width:900px){.form-wrap{grid-template-columns:.9fr 1.1fr;gap:56px}}
+.form-wrap .lead{color:var(--muted);font-size:17px;margin-top:12px}
+.form-points{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.form-points li{display:flex;gap:10px;align-items:center;font-weight:600}
+.form-points .ico{color:var(--ok);width:20px;height:20px}
+.form{background:var(--card);color:var(--ink);border-radius:22px;padding:24px;box-shadow:var(--shadow)}
+@media (min-width:600px){.form{padding:32px}}
+.field{display:block;margin-bottom:16px}
+.field span{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
+.field input,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--card-2);border:1.5px solid #dbe1ea;border-radius:12px;padding:13px 14px;min-height:48px;transition:border-color .2s,background .2s}
+.field textarea{min-height:104px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--red);background:#fff;box-shadow:0 0 0 4px rgba(224,52,43,.14)}
+.form .send{display:grid;gap:10px;grid-template-columns:1fr}
+@media (min-width:480px){.form .send{grid-template-columns:1fr 1fr}}
+.form .send .btn{width:100%}
+.hint{display:flex;gap:8px;align-items:flex-start;margin-top:14px;font-size:14px;color:var(--ink-muted)}
+.hint .ico{width:18px;height:18px;margin-top:2px}
+.form-msg{margin-top:12px;font-size:14px;font-weight:600;color:#b3261e;min-height:1.2em}
+
+/* Подвал */
+.footer{border-top:1px solid var(--line);padding:36px 0 120px;color:var(--muted);font-size:14px}
+@media (min-width:768px){.footer{padding-bottom:40px}}
+.footer .wrap{display:grid;gap:18px}
+@media (min-width:768px){.footer .wrap{grid-template-columns:1fr auto;align-items:center}}
+.footer a{color:var(--text)}
+.demo-credit{padding:12px 16px;border-radius:12px;background:rgba(255,178,63,.1);border:1px solid rgba(255,178,63,.3);color:#ffd28a}
+.demo-credit a{color:#ffd28a;font-weight:700}
+
+/* Нижняя панель на мобильном */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(14,22,34,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.dock a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:48px;border-radius:14px;text-decoration:none;font-weight:700;font-size:14px;padding:0 6px}
+.dock .ico{width:20px;height:20px}
+.dock .d-call{background:var(--red);color:#fff}
+.dock .d-tg{background:#2a9fd8;color:#fff}
+.dock .d-wa{background:#1fa855;color:#fff}
+@media (min-width:768px){.dock{display:none}}
+
+/* Появление */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn,.svc{transition:none}
+}
+.no-js .reveal{opacity:1;transform:none}
+</style>
+</head>
+<body class="no-js">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.5 20.5 5 16a8.5 8.5 0 1 1 3 3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></symbol>
+  <symbol id="i-win" viewBox="0 0 24 24"><path d="M3 5.5 10 4.5v7H3zM12 4.2 21 3v8.5h-9zM3 13.5h7v7l-7-1zM12 13.5h9V21l-9-1.2z"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+  <symbol id="i-fan" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.5"/><path d="M12 10.5C11 7 12 5 14.5 5S17 9 13.5 11M13.5 12.5c3.5-1 5.5 0 5.5 2.5s-4 2.5-6 -1M10.5 13c-1 3.5-3 4.5-5 3s-.5-5 3.5-4.5"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+  <symbol id="i-data" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="3"/><path d="M4.5 5.5v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-6M4.5 11.5v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-6"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.5l2.2 10.5h10L20 7H6.3"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V3h10v5"/><rect x="3" y="8" width="18" height="9" rx="2"/><path d="M7 14h10v7H7z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.2 2.2 4.2-4.4"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.3-4.3"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.3 2.6 2.6L16 9.5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H16a3 3 0 0 0 0-6H8a3 3 0 0 1 0-6h7.5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.8 6.3.8-4.6 4.4 1.2 6.3L12 17l-5.7 3.1 1.2-6.3L2.9 9.4l6.3-.8z"/></symbol>
+</svg>
+
+<div class="demo-bar" role="note">Демо-версия сайта для О'Сервис. Контент и фото будут уточнены с владельцем.</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="О'Сервис, на главную">
+      <span class="logo-mark" aria-hidden="true"><span></span></span>
+      <span><b>О</b>'Сервис</span>
+    </a>
+    <nav class="nav" aria-label="Разделы сайта">
+      <a href="#uslugi">Услуги</a>
+      <a href="#ceny">Цены</a>
+      <a href="#kak-rabotaem">Как работаем</a>
+      <a href="#otzyvy">Отзывы</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="btn btn-red btn-sm header-call" href="tel:+79872283374">
+      <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+      <span class="lbl">Позвонить</span><span class="num">+7 987 228-33-74</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status" id="status"><i></i><span>Роторная, 1м · ежедневно 11:00 до 19:30</span></span>
+      <h1>Ремонт компьютеров, ноутбуков и&nbsp;телефонов <em>в&nbsp;Казани</em></h1>
+      <p class="hero-sub">Быстро найдём причину поломки, объясним простыми словами и назовём цену до начала ремонта. Без навязанных услуг и сюрпризов в чеке.</p>
+      <div class="hero-cta">
+        <a class="btn btn-red" href="tel:+79872283374">
+          <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Позвонить
+        </a>
+        <a class="btn btn-ghost" href="https://t.me/oo1337" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-tg"/></svg>Написать в Telegram
+        </a>
+      </div>
+      <ul class="chips">
+        <li><svg class="ico star" aria-hidden="true" style="fill:currentColor;stroke:none"><use href="#i-star"/></svg>Рейтинг 5.0 в 2ГИС</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Диагностика от 300 руб.</li>
+        <!-- TODO: подтвердить у владельца выезд на дом -->
+        <li><svg class="ico" aria-hidden="true"><use href="#i-home"/></svg>Выезд на дом</li>
+        <!-- TODO: формулировка и срок гарантии от владельца -->
+        <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Гарантия на работы</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual">
+      <!-- TODO: заменить иллюстрацию на реальное фото мастерской или мастера за работой -->
+      <svg viewBox="0 0 500 400" role="img" aria-label="Иллюстрация: ноутбук, смартфон и системный блок на рабочем столе мастерской">
+        <defs>
+          <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b4672"/><stop offset="1" stop-color="#16243a"/></linearGradient>
+          <linearGradient id="ph" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0342b"/><stop offset="1" stop-color="#8f1d17"/></linearGradient>
+        </defs>
+        <g opacity=".5" stroke="#ffffff" stroke-opacity=".05">
+          <path d="M0 80h500M0 160h500M0 240h500M0 320h500M100 0v400M200 0v400M300 0v400M400 0v400"/>
+        </g>
+        <!-- системный блок -->
+        <rect x="340" y="120" width="110" height="200" rx="12" fill="#1a283d" stroke="#33496b" stroke-width="2"/>
+        <circle cx="395" cy="175" r="30" fill="none" stroke="#33496b" stroke-width="2"/>
+        <circle cx="395" cy="175" r="30" fill="none" stroke="#e0342b" stroke-width="3" stroke-dasharray="40 150" opacity=".9"/>
+        <circle cx="395" cy="250" r="22" fill="none" stroke="#33496b" stroke-width="2"/>
+        <rect x="358" y="292" width="40" height="6" rx="3" fill="#3ccf7e"/>
+        <!-- ноутбук -->
+        <rect x="70" y="120" width="250" height="160" rx="12" fill="#22324b" stroke="#3a5378" stroke-width="2"/>
+        <rect x="84" y="134" width="222" height="132" rx="6" fill="url(#scr)"/>
+        <rect x="104" y="156" width="96" height="10" rx="5" fill="#ffffff" opacity=".85"/>
+        <rect x="104" y="176" width="150" height="8" rx="4" fill="#ffffff" opacity=".3"/>
+        <rect x="104" y="192" width="120" height="8" rx="4" fill="#ffffff" opacity=".3"/>
+        <rect x="104" y="216" width="70" height="26" rx="13" fill="#e0342b"/>
+        <path d="M40 280h310l-18 22H58z" fill="#2c3f5e" stroke="#3a5378" stroke-width="2"/>
+        <!-- телефон -->
+        <rect x="248" y="196" width="78" height="144" rx="14" fill="#0f1826" stroke="#3a5378" stroke-width="2"/>
+        <rect x="256" y="208" width="62" height="118" rx="8" fill="url(#ph)"/>
+        <circle cx="287" cy="252" r="16" fill="none" stroke="#fff" stroke-width="5"/>
+        <rect x="270" y="282" width="34" height="5" rx="2.5" fill="#fff" opacity=".7"/>
+        <rect x="276" y="293" width="22" height="5" rx="2.5" fill="#fff" opacity=".45"/>
+        <!-- шестерёнка -->
+        <g transform="translate(120 330)" fill="none" stroke="#e0342b" stroke-width="5" stroke-linecap="round">
+          <circle r="14"/>
+          <path d="M0-26v-6M0 26v6M-26 0h-6M26 0h6M-18-18l-4-4M18 18l4 4M-18 18l-4 4M18-18l4-4"/>
+        </g>
+      </svg>
+      <div class="rating-float">
+        <strong>5.0</strong>
+        <div>
+          <div class="stars" aria-hidden="true">
+            <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+          </div>
+          <small>18 оценок в 2ГИС</small>
+        </div>
+      </div>
+      <span class="ph-note">Здесь будет фото сервиса</span>
+    </div>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section class="section light" id="uslugi">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Услуги</span>
+      <h2>Чиним, настраиваем, собираем</h2>
+      <p>Принимаем компьютеры, ноутбуки, телефоны и другую цифровую технику. Если не уверены, к нам ли с вашей проблемой, просто напишите.</p>
+    </div>
+    <ul class="services">
+      <li class="svc reveal">
+        <span class="svc-ico"><svg class="ico" aria-hidden="true"><use href="#i-laptop"/></svg></span>
+        <h3>Ремонт ноутбуков и ПК</h3>
+        <p>Не включается, греется, шумит, тормозит. Найдём причину и починим.</p>
+        <span class="from">Диагностика от 300 руб.</span>
+      </li>
+      <li class="svc reveal">
+        <span class="svc-ico"><svg class="ico" aria-hidden="true"><use href="#i-win"/></svg></span>
+        <h3>Windows и программы</h3>
+        <p>Установка и настройка Windows, драйверов и нужного ПО. Сохраним ваши файлы.</p>
+        <span class="from">от 1 000 руб.</span>
+      </li>
+      <li class="svc reveal">
+        <span class="svc-ico"><svg class="ico" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+        <h3>Сборка компьютера</h3>
+        <p>Подберём комплектующие под задачи и бюджет, соберём и протестируем.</p>
+        <span class="from">от 2 790 руб.</span>
+      </li>
+      <li class="svc reveal">
+        <span class="svc-ico"><svg class="ico" aria-hidden="true"><use href="#i-fan"/></svg></span>
+        <h3>Обслуживание и чистка</h3>
+        <p>Чистка от пыли, замена термопасты, проверка системы. Вторая жизнь старому ПК и Mac.</p>
+        <span class="from">от 2 500 руб.</span>
+      </li>
+      <!-- TODO: подтвердить у владельца ремонт телефонов и замену экранов iPhone -->
+      <li class="svc reveal">
+        <span class="svc-ico"><svg class="ico" aria-hidden="true"><use href="#i-mobile"/></svg></span>
+        <h3>Замена экранов телефонов</h3>
+        <p>Разбитый дисплей на смартфоне или iPhone. Подскажем стоимость по модели.</p>
+        <span class="from">Цена по запросу</span>
+      </li>
+      <!-- TODO: подтвердить у владельца восстановление данных -->
+      <li class="svc reveal">
+        <span class="svc-ico"><svg class="ico" aria-hidden="true"><use href="#i-data"/></svg></span>
+        <h3>Восстановление данных</h3>
+        <p>Удалённые файлы, сбой диска, флешка не открывается. Сначала оценим шансы.</p>
+        <span class="from">Цена после диагностики</span>
+      </li>
+      <li class="svc reveal">
+        <span class="svc-ico"><svg class="ico" aria-hidden="true"><use href="#i-cart"/></svg></span>
+        <h3>Подбор и покупка техники</h3>
+        <p>Поможем выбрать ноутбук или ПК без переплаты и сразу настроим к работе.</p>
+        <span class="from">Цена по запросу</span>
+      </li>
+      <li class="svc reveal">
+        <span class="svc-ico"><svg class="ico" aria-hidden="true"><use href="#i-print"/></svg></span>
+        <h3>Печать и ксерокопия</h3>
+        <p>Распечатаем документы и сделаем копии, пока вы ждёте.</p>
+        <span class="from">от 10 руб. за лист</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ЦЕНЫ -->
+<section class="section" id="ceny">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Цены</span>
+      <h2>Понятные цены на основные работы</h2>
+      <p>Цены указаны "от". Точную стоимость назовём после диагностики и только с вашего согласия начнём работу.</p>
+    </div>
+    <div class="prices">
+      <ul class="price-list reveal">
+        <li><span class="name">Диагностика компьютера, ноутбука или телевизора</span><span class="dots"></span><span class="val"><small>от</small>300 руб.</span></li>
+        <li><span class="name">Установка и настройка Windows</span><span class="dots"></span><span class="val"><small>от</small>1 000 руб.</span></li>
+        <li><span class="name">Комплексное обслуживание ПК и ноутбука</span><span class="dots"></span><span class="val"><small>от</small>2 500 руб.</span></li>
+        <li><span class="name">Сборка компьютера любой сложности</span><span class="dots"></span><span class="val"><small>от</small>2 790 руб.</span></li>
+        <li><span class="name">Ксерокопия</span><span class="dots"></span><span class="val"><small>от</small>10 руб.</span></li>
+      </ul>
+      <aside class="price-aside reveal">
+        <h3>Не нашли свою поломку?</h3>
+        <p>Опишите проблему или пришлите фото. Ответим, сколько примерно будет стоить ремонт.</p>
+        <a class="btn btn-red" href="https://t.me/oo1337" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true"><use href="#i-tg"/></svg>Узнать стоимость в Telegram
+        </a>
+        <p class="fine">Информация о ценах не является публичной офертой. Цены уточняйте у мастера.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- КАК РАБОТАЕМ -->
+<section class="section light" id="kak-rabotaem">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Как работаем</span>
+      <h2>Четыре шага без сюрпризов</h2>
+      <p>Вы всегда знаете, что происходит с техникой и сколько это стоит.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal">
+        <h3>Обращение</h3>
+        <p>Звоните, пишите в Telegram или WhatsApp, или просто приходите на Роторную, 1м.</p>
+      </li>
+      <li class="step reveal">
+        <h3>Диагностика</h3>
+        <p>Проверяем технику и находим причину. Диагностика стоит от 300 руб.</p>
+      </li>
+      <li class="step reveal">
+        <h3>Согласование цены</h3>
+        <p>Объясняем, что сломалось, и называем стоимость. Без вашего согласия не начинаем.</p>
+      </li>
+      <li class="step reveal">
+        <h3>Ремонт и гарантия</h3>
+        <p>Делаем работу, показываем результат и даём гарантию на выполненные работы.</p>
+      </li>
+    </ol>
+
+    <!-- TODO: заменить заглушки реальными фото сервиса (с разрешения владельца) -->
+    <div class="gallery reveal" aria-label="Фото сервиса (скоро)">
+      <div class="ph"><svg class="ico" aria-hidden="true"><use href="#i-camera"/></svg><span>Фото мастерской</span></div>
+      <div class="ph"><svg class="ico" aria-hidden="true"><use href="#i-laptop"/></svg><span>Фото работы</span></div>
+      <div class="ph"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Вход и вывеска</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="section" id="otzyvy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Отзывы</span>
+      <h2>Нам доверяют в Приволжском районе</h2>
+      <p>Клиенты отмечают скорость, понятные объяснения мастера и адекватные цены. Все отзывы можно прочитать на картах.</p>
+    </div>
+    <div class="reviews-top reveal">
+      <div class="big-rating">
+        <strong>5.0</strong>
+        <div>
+          <div class="stars" aria-label="5 из 5">
+            <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+          </div>
+          <small>18 оценок в 2ГИС</small>
+        </div>
+      </div>
+      <p>Рейтинг на основе реальных оценок клиентов. Читайте отзывы там, где удобно.</p>
+      <div class="review-links">
+        <a class="btn btn-ghost btn-sm" href="https://2gis.ru/kazan/firm/70000001105330081/tab/reviews" target="_blank" rel="noopener">2ГИС</a>
+        <!-- TODO: прямая ссылка на карточку в Яндекс Картах и кнопка Авито (ссылки взять с Taplink) -->
+        <a class="btn btn-ghost btn-sm" href="https://yandex.ru/maps/43/kazan/?text=%D0%9E%27%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81%20%D0%A0%D0%BE%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%201%D0%BC" target="_blank" rel="noopener">Яндекс Карты</a>      </div>
+    </div>
+    <!-- TODO: подставить реальные отзывы с согласия авторов -->
+    <div class="review-cards">
+      <div class="rcard reveal"><span class="tag">Ремонт ноутбука</span><div class="lines"><i></i><i></i><i></i></div><p>Здесь будет реальный отзыв клиента. Подставим с согласия автора.</p></div>
+      <div class="rcard reveal"><span class="tag">Сборка ПК</span><div class="lines"><i></i><i></i><i></i></div><p>Здесь будет реальный отзыв клиента. Подставим с согласия автора.</p></div>
+      <div class="rcard reveal"><span class="tag">Переустановка Windows</span><div class="lines"><i></i><i></i><i></i></div><p>Здесь будет реальный отзыв клиента. Подставим с согласия автора.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="section light" id="kontakty">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Контакты</span>
+      <h2>Приходите или напишите</h2>
+      <p>Приволжский район, рядом с остановкой. Перед визитом можно уточнить, свободен ли мастер.</p>
+    </div>
+    <div class="contacts">
+      <div class="ccard reveal">
+        <div class="crow"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><div><small>Адрес</small><strong>Казань, Роторная улица, 1м</strong><br><small>Приволжский район, 420059</small></div></div>
+        <!-- TODO: режим работы по дням недели уточнить у владельца -->
+        <div class="crow"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><div><small>Режим работы</small><strong>Ежедневно 11:00 до 19:30</strong></div></div>
+        <div class="crow"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><div><small>Телефон</small><a href="tel:+79872283374">+7 987 228-33-74</a></div></div>
+        <div class="crow"><svg class="ico" aria-hidden="true"><use href="#i-tg"/></svg><div><small>Telegram</small><a href="https://t.me/oo1337" target="_blank" rel="noopener">@oo1337</a></div></div>
+        <div class="crow"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><div><small>WhatsApp</small><a href="https://wa.me/79010084344" target="_blank" rel="noopener">+7 901 008-43-44</a></div></div>
+        <div class="btns">
+          <a class="btn btn-red" href="tel:+79872283374"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+          <a class="btn btn-dark" href="https://2gis.ru/kazan/firm/70000001105330081" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-route"/></svg>Построить маршрут</a>
+        </div>
+      </div>
+
+      <a class="map-card reveal" href="https://2gis.ru/kazan/firm/70000001105330081" target="_blank" rel="noopener" aria-label="Открыть О'Сервис на карте 2ГИС">
+        <svg class="map" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="400" fill="#e6ebf1"/>
+          <g fill="#d6dee8">
+            <rect x="20" y="20" width="150" height="90" rx="8"/><rect x="200" y="20" width="120" height="90" rx="8"/><rect x="350" y="20" width="230" height="90" rx="8"/>
+            <rect x="20" y="150" width="110" height="110" rx="8"/><rect x="380" y="150" width="200" height="110" rx="8"/>
+            <rect x="20" y="300" width="230" height="90" rx="8"/><rect x="290" y="300" width="130" height="90" rx="8"/><rect x="450" y="300" width="130" height="90" rx="8"/>
+          </g>
+          <rect x="160" y="140" width="190" height="130" rx="10" fill="#cfe7d4"/>
+          <g stroke="#ffffff" stroke-width="16" fill="none"><path d="M0 130h600M0 280h600M185 0v400M340 0v400"/></g>
+          <path d="M60 400 L600 60" stroke="#ffd98a" stroke-width="12"/>
+          <path d="M140 265 C 200 230, 240 215, 300 200" stroke="#e0342b" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span class="pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s-7.5-6.5-7.5-12.3a7.5 7.5 0 0 1 15 0C19.5 15.5 12 22 12 22z"/><circle cx="12" cy="9.7" r="2.8" fill="#fff"/></svg></span>
+        <span class="map-label">
+          <span><b>О'Сервис на карте</b><small>Роторная, 1м · открыть в 2ГИС</small></span>
+          <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ЗАЯВКА -->
+<section class="section" id="zayavka">
+  <div class="wrap form-wrap">
+    <div class="reveal">
+      <span class="kicker">Заявка</span>
+      <h2>Опишите проблему, ответим быстро</h2>
+      <p class="lead">Заполните три поля, и мы подскажем, что можно сделать и сколько это будет стоить.</p>
+      <ul class="form-points">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Без регистрации и звонков от роботов</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Ответит мастер, а не оператор</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Можно сразу приложить фото в чате</li>
+      </ul>
+    </div>
+    <form class="form reveal" id="lead-form" novalidate>
+      <label class="field"><span>Ваше имя</span><input name="name" autocomplete="given-name" placeholder="Например, Алексей" required></label>
+      <label class="field"><span>Что случилось</span><textarea name="problem" placeholder="Ноутбук перестал включаться после обновления" required></textarea></label>
+      <label class="field"><span>Телефон</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00" required></label>
+      <div class="send">
+        <button class="btn btn-red" type="submit" data-via="tg"><svg class="ico" aria-hidden="true"><use href="#i-tg"/></svg>Отправить в Telegram</button>
+        <button class="btn btn-dark" type="submit" data-via="wa"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>В WhatsApp</button>
+      </div>
+      <p class="hint"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg>Откроется Telegram или WhatsApp с готовым сообщением. Останется только нажать "Отправить".</p>
+      <p class="form-msg" id="form-msg" role="alert"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <strong style="color:var(--text);font-size:16px">О'Сервис</strong><br>
+      Казань, Роторная улица, 1м · <a href="tel:+79872283374">+7 987 228-33-74</a><br>
+      Ремонт компьютеров, ноутбуков и телефонов
+    </div>
+    <!-- TODO: вставить ссылку на Telegram Ильдара -->
+    <div class="demo-credit">Демо-версия сайта подготовлена Ильдаром · <a href="#" data-todo="telegram-ildara">Связаться</a></div>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Быстрая связь">
+  <a class="d-call" href="tel:+79872283374"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+  <a class="d-tg" href="https://t.me/oo1337" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-tg"/></svg>Telegram</a>
+  <a class="d-wa" href="https://wa.me/79010084344" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+(function(){
+  document.body.classList.remove('no-js');
+
+  // Статус "открыто сейчас" по времени Казани (UTC+3).
+  // TODO: заменить на реальный график по дням, когда владелец подтвердит.
+  var OPEN = 11*60, CLOSE = 19*60+30;
+  var st = document.getElementById('status');
+  try {
+    var now = new Date();
+    var kzn = new Date(now.getTime() + (now.getTimezoneOffset() + 180) * 60000);
+    var m = kzn.getHours()*60 + kzn.getMinutes();
+    var label = st.querySelector('span');
+    if (m >= OPEN && m < CLOSE) {
+      st.classList.add('open');
+      label.textContent = 'Открыто сейчас, до 19:30 · Роторная, 1м';
+    } else {
+      label.textContent = 'Сейчас закрыто, откроемся в 11:00 · пишите в Telegram';
+    }
+  } catch(e) {}
+
+  // Плавное появление блоков
+  var els = document.querySelectorAll('.reveal');
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    els.forEach(function(el){ io.observe(el); });
+  }
+
+  // Форма: собираем сообщение и открываем мессенджер
+  var form = document.getElementById('lead-form');
+  var msg = document.getElementById('form-msg');
+  var via = 'tg';
+  form.querySelectorAll('button[data-via]').forEach(function(b){
+    b.addEventListener('click', function(){ via = b.getAttribute('data-via'); });
+  });
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var name = form.name.value.trim();
+    var problem = form.problem.value.trim();
+    var phone = form.phone.value.trim();
+    if (!name || !problem || !phone) {
+      msg.textContent = 'Заполните, пожалуйста, все три поля.';
+      (!name ? form.name : !problem ? form.problem : form.phone).focus();
+      return;
+    }
+    if (phone.replace(/\D/g,'').length < 10) {
+      msg.textContent = 'Проверьте номер телефона.';
+      form.phone.focus();
+      return;
+    }
+    msg.textContent = '';
+    var text = 'Здравствуйте! Заявка с сайта О\'Сервис.\n' +
+               'Имя: ' + name + '\n' +
+               'Проблема: ' + problem + '\n' +
+               'Телефон: ' + phone;
+    var url = via === 'wa'
+      ? 'https://wa.me/79010084344?text=' + encodeURIComponent(text)
+      : 'https://t.me/oo1337?text=' + encodeURIComponent(text);
+    window.open(url, '_blank', 'noopener');
+  });
+
+  // Заглушка ссылки автора демо
+  document.querySelectorAll('[data-todo]').forEach(function(a){
+    a.addEventListener('click', function(e){ if (a.getAttribute('href') === '#') e.preventDefault(); });
+  });
+})();
+</script>
+</body>
+</html>
