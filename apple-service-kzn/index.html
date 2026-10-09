@@ -1,0 +1,1136 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ремонт iPhone в Казани, цены, гарантия | Сервис KZN</title>
+  <meta name="description" content="Ремонт iPhone, iPad и MacBook в Казани за 30 минут при вас. Бесплатная диагностика, гарантия, оригинальные запчасти и аналоги на выбор. Выезд на дом.">
+  <meta name="robots" content="noindex, nofollow"><!-- DEMO: убрать при публикации на боевом домене -->
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://apple-service-kzn.ru/">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzBmMTcyYSIvPjxyZWN0IHg9IjEwIiB5PSI1IiB3aWR0aD0iMTIiIGhlaWdodD0iMjIiIHJ4PSIzIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0xMyAxNi41bDIuMiAyLjIgNC00LjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzYwYTVmYSIgc3Ryb2tlLXdpZHRoPSIyLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPgo=" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Ремонт iPhone в Казани за 30 минут при вас">
+  <meta property="og:description" content="Бесплатная диагностика, гарантия, цена за 1 минуту в онлайн-калькуляторе.">
+  <meta property="og:url" content="https://apple-service-kzn.ru/">
+  <meta property="og:image" content="https://apple-service-kzn.ru/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <style>
+/* ============ Токены ============ */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f3f5f9;
+  --ink: #0f172a;
+  --ink-2: #334155;
+  --muted: #5b6577;
+  --line: #e2e7ef;
+  --brand: #1d4ed8;
+  --brand-hover: #1e40af;
+  --brand-soft: #e8efff;
+  --accent: #2563eb;
+  --wa: #128c4a;
+  --wa-hover: #0e7a3f;
+  --ok: #16a34a;
+  --err: #c2261d;
+  --dark: #0f172a;
+  --dark-2: #1b2438;
+  --radius: 20px;
+  --radius-sm: 14px;
+  --shadow: 0 1px 2px rgba(15, 23, 42, .05), 0 8px 24px rgba(15, 23, 42, .06);
+  --shadow-lg: 0 20px 50px rgba(15, 23, 42, .12);
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --header-h: 64px;
+  --mbar-h: 68px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 12px); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--bg);
+  padding-bottom: calc(var(--mbar-h) + env(safe-area-inset-bottom));
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: var(--brand); }
+h1, h2, h3 { margin: 0; line-height: 1.15; letter-spacing: -0.02em; }
+p { margin: 0; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+.container--narrow { max-width: 820px; }
+
+.skip { position: absolute; left: -9999px; top: 0; z-index: 100; background: var(--ink); color: #fff; padding: 12px 16px; }
+.skip:focus { left: 8px; top: 8px; }
+
+.demo-ribbon {
+  background: #fff7d6; color: #6b4e00; font-size: 13px; text-align: center; padding: 6px 16px;
+  border-bottom: 1px solid #f1e3a6;
+}
+
+/* ============ Кнопки ============ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 48px; padding: 12px 20px; border-radius: 14px; border: 1.5px solid transparent;
+  font-weight: 600; font-size: 16px; line-height: 1.25; text-align: center; text-decoration: none; cursor: pointer;
+  transition: background-color .15s, border-color .15s, transform .15s, box-shadow .15s;
+}
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn:active { transform: translateY(1px); }
+.btn--primary { background: var(--brand); color: #fff; box-shadow: 0 6px 16px rgba(29, 78, 216, .28); }
+.btn--primary:hover { background: var(--brand-hover); }
+.btn--ghost { background: #fff; color: var(--ink); border-color: var(--line); }
+.btn--ghost:hover { border-color: var(--ink); }
+.btn--wa { background: var(--wa); color: #fff; }
+.btn--wa:hover { background: var(--wa-hover); }
+.btn--lg { min-height: 56px; padding: 14px 24px; font-size: 17px; }
+.btn--sm { min-height: 44px; padding: 8px 14px; font-size: 15px; }
+.btn--block { width: 100%; }
+.btn[disabled] { opacity: .6; cursor: progress; }
+
+.icon-btn {
+  width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px;
+  border: 1.5px solid var(--line); color: var(--ink-2); background: #fff;
+}
+.icon-btn svg { width: 22px; height: 22px; }
+.icon-btn--wa:hover { color: var(--wa); border-color: var(--wa); }
+.icon-btn--tg:hover { color: #229ed9; border-color: #229ed9; }
+
+/* ============ Шапка ============ */
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255, 255, 255, .88); backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid transparent; transition: border-color .2s, box-shadow .2s;
+}
+.header.is-scrolled { border-color: var(--line); box-shadow: 0 4px 20px rgba(15, 23, 42, .05); }
+.header__in { display: flex; align-items: center; gap: 12px; height: var(--header-h); }
+.logo { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; margin-right: auto; min-width: 0; }
+.logo__mark { width: 30px; height: 30px; flex: none; }
+.logo__text { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
+.logo__text b { font-size: 17px; font-weight: 800; letter-spacing: -0.01em; }
+.logo__text small { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.nav { display: none; }
+.header__actions { display: flex; align-items: center; gap: 8px; }
+.header__actions .icon-btn { display: none; }
+.header__phone { display: none; }
+.header__call svg { width: 18px; height: 18px; }
+
+/* ============ Hero ============ */
+.hero { padding: 28px 0 40px; background:
+  radial-gradient(900px 400px at 85% -10%, #dfe8ff 0%, transparent 60%),
+  linear-gradient(#fff, #f7f9fc); }
+.hero__in { display: grid; gap: 28px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--ink-2);
+  background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; margin-bottom: 16px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px rgba(22, 163, 74, .15); flex: none; }
+.hero h1 { font-size: clamp(32px, 8.4vw, 60px); font-weight: 800; letter-spacing: -0.035em; }
+.hero__points { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 10px; }
+.hero__points li { display: flex; gap: 10px; align-items: flex-start; font-size: 17px; color: var(--ink-2); }
+.hero__points svg { width: 22px; height: 22px; flex: none; margin-top: 1px; fill: none; stroke: var(--brand); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round;
+  background: var(--brand-soft); border-radius: 50%; padding: 3px; }
+.hero__cta { display: grid; gap: 10px; margin-top: 26px; }
+.hero__also { margin-top: 18px; font-size: 14px; color: var(--muted); }
+.hero__media { position: relative; margin: 0; }
+.hero__media img { width: 100%; height: auto; border-radius: 28px; box-shadow: var(--shadow-lg); background: #e9eef8; aspect-ratio: 1 / 1; object-fit: cover; }
+.hero__badge { position: absolute; left: 14px; bottom: 14px; display: flex; align-items: center; gap: 12px;
+  background: rgba(255, 255, 255, .95); border-radius: 16px; padding: 10px 14px; box-shadow: var(--shadow); }
+.hero__badge b { font-size: 22px; font-weight: 800; color: var(--brand); white-space: nowrap; }
+.hero__badge span { font-size: 13px; line-height: 1.3; color: var(--ink-2); }
+
+/* ============ Секции ============ */
+.section { padding: 56px 0; }
+.section--soft { background: var(--bg-soft); }
+.section--dark { background: var(--dark); color: #e6ebf5; }
+.section__head { margin-bottom: 28px; max-width: 720px; }
+.section__head h2 { font-size: clamp(28px, 6.4vw, 44px); font-weight: 800; letter-spacing: -0.03em; }
+.section__head p { margin-top: 12px; font-size: 17px; color: var(--muted); }
+.section--dark .section__head h2 { color: #fff; }
+
+/* ============ Калькулятор ============ */
+.calc-section { background: var(--bg-soft); }
+.calc { display: grid; gap: 16px; }
+.calc__steps { display: grid; gap: 16px; }
+.calc__step { margin: 0; padding: 20px; border: 0; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); min-width: 0; }
+.calc__step legend { float: left; width: 100%; display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; margin-bottom: 14px; padding: 0; }
+.calc__step legend + * { clear: both; }
+.step-num { width: 28px; height: 28px; border-radius: 50%; display: inline-grid; place-items: center; background: var(--brand); color: #fff; font-size: 14px; font-weight: 700; flex: none; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips--grid { display: grid; grid-template-columns: 1fr 1fr; }
+.chip {
+  min-height: 48px; padding: 10px 16px; border-radius: 12px; border: 1.5px solid var(--line); background: #fff;
+  font-weight: 600; font-size: 15px; cursor: pointer; text-align: left; display: flex; align-items: center; gap: 8px;
+  transition: border-color .15s, background-color .15s, color .15s;
+}
+.chip svg { width: 22px; height: 22px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; color: var(--muted); }
+.chip:hover { border-color: #b8c4d8; }
+.chip[aria-checked="true"] { border-color: var(--brand); background: var(--brand-soft); color: var(--brand); }
+.chip[aria-checked="true"] svg { color: var(--brand); }
+#calc-groups .chip { flex: 1 1 0; justify-content: center; }
+
+.field { display: grid; gap: 6px; margin-top: 14px; }
+.field__label { font-size: 14px; font-weight: 600; color: var(--ink-2); }
+.req { color: var(--err); }
+.select, .input {
+  width: 100%; min-height: 52px; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: #fff; font-size: 16px;
+}
+.select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235b6577' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center; background-size: 20px; padding-right: 44px; cursor: pointer; }
+.select:hover, .input:hover { border-color: #b8c4d8; }
+.select:focus, .input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 4px rgba(37, 99, 235, .15); }
+.input[aria-invalid="true"] { border-color: var(--err); }
+.field__err { font-size: 13px; color: var(--err); min-height: 0; }
+.field__err:empty { display: none; }
+
+.calc__result {
+  padding: 22px 20px; border-radius: var(--radius); background: var(--dark); color: #e6ebf5; box-shadow: var(--shadow-lg);
+}
+.calc__result-label { display: flex; align-items: center; gap: 10px; font-weight: 600; color: #b9c3d6; }
+.calc__price { font-size: clamp(36px, 10vw, 48px); font-weight: 800; letter-spacing: -0.03em; color: #fff; margin-top: 10px; line-height: 1.1; }
+.calc__price.is-bump { animation: bump .35s ease; }
+@keyframes bump { 0% { transform: scale(.97); opacity: .6; } 100% { transform: none; opacity: 1; } }
+.calc__time { display: flex; align-items: center; gap: 8px; margin-top: 8px; font-weight: 600; color: #cfe0ff; }
+.calc__time svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.calc__note { margin-top: 6px; font-size: 14px; color: #93a0b8; }
+
+.lead-form { display: grid; gap: 10px; margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); }
+.lead-form .field { margin-top: 0; }
+.lead-form .field__label { color: #cdd5e3; }
+.lead-form .input { background: #fff; color: var(--ink); border-color: transparent; }
+.lead-form .field__err { color: #ff9b94; }
+.check { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #b9c3d6; cursor: pointer; margin: 4px 0; }
+.check input { width: 22px; height: 22px; flex: none; margin: 0; accent-color: var(--accent); cursor: pointer; }
+.check a { color: #9cc0ff; }
+.form-hint { font-size: 13px; color: #93a0b8; text-align: center; }
+.hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }
+
+.lead-done { text-align: center; padding: 24px 8px 8px; margin-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); outline: none; }
+.lead-done svg { width: 56px; height: 56px; margin: 0 auto 12px; fill: none; stroke: #4ade80; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.lead-done h3 { color: #fff; font-size: 24px; }
+.lead-done p { margin-top: 8px; color: #b9c3d6; }
+
+/* ============ Услуги ============ */
+.cards { display: grid; gap: 14px; }
+.card {
+  display: flex; flex-direction: column; gap: 10px; padding: 22px; border-radius: var(--radius); background: #fff;
+  border: 1px solid var(--line); transition: box-shadow .2s, transform .2s, border-color .2s;
+}
+.card:hover { box-shadow: var(--shadow-lg); border-color: transparent; transform: translateY(-2px); }
+.card__icon { width: 48px; height: 48px; border-radius: 14px; background: var(--brand-soft); display: grid; place-items: center; }
+.card__icon svg { width: 26px; height: 26px; fill: none; stroke: var(--brand); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.card h3 { font-size: 19px; font-weight: 700; }
+.card p { color: var(--muted); font-size: 15px; }
+.card__foot { margin-top: auto; padding-top: 6px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.card__price { font-size: 20px; font-weight: 800; }
+.card__price small { font-size: 14px; font-weight: 500; color: var(--muted); }
+.card__link { font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; }
+.card__link:hover { text-decoration: underline; }
+
+.devices { margin-top: 28px; padding: 20px; border-radius: var(--radius); background: var(--bg-soft); }
+.devices__title { font-weight: 700; margin-bottom: 12px; }
+.devices__list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.devices__list li { padding: 6px 12px; border-radius: 999px; background: #fff; border: 1px solid var(--line); font-size: 14px; font-weight: 500; }
+.devices__extra { margin-top: 12px; font-size: 14px; color: var(--muted); }
+
+/* ============ Почему мы ============ */
+.why { display: grid; gap: 14px; }
+.why__item { padding: 24px; border-radius: var(--radius); background: var(--dark-2); border: 1px solid rgba(255, 255, 255, .06); }
+.why__icon { width: 52px; height: 52px; border-radius: 16px; background: rgba(59, 130, 246, .16); display: grid; place-items: center; margin-bottom: 16px; }
+.why__icon svg { width: 28px; height: 28px; fill: none; stroke: #8bb4ff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.why__item h3 { color: #fff; font-size: 20px; }
+.why__item p { margin-top: 8px; color: #a9b4c8; }
+
+/* ============ Шаги ============ */
+.steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; counter-reset: s; }
+.steps__item { position: relative; padding: 22px 22px 22px 22px; border-radius: var(--radius); border: 1px solid var(--line); background: #fff; }
+.steps__num { display: inline-block; font-size: 14px; font-weight: 800; color: var(--brand); background: var(--brand-soft); padding: 4px 10px; border-radius: 999px; margin-bottom: 12px; }
+.steps__item h3 { font-size: 19px; }
+.steps__item p { margin-top: 6px; color: var(--muted); font-size: 15px; }
+
+/* ============ Рейтинги ============ */
+.ratings { display: grid; gap: 14px; }
+.rating {
+  display: flex; align-items: center; gap: 16px; padding: 22px; border-radius: var(--radius); background: #fff; border: 1px solid var(--line);
+  text-decoration: none; color: var(--ink); transition: box-shadow .2s, transform .2s;
+}
+.rating:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+.rating__value { font-size: 44px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+.rating__body { display: grid; gap: 4px; min-width: 0; }
+.rating__stars { display: flex; gap: 2px; color: #f5a524; }
+.rating__stars svg { width: 18px; height: 18px; fill: currentColor; }
+.rating__src { font-weight: 700; }
+.rating__meta { font-size: 14px; color: var(--muted); }
+.rating__go { margin-left: auto; color: var(--brand); flex: none; }
+.rating__go svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ============ FAQ ============ */
+.faq { display: grid; gap: 10px; }
+.faq details { border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff; transition: box-shadow .2s; }
+.faq details[open] { box-shadow: var(--shadow); }
+.faq summary {
+  list-style: none; cursor: pointer; padding: 18px 56px 18px 20px; font-weight: 600; font-size: 17px; position: relative; min-height: 48px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: ""; position: absolute; right: 20px; top: 50%; width: 22px; height: 22px; margin-top: -11px; border-radius: 50%;
+  background: var(--brand-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231d4ed8' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M12 7v10M7 12h10'/%3E%3C/svg%3E") center / 16px no-repeat;
+  transition: transform .2s;
+}
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { padding: 0 20px 20px; color: var(--ink-2); }
+
+/* ============ Контакты ============ */
+.contacts { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.contacts__info { padding: 24px; border-radius: var(--radius); background: #fff; box-shadow: var(--shadow); }
+.contacts__phone { display: inline-block; font-size: clamp(26px, 7vw, 34px); font-weight: 800; color: var(--ink); text-decoration: none; letter-spacing: -0.02em; }
+.contacts__phone:hover { color: var(--brand); }
+.contacts__hours { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-weight: 600; }
+.contacts__hours-note { font-size: 14px; color: var(--muted); margin-top: 4px; }
+.addresses { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 12px; }
+.addresses li { display: flex; gap: 12px; align-items: flex-start; }
+.addresses svg { width: 22px; height: 22px; flex: none; fill: none; stroke: var(--brand); stroke-width: 1.9; margin-top: 2px; }
+.addresses b { display: block; }
+.addresses small { display: block; color: var(--muted); font-size: 14px; }
+.addresses .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--brand); background: var(--brand-soft); padding: 2px 8px; border-radius: 999px; margin-left: 6px; vertical-align: 2px; }
+.contacts__btns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 22px; }
+.contacts__btns .btn { padding: 10px; font-size: 15px; }
+.contacts__map { border-radius: var(--radius); overflow: hidden; min-height: 320px; background: #dfe6f1; position: relative; }
+.contacts__map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.map-placeholder {
+  position: absolute; inset: 0; width: 100%; border: 0; cursor: pointer; display: grid; place-content: center; justify-items: center; gap: 6px; color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.55) 1px, transparent 1px) 0 0 / 40px 40px,
+    linear-gradient(rgba(255,255,255,.55) 1px, transparent 1px) 0 0 / 40px 40px,
+    linear-gradient(135deg, #dbe4f2, #c9d6ea);
+}
+.map-placeholder svg { width: 48px; height: 48px; fill: #fff; stroke: var(--brand); stroke-width: 1.6; filter: drop-shadow(0 6px 10px rgba(29, 78, 216, .3)); }
+.map-placeholder span { font-weight: 700; font-size: 17px; background: #fff; padding: 10px 18px; border-radius: 12px; box-shadow: var(--shadow); }
+.map-placeholder small { color: var(--ink-2); font-size: 14px; }
+
+/* ============ Подвал ============ */
+.footer { background: var(--dark); color: #a9b4c8; padding: 40px 0 24px; font-size: 14px; }
+.footer__in { display: grid; gap: 20px; }
+.footer__name { color: #fff; font-weight: 800; font-size: 18px; margin-bottom: 6px; }
+.footer a { color: #cfe0ff; }
+.footer__legal p + p { margin-top: 6px; }
+.footer__demo { margin-top: 28px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .1); color: #7d89a0; font-size: 13px; }
+
+/* ============ Мобильная панель ============ */
+.mbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr); gap: 8px;
+  padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); background: rgba(255, 255, 255, .96); backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(15, 23, 42, .06);
+}
+.mbar__btn {
+  min-height: 52px; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  font-size: 13px; font-weight: 600; color: var(--ink); text-decoration: none; background: var(--bg-soft);
+}
+.mbar__btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.mbar__btn--wa { color: #fff; background: var(--wa); }
+.mbar__btn--main { color: #fff; background: var(--brand); }
+
+/* ============ Политика ============ */
+.privacy { border: 0; border-radius: var(--radius); padding: 0; max-width: 560px; width: calc(100% - 32px); box-shadow: var(--shadow-lg); }
+.privacy::backdrop { background: rgba(15, 23, 42, .5); }
+.privacy__in { padding: 28px; display: grid; gap: 14px; }
+.privacy h2 { font-size: 24px; }
+.privacy p { color: var(--ink-2); }
+
+/* ============ Появление ============ */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-in { opacity: 1; transform: none; }
+.no-js .reveal { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+/* ============ ≥ 390 ============ */
+@media (min-width: 390px) {
+  .hero__cta { grid-template-columns: 1fr; }
+}
+
+/* ============ ≥ 600 ============ */
+@media (min-width: 600px) {
+  .header__actions .icon-btn { display: grid; }
+  .hero__cta { grid-template-columns: auto auto; justify-content: start; }
+  .cards { grid-template-columns: 1fr 1fr; }
+  .why, .steps, .ratings { grid-template-columns: 1fr 1fr; }
+  .chips--grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ============ ≥ 768 ============ */
+@media (min-width: 768px) {
+  .container { padding: 0 28px; }
+  .section { padding: 80px 0; }
+  .hero { padding: 48px 0 64px; }
+  .contacts { grid-template-columns: 1fr 1fr; }
+  .contacts__map { min-height: 100%; }
+  .footer__in { grid-template-columns: 1.4fr 1fr; }
+}
+
+/* ============ ≥ 1024: десктоп ============ */
+@media (min-width: 1024px) {
+  :root { --header-h: 72px; }
+  body { padding-bottom: 0; }
+  .mbar { display: none; }
+  .nav { display: flex; gap: 4px; margin-right: 8px; }
+  .nav a { color: var(--ink-2); text-decoration: none; font-weight: 500; font-size: 15px; padding: 10px 12px; border-radius: 10px; }
+  .nav a:hover { color: var(--ink); background: var(--bg-soft); }
+  .header__phone { display: inline; }
+  .header__call-short { display: none; }
+  .hero { padding: 64px 0 96px; }
+  .hero__in { grid-template-columns: 1.1fr .9fr; align-items: center; gap: 56px; }
+  .hero__points li { font-size: 18px; }
+  .calc { grid-template-columns: 1.25fr 1fr; align-items: start; gap: 20px; }
+  .calc__step { padding: 28px; }
+  .calc__result { padding: 28px; position: sticky; top: calc(var(--header-h) + 20px); }
+  .cards { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .why, .steps { grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .steps__item::after {
+    content: ""; position: absolute; top: 36px; right: -14px; width: 10px; height: 10px; border-top: 2px solid #b8c4d8; border-right: 2px solid #b8c4d8; transform: rotate(45deg);
+  }
+  .steps__item:last-child::after { display: none; }
+  .contacts { grid-template-columns: 1fr 1.3fr; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#calc">Перейти к калькулятору</a>
+
+<div class="demo-ribbon" role="note">Демо-версия сайта. Цены и данные условные.</div>
+
+<header class="header" id="top">
+  <div class="container header__in">
+    <a class="logo" href="#top" aria-label="На главную">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="3" width="16" height="26" rx="4" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M13 17.5l2.4 2.4 4.6-5" fill="none" stroke="#2563eb" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="logo__text"><b data-bind="name">Сервис KZN</b><small>ремонт техники Apple</small></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#calc">Цены</a>
+      <a href="#services">Услуги</a>
+      <a href="#how">Как работаем</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header__actions">
+      <a class="icon-btn icon-btn--wa" data-wa href="https://wa.me/79196954054" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.6 8.3c.2-.5.5-.5.8-.5h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.5.9 1.3 1.7 2.3 2.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.6-.1l1.6.8c.3.1.4.2.4.4 0 .6-.3 1.4-1 1.7-.6.3-1.6.4-3.4-.4-2-.9-3.4-3-3.6-3.3-.3-.4-.9-1.4-.9-2.4 0-.9.4-1.3.5-1.4Z" fill="currentColor"/></svg>
+      </a>
+      <a class="icon-btn icon-btn--tg" data-tg href="https://t.me/+79196954054" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 4.2 3.6 10.7c-.9.4-.9 1.5 0 1.8l4.2 1.4 1.6 5c.2.7 1.1.9 1.6.4l2.4-2.2 4.3 3.2c.7.5 1.6.1 1.8-.7l2.6-13.2c.2-1-.8-1.8-1.6-1.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m8 13.8 9-6.3-6.8 7.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn--primary btn--sm header__call" data-tel href="tel:+79196954054">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5 9 3.3l1.6 4.2-2 1.4a11 11 0 0 0 6 6l1.4-2 4.2 1.6-.2 2.4a2 2 0 0 1-2.1 1.8A16 16 0 0 1 4.7 5.6a2 2 0 0 1 1.9-2.1Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+        <span class="header__phone" data-bind="phoneDisplay">+7 919 695-40-54</span>
+        <span class="header__call-short">Позвонить</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Первый экран -->
+  <section class="hero">
+    <div class="container hero__in">
+      <div class="hero__text reveal">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> <span data-bind="hours">Ежедневно, круглосуточно</span> · Казань</p>
+        <h1>Ремонт iPhone в Казани за&nbsp;30&nbsp;минут при вас</h1>
+        <ul class="hero__points">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Диагностика бесплатно</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Гарантия на работу</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Оригинальные запчасти или качественные аналоги на выбор</li>
+        </ul>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="#calc">Узнать цену за 1 минуту</a>
+          <a class="btn btn--ghost btn--lg" data-tel href="tel:+79196954054">Позвонить</a>
+        </div>
+        <p class="hero__also">Также ремонтируем iPad, MacBook, iMac, Apple Watch и смартфоны Samsung, Xiaomi, Honor, Huawei.</p>
+      </div>
+      <figure class="hero__media reveal">
+        <!-- Заглушка: заменить на фото мастера или рабочего места клиента (assets/hero.webp) -->
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgNTYwIj4KICA8IS0tINCX0LDQs9C70YPRiNC60LAg0LLQvNC10YHRgtC+INGE0L7RgtC+INC80LDRgdGC0LXRgNCwLiDQl9Cw0LzQtdC90LjRgtGMINC90LAgYXNzZXRzL2hlcm8ud2VicCAtLT4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxZTI5M2IiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwYjEyMjIiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJtYXQiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyYjZjYjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxZTRlOGMiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJzY3IiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzYjgyZjYiLz48c3RvcCBvZmZzZXQ9Ii41NSIgc3RvcC1jb2xvcj0iIzYzNjZmMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBlYTVlOSIvPjwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImxhbXAiIGN4PSIuNyIgY3k9Ii4xIiByPSIuOCI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJncmlkIiB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0yOCAwSDB2MjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wOCIvPjwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSI1NjAiIGZpbGw9InVybCgjYmcpIi8+CiAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoLTggMjgwIDMwMCkiPgogICAgPHJlY3QgeD0iNDAiIHk9IjExMCIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSIzODAiIHJ4PSIyNiIgZmlsbD0idXJsKCNtYXQpIi8+CiAgICA8cmVjdCB4PSI0MCIgeT0iMTEwIiB3aWR0aD0iNDgwIiBoZWlnaHQ9IjM4MCIgcng9IjI2IiBmaWxsPSJ1cmwoI2dyaWQpIi8+CiAgICA8IS0tINGC0LXQu9C10YTQvtC9OiDQutC+0YDQv9GD0YEg0L7RgtC60YDRi9GCIC0tPgogICAgPHJlY3QgeD0iMTUwIiB5PSIxNjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMjkwIiByeD0iMjYiIGZpbGw9IiNkNmRiZTQiLz4KICAgIDxyZWN0IHg9IjE1OCIgeT0iMTY4IiB3aWR0aD0iMTM0IiBoZWlnaHQ9IjI3NCIgcng9IjIwIiBmaWxsPSIjMWYyOTM3Ii8+CiAgICA8cmVjdCB4PSIxNzIiIHk9IjE5MCIgd2lkdGg9IjU4IiBoZWlnaHQ9IjEyMCIgcng9IjEwIiBmaWxsPSIjNGI1NTYzIi8+CiAgICA8cmVjdCB4PSIxNzgiIHk9IjE5OCIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjEwNCIgcng9IjciIGZpbGw9IiMyMmM1NWUiIGZpbGwtb3BhY2l0eT0iLjg1Ii8+CiAgICA8cmVjdCB4PSIyNDAiIHk9IjE5MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjcwIiByeD0iNiIgZmlsbD0iIzM3NDE1MSIvPgogICAgPGNpcmNsZSBjeD0iMjUyIiBjeT0iMjA4IiByPSI4IiBmaWxsPSIjMGYxNzJhIiBzdHJva2U9IiM2YjcyODAiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPGNpcmNsZSBjeD0iMjcwIiBjeT0iMjMwIiByPSI4IiBmaWxsPSIjMGYxNzJhIiBzdHJva2U9IiM2YjcyODAiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHJlY3QgeD0iMTcyIiB5PSIzMjQiIHdpZHRoPSIxMDgiIGhlaWdodD0iMTAwIiByeD0iOCIgZmlsbD0iIzMzNDE1NSIvPgogICAgPGcgZmlsbD0iIzk0YTNiOCI+PHJlY3QgeD0iMTgyIiB5PSIzMzQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIxMCIgcng9IjIiLz48cmVjdCB4PSIyMDgiIHk9IjMzNCIgd2lkdGg9IjM0IiBoZWlnaHQ9IjEwIiByeD0iMiIvPjxyZWN0IHg9IjE4MiIgeT0iMzUyIiB3aWR0aD0iNjAiIGhlaWdodD0iNiIgcng9IjIiLz48cmVjdCB4PSIyNDgiIHk9IjMzNCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjI2IiByeD0iMyIvPjxyZWN0IHg9IjE4MiIgeT0iMzY2IiB3aWR0aD0iODgiIGhlaWdodD0iNiIgcng9IjIiLz48cmVjdCB4PSIxODIiIHk9IjM4MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiByeD0iMyIvPjwvZz4KICAgIDwhLS0g0L3QvtCy0YvQuSDRjdC60YDQsNC9IC0tPgogICAgPHJlY3QgeD0iMzI1IiB5PSIxNTAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMjkwIiByeD0iMjYiIGZpbGw9IiMwZjE3MmEiLz4KICAgIDxyZWN0IHg9IjMzMyIgeT0iMTU4IiB3aWR0aD0iMTM0IiBoZWlnaHQ9IjI3NCIgcng9IjIwIiBmaWxsPSJ1cmwoI3NjcikiLz4KICAgIDxyZWN0IHg9IjM3NyIgeT0iMTY2IiB3aWR0aD0iNDYiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjMGYxNzJhIi8+CiAgICA8cGF0aCBkPSJNMzMzIDMwMGM0MC0zMCA5MCAxMCAxMzQtMzB2MTUyYTIwIDIwIDAgMCAxLTIwIDIwSDM1M2EyMCAyMCAwIDAgMS0yMC0yMFoiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjEyIi8+CiAgICA8IS0tINGI0LvQtdC50YQgLS0+CiAgICA8cGF0aCBkPSJNMzAwIDMwMGMxNCAwIDE0LTIwIDI1LTIwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmNTllMGIiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPCEtLSDQvtGC0LLRkdGA0YLQutCwIC0tPgogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoMzAgMTEwIDQyMCkiPjxyZWN0IHg9Ijk2IiB5PSIzMzAiIHdpZHRoPSIyOCIgaGVpZ2h0PSI4MCIgcng9IjEwIiBmaWxsPSIjZjk3MzE2Ii8+PHJlY3QgeD0iMTA2IiB5PSI0MTAiIHdpZHRoPSI4IiBoZWlnaHQ9IjcwIiByeD0iMyIgZmlsbD0iI2NiZDVlMSIvPjwvZz4KICAgIDwhLS0g0L/RgNC40YHQvtGB0LrQsCDQuCDQvNC10LTQuNCw0YLQvtGAIC0tPgogICAgPGNpcmNsZSBjeD0iNDYwIiBjeT0iNDYwIiByPSIyNiIgZmlsbD0iIzkzYzVmZCIgZmlsbC1vcGFjaXR5PSIuNyIvPjxjaXJjbGUgY3g9IjQ2MCIgY3k9IjQ2MCIgcj0iMTAiIGZpbGw9IiM2MGE1ZmEiLz4KICAgIDxwYXRoIGQ9Ik05MCAxNzBsNDAtMTAgMTAgNDB6IiBmaWxsPSIjZmJiZjI0Ii8+CiAgICA8IS0tINCy0LjQvdGC0LjQutC4IC0tPgogICAgPGcgZmlsbD0iI2UyZThmMCI+PGNpcmNsZSBjeD0iMTEwIiBjeT0iMjUwIiByPSI0Ii8+PGNpcmNsZSBjeD0iMTI0IiBjeT0iMjYyIiByPSI0Ii8+PGNpcmNsZSBjeD0iMTAyIiBjeT0iMjcwIiByPSI0Ii8+PC9nPgogIDwvZz4KICA8cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjU2MCIgZmlsbD0idXJsKCNsYW1wKSIvPgo8L3N2Zz4K" width="560" height="560" alt="Рабочее место мастера: смартфон на антистатическом коврике и инструменты" fetchpriority="high">
+        <figcaption class="hero__badge">
+          <b>30 мин</b>
+          <span>типовая замена экрана<br>или аккумулятора iPhone</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. Калькулятор -->
+  <section class="section calc-section" id="calc" aria-labelledby="calc-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 id="calc-title">Сколько стоит ремонт</h2>
+        <p>Выберите устройство и поломку. Точную цену мастер назовёт после бесплатной диагностики, до начала работ.</p>
+      </div>
+
+      <div class="calc reveal">
+        <div class="calc__steps">
+          <fieldset class="calc__step">
+            <legend><span class="step-num">1</span> Устройство</legend>
+            <div class="chips" id="calc-groups" role="radiogroup" aria-label="Тип устройства"></div>
+            <label class="field">
+              <span class="field__label">Модель</span>
+              <select id="calc-model" class="select"></select>
+            </label>
+          </fieldset>
+
+          <fieldset class="calc__step">
+            <legend><span class="step-num">2</span> Что случилось</legend>
+            <div class="chips chips--grid" id="calc-problems" role="radiogroup" aria-label="Тип поломки"></div>
+          </fieldset>
+        </div>
+
+        <div class="calc__result" aria-live="polite">
+          <p class="calc__result-label"><span class="step-num">3</span> Предварительная цена</p>
+          <p class="calc__price" id="calc-price">от 4 500 руб.</p>
+          <p class="calc__time" id="calc-time">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+            <span>Срок: от 30 минут</span>
+          </p>
+          <p class="calc__note" id="calc-note">Цена работы и запчасти. Диагностика бесплатно.</p>
+
+          <form class="lead-form" id="lead-form" novalidate>
+            <input type="hidden" name="device" id="lead-device">
+            <input type="hidden" name="problem" id="lead-problem">
+            <!-- honeypot от ботов -->
+            <label class="hp" aria-hidden="true">Не заполняйте <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+            <label class="field">
+              <span class="field__label">Ваше имя</span>
+              <input class="input" type="text" name="name" autocomplete="given-name" maxlength="60" placeholder="Например, Айдар">
+            </label>
+            <label class="field">
+              <span class="field__label">Телефон <span class="req" aria-hidden="true">*</span></span>
+              <input class="input" type="tel" name="phone" id="lead-phone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required aria-describedby="phone-err">
+              <span class="field__err" id="phone-err" role="alert"></span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="consent" id="lead-consent" required>
+              <span>Согласен на обработку персональных данных по <a href="#privacy" data-open-privacy>политике конфиденциальности</a></span>
+            </label>
+            <span class="field__err" id="consent-err" role="alert"></span>
+            <button class="btn btn--primary btn--lg btn--block" type="submit" id="lead-submit">Записаться на бесплатную диагностику</button>
+            <a class="btn btn--wa btn--lg btn--block" id="calc-wa" data-wa-calc href="https://wa.me/79196954054" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              Написать в WhatsApp
+            </a>
+            <p class="form-hint">Перезвоним в течение 10 минут и подскажем, когда удобно подъехать.</p>
+          </form>
+
+          <div class="lead-done" id="lead-done" hidden tabindex="-1">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21"/><path d="m15 24.5 6 6 12-13"/></svg>
+            <h3>Заявка принята</h3>
+            <p id="lead-done-text">Мастер перезвонит вам в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Популярные услуги -->
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 id="services-title">Популярные услуги</h2>
+        <p>Цены на iPhone. Для iPad и MacBook посчитайте в калькуляторе выше.</p>
+      </div>
+      <div class="cards" id="services-list">
+        <!-- заполняется из data/prices.json -->
+      </div>
+      <div class="devices reveal">
+        <p class="devices__title">Ремонтируем</p>
+        <ul class="devices__list">
+          <li>iPhone</li><li>iPad</li><li>MacBook</li><li>iMac</li><li>Apple Watch</li><li>Ноутбуки</li><li>Samsung</li><li>Xiaomi</li><li>Honor</li><li>Huawei</li><li>ZTE</li>
+        </ul>
+        <p class="devices__extra">Также выкуп и продажа техники. Подробности по телефону.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Почему мы -->
+  <section class="section section--dark" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 id="why-title">Почему к нам</h2>
+      </div>
+      <div class="why">
+        <article class="why__item reveal">
+          <span class="why__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></span>
+          <h3>Диагностика бесплатно</h3>
+          <p>Найдём причину поломки и назовём точную цену. Если откажетесь от ремонта, ничего не платите.</p>
+        </article>
+        <article class="why__item reveal">
+          <span class="why__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-6.5 9.5-6.5S21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h3>Ремонт при вас</h3>
+          <p>Типовые работы делаем за 20-40 минут на ваших глазах. Телефон не уезжает на склад.</p>
+        </article>
+        <article class="why__item reveal">
+          <span class="why__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.8 4.5 5.6v5.6c0 4.6 3.1 8.4 7.5 10 4.4-1.6 7.5-5.4 7.5-10V5.6L12 2.8Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span>
+          <h3>Гарантия на работу</h3>
+          <p>Выдаём гарантийный талон. Если что-то пойдёт не так, исправим бесплатно.</p>
+        </article>
+        <article class="why__item reveal">
+          <span class="why__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></span>
+          <h3>Выезд на дом</h3>
+          <p>Нет времени ехать? Мастер приедет к вам или заберёт устройство курьером.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Как проходит ремонт -->
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 id="how-title">Как проходит ремонт</h2>
+      </div>
+      <ol class="steps">
+        <li class="steps__item reveal">
+          <span class="steps__num">01</span>
+          <h3>Заявка</h3>
+          <p>Звонок, WhatsApp или форма на сайте. Подскажем ближайшее время.</p>
+        </li>
+        <li class="steps__item reveal">
+          <span class="steps__num">02</span>
+          <h3>Диагностика</h3>
+          <p>Бесплатно, 10-15 минут. Покажем, что сломано.</p>
+        </li>
+        <li class="steps__item reveal">
+          <span class="steps__num">03</span>
+          <h3>Согласование цены</h3>
+          <p>Называем итоговую стоимость и срок. Без вашего согласия ничего не делаем.</p>
+        </li>
+        <li class="steps__item reveal">
+          <span class="steps__num">04</span>
+          <h3>Выдача с гарантией</h3>
+          <p>Проверяем устройство вместе с вами и выдаём гарантийный талон.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 6. Отзывы: только рейтинг с площадок -->
+  <section class="section section--soft" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 id="reviews-title">Что говорят клиенты</h2>
+        <p>Мы не публикуем отзывы на своём сайте. Читайте честные оценки на независимых площадках.</p>
+      </div>
+      <div class="ratings" id="ratings-list">
+        <!-- заполняется из data/business.json -->
+      </div>
+      <!-- Блок текстовых отзывов скрыт, пока клиент не предоставит реальные отзывы с разрешением на публикацию -->
+      <div class="reviews-texts" id="reviews-texts" hidden></div>
+    </div>
+  </section>
+
+  <!-- 7. FAQ -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="container container--narrow">
+      <div class="section__head reveal">
+        <h2 id="faq-title">Вопросы и ответы</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Сколько длится ремонт?</summary>
+          <p>Замена экрана или аккумулятора iPhone обычно занимает 20-40 минут, и вы можете подождать прямо у нас. Сложные случаи, например после воды или ремонт платы, могут занять от 1 дня. Точный срок назовём после диагностики.</p>
+        </details>
+        <details>
+          <summary>Какая гарантия?</summary>
+          <p>Даём гарантию на выполненную работу и установленные запчасти, срок указываем в гарантийном талоне. Срок зависит от вида запчасти: оригинал или аналог.</p><!-- DEMO: уточнить срок гарантии у клиента -->
+        </details>
+        <details>
+          <summary>Нужно ли звонить заранее?</summary>
+          <p>Желательно. Позвоните или напишите в WhatsApp: проверим, есть ли нужная запчасть в наличии, и назначим время, чтобы вам не пришлось ждать.</p>
+        </details>
+        <details>
+          <summary>Оригинальные ли запчасти?</summary>
+          <p>Предлагаем выбор: оригинальные запчасти или качественные аналоги дешевле. Перед ремонтом объясним разницу и цену каждого варианта, выбор за вами.</p>
+        </details>
+        <details>
+          <summary>Телефон упал в воду. Что делать?</summary>
+          <p>Выключите его, не заряжайте и не сушите феном или в рисе. Привезите как можно быстрее: чем раньше сделать чистку платы, тем выше шанс сохранить телефон и данные.</p>
+        </details>
+        <details>
+          <summary>Есть ли выезд на дом?</summary>
+          <p>Да, мастер может приехать к вам или забрать устройство курьером. Стоимость и время выезда уточняйте по телефону.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Контакты -->
+  <section class="section section--soft" id="contacts" aria-labelledby="contacts-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2 id="contacts-title">Контакты</h2>
+      </div>
+      <div class="contacts">
+        <div class="contacts__info reveal">
+          <a class="contacts__phone" data-tel href="tel:+79196954054" data-bind="phoneDisplay">+7 919 695-40-54</a>
+          <p class="contacts__hours"><span class="dot" aria-hidden="true"></span><span data-bind="hours">Ежедневно, круглосуточно</span></p>
+          <p class="contacts__hours-note" data-bind="hoursNote">Перед визитом лучше позвонить.</p>
+          <ul class="addresses" id="addresses-list">
+            <li><b>ул. Мусина, 59 корп. Д</b></li>
+          </ul>
+          <div class="contacts__btns">
+            <a class="btn btn--primary" data-tel href="tel:+79196954054">Позвонить</a>
+            <a class="btn btn--wa" data-wa href="https://wa.me/79196954054" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn--ghost" data-tg href="https://t.me/+79196954054" target="_blank" rel="noopener">Telegram</a>
+          </div>
+        </div>
+        <div class="contacts__map reveal" id="map">
+          <button class="map-placeholder" type="button" id="map-load" aria-label="Показать карту">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <span>Показать на карте</span>
+            <small data-bind="mapQuery">Казань, улица Мусина, 59Д</small>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__in">
+    <div>
+      <p class="footer__name" data-bind="name">Сервис KZN</p>
+      <p>Ремонт техники Apple и смартфонов в Казани. Не является официальным сервисным центром Apple.</p>
+    </div>
+    <div class="footer__legal">
+      <p id="legal-line">Реквизиты будут указаны после согласования с владельцем.</p>
+      <p><a href="#privacy" data-open-privacy>Политика конфиденциальности</a></p>
+    </div>
+  </div>
+  <div class="container footer__demo">Демо-версия сайта.</div>
+</footer>
+
+<nav class="mbar" aria-label="Быстрая связь">
+  <a class="mbar__btn" data-tel href="tel:+79196954054">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5 9 3.3l1.6 4.2-2 1.4a11 11 0 0 0 6 6l1.4-2 4.2 1.6-.2 2.4a2 2 0 0 1-2.1 1.8A16 16 0 0 1 4.7 5.6a2 2 0 0 1 1.9-2.1Z"/></svg>
+    Позвонить
+  </a>
+  <a class="mbar__btn mbar__btn--wa" data-wa href="https://wa.me/79196954054" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z"/></svg>
+    WhatsApp
+  </a>
+  <a class="mbar__btn mbar__btn--main" href="#calc">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8.5 7.5h7M8.5 12h1M12 12h0M15.5 12h0M8.5 16h1M12 16h0M15.5 16h0"/></svg>
+    Рассчитать
+  </a>
+</nav>
+
+<dialog class="privacy" id="privacy" aria-labelledby="privacy-title">
+  <div class="privacy__in">
+    <h2 id="privacy-title">Политика конфиденциальности</h2>
+    <p><b>Страница-заглушка для демо.</b> Перед запуском заменить на текст политики обработки персональных данных по 152-ФЗ, согласованный с владельцем.</p>
+    <p>Мы собираем только имя и номер телефона, которые вы указываете в форме, и используем их, чтобы связаться с вами по поводу ремонта. Данные не передаются третьим лицам, кроме случаев, предусмотренных законом.</p>
+    <p>Оператор персональных данных: <span id="privacy-operator">реквизиты уточняются</span>.</p>
+    <form method="dialog"><button class="btn btn--primary">Закрыть</button></form>
+  </div>
+</dialog>
+
+<script type="application/ld+json" id="ld-business"></script>
+<script>
+window.SITE_DATA = {"business": {"_comment": "Данные бизнеса для демо. Всё, что помечено confirmed:false, нужно сверить с клиентом перед публикацией.", "name": "Сервис KZN", "nameNote": "Рабочее название для демо, заменить на согласованное с клиентом", "tagline": "Ремонт техники Apple и смартфонов в Казани", "city": "Казань", "site": "https://apple-service-kzn.ru", "phone": "+79196954054", "phoneDisplay": "+7 919 695-40-54", "whatsapp": "79196954054", "telegram": "https://t.me/+79196954054", "telegramNote": "Проверить, что Telegram привязан к этому номеру, либо указать @username", "hours": "Ежедневно, круглосуточно", "hoursNote": "Перед визитом лучше позвонить: проверим наличие запчасти", "openingHoursSchema": "Mo-Su 00:00-23:59", "homeVisit": true, "addresses": [{"title": "ул. Мусина, 59 корп. Д", "streetAddress": "ул. Мусина, 59Д", "main": true, "how": "Основная мастерская", "confirmed": false, "_check": "Уточнить ориентир: этаж, вывеска, вход"}, {"title": "ул. Назарбаева, 21/64", "streetAddress": "ул. Назарбаева, 21/64", "main": false, "how": "", "confirmed": false, "_check": "Уточнить, работает ли точка"}, {"title": "м. Проспект Победы, вход №2", "streetAddress": "станция метро Проспект Победы, вход №2", "main": false, "how": "При входе №2", "confirmed": false, "_check": "Уточнить, работает ли точка"}], "addressIn2gis": "ул. Рихарда Зорге, 101, 1 этаж (данные в 2ГИС устарели, сверить)", "ratings": [{"source": "Яндекс Карты", "value": 5.0, "votes": 142, "reviews": 97, "url": "https://yandex.ru/maps/43/kazan/search/%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%20%D0%9C%D1%83%D1%81%D0%B8%D0%BD%D0%B0%2059/", "confirmed": false}, {"source": "2ГИС", "value": 5.0, "votes": 3, "reviews": null, "url": "https://2gis.ru/kazan/search/%D0%A0%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%20%D0%A0%D0%B8%D1%85%D0%B0%D1%80%D0%B4%D0%B0%20%D0%97%D0%BE%D1%80%D0%B3%D0%B5%20101", "confirmed": false}], "ratingsNote": "URL ведут на поиск. Заменить на прямые ссылки на карточки организации", "legal": {"type": "ИП", "fullName": "", "ogrnip": "322169000209030", "inn": "166021365501", "confirmed": false}, "mapQuery": "Казань, улица Мусина, 59Д", "_hoursCheck": "В 2ГИС указано: по звонку, с 08:00. Уточнить у клиента"}, "prices": {"_comment": "DEMO: все цены условные, для показа. Клиент подтверждает реальные. Итог = base[группа] * k модели, округление до 100 руб.", "demo": true, "groups": [{"id": "iphone", "name": "iPhone"}, {"id": "ipad", "name": "iPad"}, {"id": "mac", "name": "MacBook"}], "models": [{"id": "ip11", "group": "iphone", "name": "iPhone 11", "k": 0.75}, {"id": "ip12", "group": "iphone", "name": "iPhone 12 / 12 mini", "k": 0.85}, {"id": "ip12p", "group": "iphone", "name": "iPhone 12 Pro / Pro Max", "k": 0.95}, {"id": "ip13", "group": "iphone", "name": "iPhone 13 / 13 mini", "k": 0.95}, {"id": "ip13p", "group": "iphone", "name": "iPhone 13 Pro / Pro Max", "k": 1.1}, {"id": "ip14", "group": "iphone", "name": "iPhone 14 / 14 Plus", "k": 1.05}, {"id": "ip14p", "group": "iphone", "name": "iPhone 14 Pro / Pro Max", "k": 1.25}, {"id": "ip15", "group": "iphone", "name": "iPhone 15 / 15 Plus", "k": 1.2}, {"id": "ip15p", "group": "iphone", "name": "iPhone 15 Pro / Pro Max", "k": 1.4}, {"id": "ip16", "group": "iphone", "name": "iPhone 16 / 16 Plus / 16e", "k": 1.35}, {"id": "ip16p", "group": "iphone", "name": "iPhone 16 Pro / Pro Max", "k": 1.55}, {"id": "ip17", "group": "iphone", "name": "iPhone 17 / Air", "k": 1.5}, {"id": "ip17p", "group": "iphone", "name": "iPhone 17 Pro / Pro Max", "k": 1.75}, {"id": "ipad", "group": "ipad", "name": "iPad (9, 10, 11 поколение)", "k": 1.0}, {"id": "ipadair", "group": "ipad", "name": "iPad Air / mini", "k": 1.2}, {"id": "ipadpro", "group": "ipad", "name": "iPad Pro", "k": 1.6}, {"id": "mba", "group": "mac", "name": "MacBook Air", "k": 1.0}, {"id": "mbp", "group": "mac", "name": "MacBook Pro", "k": 1.35}], "problems": [{"id": "screen", "name": "Экран", "base": {"iphone": 4500, "ipad": 6500, "mac": 18000}, "time": {"iphone": "от 30 минут", "ipad": "от 2 часов", "mac": "от 1 дня"}}, {"id": "battery", "name": "Аккумулятор", "base": {"iphone": 2500, "ipad": 4000, "mac": 7500}, "time": {"iphone": "от 20 минут", "ipad": "от 1 часа", "mac": "от 2 часов"}}, {"id": "port", "name": "Разъём зарядки", "base": {"iphone": 2200, "ipad": 3500, "mac": 5500}, "time": {"iphone": "от 40 минут", "ipad": "от 1 часа", "mac": "от 3 часов"}}, {"id": "camera", "name": "Камера", "base": {"iphone": 3000, "ipad": 3500, "mac": 6000}, "time": {"iphone": "от 30 минут", "ipad": "от 1 часа", "mac": "от 1 дня"}}, {"id": "water", "name": "Попала вода", "base": {"iphone": 1500, "ipad": 2000, "mac": 3500}, "time": {"iphone": "от 1 часа", "ipad": "от 2 часов", "mac": "от 1 дня"}}, {"id": "other", "name": "Другое", "base": null, "time": null}], "services": [{"id": "screen", "name": "Замена экрана", "from": 3400, "text": "Разбит, полосы, не реагирует на касания. Оригинал или качественный аналог на выбор."}, {"id": "battery", "name": "Замена аккумулятора", "from": 1900, "text": "Быстро садится, выключается на холоде, вздулся. Около 20 минут."}, {"id": "water", "name": "Чистка после воды", "from": 1100, "text": "Ультразвуковая чистка платы и проверка всех узлов. Чем раньше, тем лучше."}, {"id": "port", "name": "Замена разъёма", "from": 1700, "text": "Не заряжается, заряжается под углом, не видит компьютер."}, {"id": "faceid", "name": "Ремонт Face ID", "from": 3500, "text": "Face ID недоступен после падения или попадания влаги. Сначала диагностика."}, {"id": "data", "name": "Перенос данных", "from": 500, "text": "Фото, контакты, переписки со старого телефона на новый."}]}};
+</script>
+<script>
+/* Сервис KZN: демо-лендинг. Без зависимостей. */
+(function () {
+  'use strict';
+
+  var LEAD_ENDPOINT = '/api/lead';   // серверless-функция, см. README
+  var LEAD_COOLDOWN_MS = 60 * 1000;  // защита от повторной отправки
+
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  document.documentElement.classList.remove('no-js');
+
+  /* ---------- Данные ----------
+     В режиме разработки берём data/*.json через fetch.
+     В собранном однофайловом демо (dist/) данные уже лежат в window.SITE_DATA. */
+  function loadData() {
+    if (window.SITE_DATA) return Promise.resolve(window.SITE_DATA);
+    var get = function (url) { return fetch(url, { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(url); return r.json(); }); };
+    return Promise.all([get('data/business.json'), get('data/prices.json')])
+      .then(function (res) { return { business: res[0], prices: res[1] }; });
+  }
+
+  function money(n) {
+    return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' руб.';
+  }
+  function round100(n) { return Math.round(n / 100) * 100; }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+
+  var ICONS = {
+    iphone: '<svg viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.8"/><path d="M10.5 5h3"/></svg>',
+    ipad: '<svg viewBox="0 0 24 24"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>',
+    mac: '<svg viewBox="0 0 24 24"><rect x="4" y="4.5" width="16" height="11" rx="1.8"/><path d="M2 19h20"/></svg>',
+    screen: '<svg viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.8"/><path d="m9 8 3 3-2 2 4 3"/></svg>',
+    battery: '<svg viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="10" rx="2.2"/><path d="M21 10.5v3M12 9l-2 3h3l-2 3"/></svg>',
+    port: '<svg viewBox="0 0 24 24"><path d="M9 2.5v4M15 2.5v4M7 6.5h10v4a5 5 0 0 1-10 0v-4ZM12 15.5v6"/></svg>',
+    camera: '<svg viewBox="0 0 24 24"><path d="M4 8h3l1.5-2.5h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.4"/></svg>',
+    water: '<svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg>',
+    other: '<svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.3 5.3L3.5 17.5l3 3 5.9-5.9a4 4 0 0 0 5.3-5.3l-2.6 2.6-2.4-.5-.5-2.4 2.5-2.7Z"/></svg>',
+    faceid: '<svg viewBox="0 0 24 24"><path d="M3.5 8V5.5a2 2 0 0 1 2-2H8M16 3.5h2.5a2 2 0 0 1 2 2V8M20.5 16v2.5a2 2 0 0 1-2 2H16M8 20.5H5.5a2 2 0 0 1-2-2V16M9 9v1.5M15 9v1.5M12 9v4h-1M9.5 16a4 4 0 0 0 5 0"/></svg>',
+    data: '<svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="7" height="14" rx="1.8"/><rect x="14.5" y="5" width="7" height="14" rx="1.8"/><path d="M10.5 10h3m-1.5-1.5L13.5 10 12 11.5M13.5 14h-3m1.5-1.5L10.5 14l1.5 1.5"/></svg>'
+  };
+  var PIN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>';
+  var STAR = '<svg viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.3l-5.7 3 1.1-6.3-4.6-4.5 6.4-.9z"/></svg>';
+  var ARROW = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+
+  /* ---------- Контакты из business.json ---------- */
+  function applyBusiness(b) {
+    $$('[data-bind]').forEach(function (el) {
+      var v = b[el.getAttribute('data-bind')];
+      if (v != null && v !== '') el.textContent = v;
+    });
+    $$('[data-tel]').forEach(function (a) { a.href = 'tel:' + b.phone; });
+    $$('[data-wa]').forEach(function (a) { a.href = 'https://wa.me/' + b.whatsapp; });
+    $$('[data-tg]').forEach(function (a) {
+      if (b.telegram) a.href = b.telegram; else a.hidden = true;
+    });
+
+    // Адреса
+    var list = $('#addresses-list');
+    if (list && b.addresses) {
+      list.innerHTML = b.addresses.map(function (a) {
+        return '<li>' + PIN + '<div><b>' + esc(a.title) + (a.main ? '<span class="tag">основной</span>' : '') + '</b>' +
+          (a.how ? '<small>' + esc(a.how) + '</small>' : '') + '</div></li>';
+      }).join('');
+    }
+
+    // Рейтинги
+    var rl = $('#ratings-list');
+    if (rl && b.ratings) {
+      rl.innerHTML = b.ratings.map(function (r) {
+        var meta = r.votes + ' ' + plural(r.votes, ['оценка', 'оценки', 'оценок']);
+        if (r.reviews) meta += ', ' + r.reviews + ' ' + plural(r.reviews, ['отзыв', 'отзыва', 'отзывов']);
+        var stars = '';
+        for (var i = 0; i < 5; i++) stars += STAR;
+        return '<a class="rating reveal" href="' + esc(r.url) + '" target="_blank" rel="noopener">' +
+          '<span class="rating__value">' + r.value.toFixed(1).replace('.', ',') + '</span>' +
+          '<span class="rating__body"><span class="rating__stars" aria-hidden="true">' + stars + '</span>' +
+          '<span class="rating__src">' + esc(r.source) + '</span><span class="rating__meta">' + meta + '</span></span>' +
+          '<span class="rating__go">' + ARROW + '</span></a>';
+      }).join('');
+    }
+
+    // Реквизиты: показываем только подтверждённые
+    var legal = b.legal || {};
+    var line = $('#legal-line');
+    if (legal.confirmed && line) {
+      line.textContent = [legal.type + (legal.fullName ? ' ' + legal.fullName : ''), legal.ogrnip && 'ОГРНИП ' + legal.ogrnip, legal.inn && 'ИНН ' + legal.inn].filter(Boolean).join(', ');
+      $('#privacy-operator').textContent = line.textContent;
+    }
+
+    // schema.org LocalBusiness
+    var main = (b.addresses || []).filter(function (a) { return a.main; })[0] || {};
+    var ld = {
+      '@context': 'https://schema.org',
+      '@type': 'MobilePhoneStore',
+      name: b.name,
+      url: b.site,
+      telephone: b.phone,
+      openingHours: b.openingHoursSchema,
+      address: { '@type': 'PostalAddress', streetAddress: main.streetAddress, addressLocality: b.city, addressCountry: 'RU' },
+      priceRange: 'руб.'
+    };
+    // Рейтинг в разметку только если цифры подтверждены
+    var conf = (b.ratings || []).filter(function (r) { return r.confirmed; })[0];
+    if (conf) ld.aggregateRating = { '@type': 'AggregateRating', ratingValue: conf.value, ratingCount: conf.votes };
+    var ldEl = $('#ld-business');
+    if (ldEl) ldEl.textContent = JSON.stringify(ld);
+  }
+
+  function plural(n, f) {
+    var m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return f[0];
+    if (m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20)) return f[1];
+    return f[2];
+  }
+
+  /* ---------- Популярные услуги ---------- */
+  function renderServices(p) {
+    var wrap = $('#services-list');
+    if (!wrap) return;
+    wrap.innerHTML = p.services.map(function (s) {
+      return '<article class="card reveal">' +
+        '<span class="card__icon" aria-hidden="true">' + (ICONS[s.id] || ICONS.other) + '</span>' +
+        '<h3>' + esc(s.name) + '</h3><p>' + esc(s.text) + '</p>' +
+        '<div class="card__foot"><span class="card__price"><small>от </small>' + money(s.from) + '</span>' +
+        '<a class="card__link" href="#calc" data-pick="' + esc(s.id) + '">Рассчитать</a></div></article>';
+    }).join('');
+  }
+
+  /* ---------- Калькулятор ---------- */
+  var state = { group: 'iphone', model: null, problem: 'screen' };
+  var P, B;
+
+  function chip(id, label, icon, checked) {
+    return '<button type="button" class="chip" role="radio" data-id="' + esc(id) + '" aria-checked="' + (checked ? 'true' : 'false') + '" tabindex="' + (checked ? '0' : '-1') + '">' +
+      (icon ? icon : '') + '<span>' + esc(label) + '</span></button>';
+  }
+
+  function renderGroups() {
+    $('#calc-groups').innerHTML = P.groups.map(function (g) { return chip(g.id, g.name, ICONS[g.id], g.id === state.group); }).join('');
+  }
+  function renderModels() {
+    var models = P.models.filter(function (m) { return m.group === state.group; });
+    if (!models.some(function (m) { return m.id === state.model; })) {
+      // по умолчанию предлагаем популярную модель из середины списка
+      state.model = (models[Math.min(models.length - 1, Math.floor(models.length / 2))] || {}).id;
+    }
+    $('#calc-model').innerHTML = models.map(function (m) {
+      return '<option value="' + esc(m.id) + '"' + (m.id === state.model ? ' selected' : '') + '>' + esc(m.name) + '</option>';
+    }).join('');
+  }
+  function renderProblems() {
+    $('#calc-problems').innerHTML = P.problems.map(function (p) { return chip(p.id, p.name, ICONS[p.id], p.id === state.problem); }).join('');
+  }
+
+  function current() {
+    var m = P.models.filter(function (x) { return x.id === state.model; })[0];
+    var pr = P.problems.filter(function (x) { return x.id === state.problem; })[0];
+    return { model: m, problem: pr };
+  }
+
+  function update() {
+    var c = current();
+    var priceEl = $('#calc-price'), timeEl = $('#calc-time span'), noteEl = $('#calc-note');
+    if (!c.model || !c.problem) return;
+    var base = c.problem.base && c.problem.base[state.group];
+    if (base) {
+      priceEl.textContent = 'от ' + money(round100(base * c.model.k)); // DEMO-цены
+      timeEl.textContent = 'Срок: ' + c.problem.time[state.group];
+      noteEl.textContent = 'Работа и запчасть. Точную цену назовём после бесплатной диагностики.';
+    } else {
+      priceEl.textContent = 'После диагностики';
+      timeEl.textContent = 'Диагностика: 10-15 минут, бесплатно';
+      noteEl.textContent = 'Опишите проблему мастеру по телефону или в WhatsApp.';
+    }
+    priceEl.classList.remove('is-bump'); void priceEl.offsetWidth; priceEl.classList.add('is-bump');
+
+    $('#lead-device').value = c.model.name;
+    $('#lead-problem').value = c.problem.name;
+
+    var problemText = c.problem.id === 'other' ? 'другая поломка' : c.problem.name.toLowerCase();
+    var msg = 'Здравствуйте! Хочу узнать цену ремонта ' + c.model.name + ', ' + problemText;
+    $('#calc-wa').href = 'https://wa.me/' + B.whatsapp + '?text=' + encodeURIComponent(msg);
+  }
+
+  function bindRadioGroup(container, onPick) {
+    container.addEventListener('click', function (e) {
+      var b = e.target.closest('.chip'); if (!b) return;
+      onPick(b.getAttribute('data-id'));
+      var nb = container.querySelector('[data-id="' + b.getAttribute('data-id') + '"]');
+      if (nb) nb.focus();
+    });
+    container.addEventListener('keydown', function (e) {
+      var keys = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 };
+      if (!(e.key in keys)) return;
+      e.preventDefault();
+      var items = $$('.chip', container);
+      var i = items.indexOf(document.activeElement);
+      var next = items[(i + keys[e.key] + items.length) % items.length];
+      onPick(next.getAttribute('data-id'));
+      container.querySelector('[data-id="' + next.getAttribute('data-id') + '"]').focus();
+    });
+  }
+
+  function initCalc() {
+    renderGroups(); renderModels(); renderProblems(); update();
+    bindRadioGroup($('#calc-groups'), function (id) { state.group = id; renderGroups(); renderModels(); update(); });
+    bindRadioGroup($('#calc-problems'), function (id) { state.problem = id; renderProblems(); update(); });
+    $('#calc-model').addEventListener('change', function (e) { state.model = e.target.value; update(); });
+
+    // «Рассчитать» в карточках услуг подставляет поломку
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('[data-pick]'); if (!a) return;
+      var id = a.getAttribute('data-pick');
+      if (P.problems.some(function (p) { return p.id === id; })) { state.problem = id; }
+      else { state.problem = 'other'; }
+      state.group = 'iphone'; renderGroups(); renderModels(); renderProblems(); update();
+    });
+  }
+
+  /* ---------- Форма заявки ---------- */
+  function normalizePhone(v) {
+    var d = v.replace(/\D/g, '');
+    if (d.length === 11 && (d[0] === '8' || d[0] === '7')) d = '7' + d.slice(1);
+    else if (d.length === 10 && d[0] === '9') d = '7' + d;
+    return d;
+  }
+  function formatPhone(v) {
+    var d = v.replace(/\D/g, '');
+    if (!d) return '';
+    if (d[0] === '8') d = '7' + d.slice(1);
+    if (d[0] !== '7') d = '7' + d;
+    d = d.slice(0, 11);
+    var out = '+7';
+    if (d.length > 1) out += ' (' + d.slice(1, 4);
+    if (d.length >= 4) out += ')';
+    if (d.length > 4) out += ' ' + d.slice(4, 7);
+    if (d.length > 7) out += '-' + d.slice(7, 9);
+    if (d.length > 9) out += '-' + d.slice(9, 11);
+    return out;
+  }
+
+  function initForm() {
+    var form = $('#lead-form'), phone = $('#lead-phone'), consent = $('#lead-consent'), btn = $('#lead-submit');
+    var phoneErr = $('#phone-err'), consentErr = $('#consent-err');
+    var sending = false;
+
+    phone.addEventListener('input', function () {
+      var pos = phone.value.length === phone.selectionStart;
+      phone.value = formatPhone(phone.value);
+      if (pos) phone.setSelectionRange(phone.value.length, phone.value.length);
+      if (phone.getAttribute('aria-invalid')) validatePhone();
+    });
+    phone.addEventListener('blur', function () { if (phone.value) validatePhone(); });
+    consent.addEventListener('change', function () { if (consent.checked) consentErr.textContent = ''; });
+
+    function validatePhone() {
+      var ok = /^79\d{9}$/.test(normalizePhone(phone.value));
+      phone.setAttribute('aria-invalid', ok ? 'false' : 'true');
+      phoneErr.textContent = ok ? '' : 'Введите мобильный номер: +7 9XX XXX-XX-XX';
+      return ok;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (sending) return;
+      var okPhone = validatePhone();
+      var okConsent = consent.checked;
+      consentErr.textContent = okConsent ? '' : 'Нужно согласие на обработку данных';
+      if (!okPhone) { phone.focus(); return; }
+      if (!okConsent) { consent.focus(); return; }
+      if (form.company.value) return; // honeypot
+
+      var last = 0;
+      try { last = +localStorage.getItem('lead_sent_at') || 0; } catch (err) {}
+      if (Date.now() - last < LEAD_COOLDOWN_MS) {
+        showDone('Мы уже получили вашу заявку и скоро перезвоним. Если срочно, позвоните нам.');
+        return;
+      }
+
+      sending = true; btn.disabled = true; btn.textContent = 'Отправляем...';
+      var payload = {
+        name: form.name.value.trim().slice(0, 60),
+        phone: '+' + normalizePhone(phone.value),
+        device: $('#lead-device').value,
+        problem: $('#lead-problem').value,
+        estimate: $('#calc-price').textContent,
+        page: location.href
+      };
+
+      var ctrl = 'AbortController' in window ? new AbortController() : null;
+      var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 8000);
+      fetch(LEAD_ENDPOINT, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload), signal: ctrl && ctrl.signal
+      }).then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return true;
+      }).catch(function () {
+        // Демо без сервера: заявка не уходит, показываем, как это будет выглядеть
+        return 'demo';
+      }).then(function (res) {
+        clearTimeout(timer);
+        try { localStorage.setItem('lead_sent_at', String(Date.now())); } catch (err) {}
+        showDone(res === 'demo'
+          ? 'Демо-режим: так клиент увидит подтверждение. После подключения бота заявка придёт владельцу в Telegram за секунду.'
+          : 'Мастер перезвонит вам в ближайшее время.');
+      });
+    });
+
+    function showDone(text) {
+      sending = false; btn.disabled = false; btn.textContent = 'Записаться на бесплатную диагностику';
+      form.hidden = true;
+      var done = $('#lead-done');
+      $('#lead-done-text').textContent = text;
+      done.hidden = false; done.focus();
+    }
+  }
+
+  /* ---------- Карта: грузим по клику, чтобы не тормозить страницу ---------- */
+  function initMap() {
+    var btn = $('#map-load'); if (!btn) return;
+    function load() {
+      var q = (B && B.mapQuery) || 'Казань, улица Мусина, 59Д';
+      var f = document.createElement('iframe');
+      f.src = 'https://yandex.ru/map-widget/v1/?mode=search&z=16&text=' + encodeURIComponent(q);
+      f.title = 'Карта: ' + q; f.loading = 'lazy'; f.allowFullscreen = true;
+      $('#map').appendChild(f); btn.remove();
+    }
+    btn.addEventListener('click', load);
+    // На десктопе подгружаем, когда блок почти виден
+    if ('IntersectionObserver' in window && window.matchMedia('(min-width: 1024px)').matches) {
+      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); if (document.body.contains(btn)) load(); } }, { rootMargin: '200px' });
+      io.observe(btn);
+    }
+  }
+
+  /* ---------- Мелочи интерфейса ---------- */
+  function initUI() {
+    var header = $('.header');
+    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 8); };
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    var dlg = $('#privacy');
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('[data-open-privacy]'); if (!a) return;
+      e.preventDefault();
+      if (dlg && dlg.showModal) dlg.showModal();
+    });
+  }
+
+  function initReveal() {
+    var els = $$('.reveal:not(.is-in)');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      els.forEach(function (el) { el.classList.add('is-in'); }); return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    els.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- Старт ---------- */
+  initUI();
+  loadData().then(function (d) {
+    B = d.business; P = d.prices;
+    applyBusiness(B);
+    renderServices(P);
+    initCalc();
+    initForm();
+    initMap();
+    initReveal();
+  }).catch(function (err) {
+    // Открыли index.html двойным кликом без сервера: fetch к JSON запрещён браузером
+    console.warn('Данные не загрузились (' + err.message + '). Запустите локальный сервер или откройте dist/*.html');
+    $$('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    var r = $('.calc__result');
+    if (r) r.insertAdjacentHTML('afterbegin', '<p style="color:#ffb4ab;margin-bottom:12px">Не удалось загрузить данные. Откройте собранный файл из папки dist или запустите локальный сервер (см. README).</p>');
+  });
+})();
+
+</script>
+</body>
+</html>
