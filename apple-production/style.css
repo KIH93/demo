@@ -165,14 +165,18 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .prow__name { color: var(--ink); font-weight: 600; }
 .prow__cost { font-weight: 800; color: var(--ink); white-space: nowrap; text-align: right; }
 .prow__cost--free { color: var(--wa); }
-.prow__ask { grid-column: 1 / -1; justify-self: start; display: inline-flex; align-items: center; gap: 6px; padding: 6px 0; font-size: 14px; font-weight: 700; color: var(--wa-d); text-decoration: none; }
+.prow__acts { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 4px; }
+.prow__label { display: none; font-size: 13px; color: var(--muted); font-weight: 600; }
+.prow__ask { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 6px 12px; border-radius: 10px; font-size: 14px; font-weight: 700; text-decoration: none; color: var(--wa-d); background: #e8f6ed; transition: background .2s; }
 .prow__ask .ic { width: 16px; height: 16px; }
-.prow__ask:hover { text-decoration: underline; }
+.prow__ask:hover { background: #d4efdd; }
+.prow__ask--tg { color: var(--tg-d); background: #e6f1f9; }
+.prow__ask--tg:hover { background: #d2e6f4; }
 @media (min-width: 640px) {
   .prow { grid-template-columns: 1fr auto auto; padding: 12px 8px; border-radius: 12px; border-bottom-color: transparent; }
   .prow:nth-child(odd) { background: var(--gray); }
-  .prow__ask { grid-column: auto; padding: 8px 12px; border-radius: 10px; background: #e8f6ed; }
-  .prow__ask:hover { text-decoration: none; background: #d4efdd; }
+  .prow__acts { grid-column: auto; margin-top: 0; }
+  .prow__label { display: inline; }
 }
 .price__empty { padding: 28px 8px; text-align: center; color: var(--muted); }
 .price__ondemand { padding: 24px 8px; }
@@ -287,3 +291,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 /* Место под реальные фото: класс photo-placeholder оставлен для замены на <img> */
 .photo-placeholder { }
+
+/* Подсказка после копирования текста для Telegram */
+.toast { position: fixed; left: 50%; bottom: 84px; z-index: 60; width: max-content; max-width: calc(100% - 32px); padding: 12px 16px; border-radius: 14px; background: var(--ink); color: #fff; font-size: 14px; font-weight: 600; box-shadow: var(--shadow); transform: translate(-50%, 20px); opacity: 0; visibility: hidden; transition: .25s; }
+.toast.is-visible { transform: translate(-50%, 0); opacity: 1; visibility: visible; }
+@media (min-width: 960px) { .toast { bottom: 24px; } }

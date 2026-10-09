@@ -93,7 +93,31 @@
       : cost === 0 ? '<span class="prow__cost prow__cost--free">бесплатно</span>'
       : '<span class="prow__cost">от ' + fmt(cost) + ' руб.</span>';
     return '<div class="prow"><span class="prow__name">' + esc(name) + '</span>' + costHtml +
-      '<a class="prow__ask" href="' + waLink(msg) + '" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Узнать точнее</a></div>';
+      '<div class="prow__acts"><span class="prow__label">Узнать точнее:</span>' +
+      '<a class="prow__ask" href="' + waLink(msg) + '" target="_blank" rel="noopener" aria-label="Узнать точнее в WhatsApp: ' + esc(name) + '"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>' +
+      '<a class="prow__ask prow__ask--tg" href="' + TG + '" target="_blank" rel="noopener" data-msg="' + esc(msg) + '" aria-label="Узнать точнее в Telegram: ' + esc(name) + '"><svg class="ic" aria-hidden="true"><use href="#i-tg"/></svg>Telegram</a></div></div>';
+  }
+
+  /* Telegram не подставляет текст в чат, поэтому копируем его в буфер и показываем подсказку */
+  var toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.setAttribute('role', 'status');
+  document.body.appendChild(toast);
+  var toastTimer;
+  function showToast(text) {
+    toast.textContent = text;
+    toast.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('is-visible'); }, 4000);
+  }
+  function copyForTg(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        showToast('Текст скопирован. Вставьте его в чат Telegram и допишите модель.');
+      }, function () { showToast('Напишите в Telegram: ' + text); });
+    } else {
+      showToast('Напишите в Telegram: ' + text);
+    }
   }
 
   function render() {
@@ -136,6 +160,10 @@
     });
   });
   search.addEventListener('input', render);
+  list.addEventListener('click', function (e) {
+    var a = e.target.closest('.prow__ask--tg');
+    if (a) copyForTg(a.dataset.msg);
+  });
 
   document.querySelectorAll('.device').forEach(function (d) {
     d.addEventListener('click', function () {
