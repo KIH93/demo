@@ -674,8 +674,7 @@ p{margin:0}
       Казань, Роторная улица, 1м · <a href="tel:+79872283374">+7 987 228-33-74</a><br>
       Ремонт компьютеров, ноутбуков и телефонов
     </div>
-    <!-- TODO: вставить ссылку на Telegram Ильдара -->
-    <div class="demo-credit">Демо-версия сайта подготовлена Ильдаром · <a href="#" data-todo="telegram-ildara">Связаться</a></div>
+    <div class="demo-credit">Демо-версия сайта подготовлена Ильдаром · <a href="https://t.me/Ildar_kih" target="_blank" rel="noopener">Связаться</a></div>
   </div>
 </footer>
 
@@ -751,11 +750,6 @@ p{margin:0}
       ? 'https://wa.me/79010084344?text=' + encodeURIComponent(text)
       : 'https://t.me/oo1337?text=' + encodeURIComponent(text);
     window.open(url, '_blank', 'noopener');
-  });
-
-  // Заглушка ссылки автора демо
-  document.querySelectorAll('[data-todo]').forEach(function(a){
-    a.addEventListener('click', function(e){ if (a.getAttribute('href') === '#') e.preventDefault(); });
   });
 })();
 </script>
