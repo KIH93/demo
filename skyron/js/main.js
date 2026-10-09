@@ -118,6 +118,8 @@
       }
       if (btn.hasAttribute("data-calc-request")) {
         comment.value = "Рассрочка: " + fmt(sumValue()) + " руб. на " + termValue() + " мес.";
+      } else if (btn.hasAttribute("data-comment")) {
+        comment.value = btn.getAttribute("data-comment");
       } else if (btn.closest(".product")) {
         comment.value = "Интересует: " + btn.closest(".product").querySelector("h4").textContent;
       }

@@ -117,7 +117,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .nav.is-open a:last-child { border-bottom: 0; }
 }
 @media (min-width: 900px) {
-  .nav { display: flex; gap: 28px; margin-left: 40px; }
+  .nav { display: flex; gap: 24px; margin-left: 32px; }
   .nav a { text-decoration: none; font-weight: 800; color: var(--navy); padding: 10px 0; position: relative; }
   .nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: 4px; height: 2px; background: var(--red); transition: right .25s; }
   .nav a:hover::after { right: 0; }
@@ -194,6 +194,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .price-banner p { margin: 0; color: var(--muted); font-size: 15px; }
 .price-banner > div { flex: 1 1 220px; }
 .price-banner .btn { flex: 1 1 auto; }
+.price-banner p.price-banner__cash { margin-top: 4px; color: var(--red); font-weight: 800; font-size: 14px; }
 .price-banner__icon { width: 52px; height: 52px; border-radius: 14px; background: #fff; color: #0f7a3d; display: grid; place-items: center; flex: none; }
 .price-banner__icon svg { width: 26px; height: 26px; }
 @media (min-width: 768px) { .price-banner { padding: 24px 28px; } .price-banner .btn { flex: 0 0 auto; } }
@@ -219,6 +220,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .product h4 { font-size: 15px; margin-bottom: 2px; }
 .product__meta { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
 .product__price { font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; flex: 1; }
+.product__price span { display: block; font-size: 12px; font-weight: 500; color: var(--muted); }
 .product__btn { min-height: 44px; border-radius: 10px; border: 0; background: var(--red); color: #fff; font-weight: 800; font-size: 14px; cursor: pointer; }
 .product__btn:hover { background: var(--red-dark); }
 .showcase__note { margin: 16px 0 0; font-size: 14px; color: var(--muted); text-align: center; }
@@ -254,6 +256,22 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .calc__result b { font-size: 30px; color: var(--navy); }
 .calc__note { font-size: 13px; color: var(--muted); margin: 12px 0 16px; }
 @media (min-width: 900px) { .credit { grid-template-columns: 1fr 1fr; gap: 56px; } .calc { padding: 32px; } }
+
+/* Trade-In */
+.tradein { display: grid; gap: 24px; align-items: center; border-radius: 24px; padding: 28px 20px; color: #fff; background: radial-gradient(120% 140% at 100% 0%, #2a52b0 0%, var(--navy) 50%, var(--navy-2) 100%); overflow: hidden; }
+.tradein h2 { font-size: clamp(24px, 4.6vw, 36px); }
+.tradein p { color: #d5def2; }
+.eyebrow--light { color: #ff9ca1; }
+.tradein__steps { list-style: none; padding: 0; margin: 0 0 22px; display: grid; gap: 10px; }
+.tradein__steps li { display: flex; align-items: center; gap: 12px; }
+.tradein__steps span { width: 30px; height: 30px; flex: none; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.14); font-weight: 800; font-size: 14px; }
+.tradein__btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.tradein__btns .btn { flex: 1 1 220px; }
+.tradein__btns .btn svg { color: #fff; }
+.tradein__note { font-size: 13px; margin: 14px 0 0; }
+.tradein__visual { max-width: 300px; width: 100%; margin: 0 auto; }
+.tradein__visual svg { width: 100%; height: auto; }
+@media (min-width: 900px) { .tradein { grid-template-columns: 1.3fr .7fr; padding: 48px; gap: 40px; } .tradein__btns .btn { flex: 0 0 auto; } }
 
 /* Шаги */
 .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; counter-reset: none; }

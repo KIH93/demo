@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
 
   <script type="application/ld+json">
   {
@@ -80,6 +80,7 @@
   <symbol id="i-table" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></g></symbol>
   <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h14v12H1zM15 9h4l3 3v4h-7"/><circle cx="5.5" cy="18" r="2"/><circle cx="18.5" cy="18" r="2"/></g></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4"/><path d="M3 11V9a2 2 0 0 1 2-2h16"/><path d="M7 21l-4-4 4-4"/><path d="M21 13v2a2 2 0 0 1-2 2H3"/></g></symbol>
   <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></g></symbol>
 </svg>
 
@@ -95,6 +96,7 @@
     <nav class="nav" id="nav" aria-label="Основное меню">
       <a href="#catalog">Каталог</a>
       <a href="#credit">Рассрочка</a>
+      <a href="#tradein">Trade-In</a>
       <a href="#find">Как нас найти</a>
       <a href="#contacts">Контакты</a>
     </nav>
@@ -116,7 +118,7 @@
           <svg><use href="#i-star"/></svg><b data-rating="value">4.8</b> в 2ГИС <span class="rating-badge__muted"><span data-rating="votes">214</span> оценок</span>
         </a>
         <h1>Смартфоны и техника с гарантией в Казани. <span class="accent">Работаем с 2002 года</span></h1>
-        <p class="hero__lead">Только оригинальная техника с официальной гарантией. Рассрочка и кредит до 36 месяцев. Подберём модель под задачи и бюджет.</p>
+        <p class="hero__lead">Только оригинальная техника с официальной гарантией. Рассрочка и кредит до 36 месяцев, Trade-In для техники Apple. Подберём модель под задачи и бюджет.</p>
         <div class="hero__cta">
           <a class="btn btn--red btn--lg" href="#catalog">Подобрать технику</a>
           <a class="btn btn--ghost btn--lg" data-wa="main" href="https://wa.me/79872908904" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Написать в WhatsApp</a>
@@ -192,7 +194,8 @@
         <span class="price-banner__icon"><svg><use href="#i-table"/></svg></span>
         <div>
           <h3>Актуальный прайс</h3>
-          <p>Полный список техники с ценами, обновляется менеджерами.</p>
+          <p>Полный список техники с ценами, обновляется в течение дня.</p>
+          <p class="price-banner__cash">Цены указаны со скидкой 15% за наличный расчёт</p>
         </div>
         <a class="btn btn--blue" data-link="price" href="https://docs.google.com/spreadsheets/d/11mQwL7oV5bT6CgpWCnG1f26FoHwvAF0oTHXadsrSz4w/edit" target="_blank" rel="noopener">Открыть прайс</a>
       </div>
@@ -203,7 +206,7 @@
           <div>
             <p class="eyebrow eyebrow--red">Пример оформления</p>
             <h3>Витрина, которая обновляется из вашей таблицы</h3>
-            <p class="section__lead">Менеджер меняет цену или наличие в Google Таблице, и через минуту это видно на сайте. Ниже макет: названия и цены условные, в рабочей версии здесь будут позиции из вашего прайса.</p>
+            <p class="section__lead">Менеджер меняет цену или наличие в Google Таблице, и через несколько минут это видно на сайте. Ниже макет: названия и цены условные, в рабочей версии здесь будут позиции из вашего прайса.</p>
           </div>
           <div class="chips" role="group" aria-label="Фильтр витрины">
             <button class="chip is-active" type="button" data-filter="all">Все</button>
@@ -214,14 +217,14 @@
         </div>
         <div class="products">
           <!-- ЗАМЕНИТЬ: карточки будут формироваться из прайса клиента -->
-          <article class="product" data-kind="phone"><div class="product__img product__img--blue"><svg><use href="#i-smartphone"/></svg></div><span class="product__tag">В наличии</span><h4>Смартфон, модель 1</h4><p class="product__meta">Цвет, память</p><p class="product__price">от ... руб.</p><button class="product__btn" type="button" data-request="Смартфоны">Узнать цену</button></article>
-          <article class="product" data-kind="phone"><div class="product__img product__img--red"><svg><use href="#i-smartphone"/></svg></div><span class="product__tag">В наличии</span><h4>Смартфон, модель 2</h4><p class="product__meta">Цвет, память</p><p class="product__price">от ... руб.</p><button class="product__btn" type="button" data-request="Смартфоны">Узнать цену</button></article>
-          <article class="product" data-kind="phone"><div class="product__img product__img--navy"><svg><use href="#i-smartphone"/></svg></div><span class="product__tag product__tag--muted">Под заказ</span><h4>Смартфон, модель 3</h4><p class="product__meta">Цвет, память</p><p class="product__price">от ... руб.</p><button class="product__btn" type="button" data-request="Смартфоны">Узнать цену</button></article>
-          <article class="product" data-kind="tablet"><div class="product__img product__img--sky"><svg><use href="#i-tablet"/></svg></div><span class="product__tag">В наличии</span><h4>Планшет, модель 1</h4><p class="product__meta">Диагональ, память</p><p class="product__price">от ... руб.</p><button class="product__btn" type="button" data-request="Планшеты">Узнать цену</button></article>
-          <article class="product" data-kind="audio"><div class="product__img product__img--sky"><svg><use href="#i-headphones"/></svg></div><span class="product__tag">В наличии</span><h4>Наушники, модель 1</h4><p class="product__meta">Тип, цвет</p><p class="product__price">от ... руб.</p><button class="product__btn" type="button" data-request="Наушники">Узнать цену</button></article>
-          <article class="product" data-kind="audio"><div class="product__img product__img--blue"><svg><use href="#i-watch"/></svg></div><span class="product__tag">В наличии</span><h4>Умные часы, модель 1</h4><p class="product__meta">Размер, ремешок</p><p class="product__price">от ... руб.</p><button class="product__btn" type="button" data-request="Умные часы">Узнать цену</button></article>
+          <article class="product" data-kind="phone"><div class="product__img product__img--blue"><svg><use href="#i-smartphone"/></svg></div><span class="product__tag">В наличии</span><h4>Смартфон, модель 1</h4><p class="product__meta">Цвет, память</p><p class="product__price">от ... руб.<span>за наличные</span></p><button class="product__btn" type="button" data-request="Смартфоны">Узнать цену</button></article>
+          <article class="product" data-kind="phone"><div class="product__img product__img--red"><svg><use href="#i-smartphone"/></svg></div><span class="product__tag">В наличии</span><h4>Смартфон, модель 2</h4><p class="product__meta">Цвет, память</p><p class="product__price">от ... руб.<span>за наличные</span></p><button class="product__btn" type="button" data-request="Смартфоны">Узнать цену</button></article>
+          <article class="product" data-kind="phone"><div class="product__img product__img--navy"><svg><use href="#i-smartphone"/></svg></div><span class="product__tag product__tag--muted">Под заказ</span><h4>Смартфон, модель 3</h4><p class="product__meta">Цвет, память</p><p class="product__price">от ... руб.<span>за наличные</span></p><button class="product__btn" type="button" data-request="Смартфоны">Узнать цену</button></article>
+          <article class="product" data-kind="tablet"><div class="product__img product__img--sky"><svg><use href="#i-tablet"/></svg></div><span class="product__tag">В наличии</span><h4>Планшет, модель 1</h4><p class="product__meta">Диагональ, память</p><p class="product__price">от ... руб.<span>за наличные</span></p><button class="product__btn" type="button" data-request="Планшеты">Узнать цену</button></article>
+          <article class="product" data-kind="audio"><div class="product__img product__img--sky"><svg><use href="#i-headphones"/></svg></div><span class="product__tag">В наличии</span><h4>Наушники, модель 1</h4><p class="product__meta">Тип, цвет</p><p class="product__price">от ... руб.<span>за наличные</span></p><button class="product__btn" type="button" data-request="Наушники">Узнать цену</button></article>
+          <article class="product" data-kind="audio"><div class="product__img product__img--blue"><svg><use href="#i-watch"/></svg></div><span class="product__tag">В наличии</span><h4>Умные часы, модель 1</h4><p class="product__meta">Размер, ремешок</p><p class="product__price">от ... руб.<span>за наличные</span></p><button class="product__btn" type="button" data-request="Умные часы">Узнать цену</button></article>
         </div>
-        <p class="showcase__note">Пример оформления, цены из вашего прайса.</p>
+        <p class="showcase__note">Пример оформления, цены из вашего прайса. Цены за наличный расчёт со скидкой 15%.</p>
       </div>
     </div>
   </section>
@@ -258,9 +261,41 @@
           <b id="calc-out">5 000 руб.</b>
           <span>в месяц</span>
         </div>
-        <p class="calc__note">Ориентировочный расчёт без учёта условий банка и переплаты. Точные условия уточняйте у менеджера.</p>
+        <p class="calc__note">Ориентировочный расчёт без учёта условий банка и переплаты. Точные условия уточняйте у менеджера. Цены в прайсе указаны за наличный расчёт, при рассрочке и кредите стоимость может отличаться.</p>
         <button class="btn btn--red btn--block" type="button" data-request="Рассрочка / кредит" data-calc-request>Оформить заявку</button>
       </form>
+    </div>
+  </section>
+
+  <!-- Trade-In -->
+  <section class="section" id="tradein">
+    <div class="container">
+      <div class="tradein reveal">
+        <div class="tradein__text">
+          <p class="eyebrow eyebrow--light">Trade-In</p>
+          <h2>Сдайте старую технику Apple в зачёт новой</h2>
+          <p>Принимаем технику Apple. Менеджер оценит ваше устройство и учтёт его стоимость при покупке, вы доплачиваете только разницу.</p>
+          <ol class="tradein__steps">
+            <li><span>1</span>Напишите модель и состояние устройства</li>
+            <li><span>2</span>Менеджер назовёт оценку</li>
+            <li><span>3</span>Приносите в салон и забирайте новую технику</li>
+          </ol>
+          <div class="tradein__btns">
+            <button class="btn btn--red btn--lg" type="button" data-request="Trade-In" data-comment="Хочу сдать в Trade-In: модель, память, состояние">Оценить мою технику</button>
+            <a class="btn btn--outline-white btn--lg" data-wa="main" href="https://wa.me/79872908904" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Спросить в WhatsApp</a>
+          </div>
+          <p class="tradein__note">Принимаем только технику Apple. Условия и точную оценку уточняйте у менеджера.</p>
+        </div>
+        <div class="tradein__visual" aria-hidden="true">
+          <svg viewBox="0 0 260 200">
+            <rect x="20" y="30" width="80" height="150" rx="16" fill="#0d1426" stroke="#8fa6d8" stroke-width="2" opacity=".7"/>
+            <rect x="27" y="37" width="66" height="136" rx="11" fill="#2a3a5e"/>
+            <rect x="160" y="20" width="84" height="160" rx="17" fill="#0d1426"/>
+            <rect x="167" y="27" width="70" height="146" rx="12" fill="url(#g-screen)"/>
+            <g transform="translate(108 82)" color="#fff"><circle cx="22" cy="18" r="26" fill="#c8202a"/><svg x="8" y="4" width="28" height="28"><use href="#i-swap"/></svg></g>
+          </svg>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -378,6 +413,7 @@
             <option>Наушники</option>
             <option>Аксессуары</option>
             <option>Рассрочка / кредит</option>
+            <option>Trade-In</option>
             <option>Другое</option>
           </select>
         </label>
@@ -421,6 +457,6 @@
 </nav>
 
 <script src="js/config.js?v=1"></script>
-<script src="js/main.js?v=1"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>
