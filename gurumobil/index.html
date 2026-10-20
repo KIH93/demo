@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- ДЕМО: закрыто от поисковиков. На домене клиента эту строку нужно удалить. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Гуру Мобил: ремонт телефонов и техники у вокзала, Челябинск</title>
+<meta name="description" content="Ремонт телефонов, планшетов, ноутбуков и цифровой техники в Челябинске, ул. Разина, 2, рядом с ж/д вокзалом. Комиссионный магазин и ювелирная мастерская. Работаем с 2003 года.">
+<meta name="theme-color" content="#0B3533">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B3533'/%3E%3Cpath d='M22 46V18h22' stroke='%23FFB23F' stroke-width='7' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Ccircle cx='42' cy='42' r='5' fill='%23FFB23F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#0B3533;
+  --pine-2:#114744;
+  --pine-3:#1B5C57;
+  --ink:#10201F;
+  --muted:#556664;
+  --cream:#F6F1E8;
+  --paper:#FFFDF9;
+  --line:#E4DCCD;
+  --amber:#FFB23F;
+  --amber-2:#FF9A1F;
+  --gold:#C8A04A;
+  --mint:#7FD6C2;
+  --r:20px;
+  --r-sm:14px;
+  --shadow:0 1px 2px rgba(16,32,31,.06),0 8px 24px -12px rgba(16,32,31,.18);
+  --head:"Unbounded",system-ui,sans-serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:500 16px/1.6 var(--body);overflow-x:hidden;padding-bottom:84px}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:600;line-height:1.15;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:10px}
+
+/* ---------- кнопки ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;font:700 16px/1 var(--body);text-decoration:none;border:0;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-call{background:var(--amber);color:#1D1300;box-shadow:0 10px 28px -10px rgba(255,154,31,.75)}
+.btn-call:hover{background:#FFC160;transform:translateY(-2px);box-shadow:0 14px 32px -10px rgba(255,154,31,.85)}
+.btn-call.xl{min-height:64px;font-size:18px;padding:0 30px;width:100%}
+.btn-ghost{background:transparent;color:var(--pine);border:2px solid var(--pine)}
+.btn-ghost:hover{background:var(--pine);color:#fff}
+.msgr{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.msgr a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:72px;border-radius:var(--r-sm);text-decoration:none;font-weight:700;font-size:14px;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+.msgr a svg{width:24px;height:24px}
+.msgr.on-dark a{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff}
+.msgr.on-dark a:hover{background:rgba(255,255,255,.14);transform:translateY(-2px)}
+.msgr.on-light a{background:var(--paper);border:1px solid var(--line);color:var(--ink)}
+.msgr.on-light a:hover{border-color:var(--pine-3);transform:translateY(-2px)}
+
+/* ---------- шапка ---------- */
+.top{position:sticky;top:0;z-index:40;background:rgba(11,53,51,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--head);font-weight:600;font-size:17px;letter-spacing:-.01em;white-space:nowrap}
+.brand svg{width:36px;height:36px}
+.brand small{display:block;font:600 11px/1.2 var(--body);color:var(--mint);letter-spacing:.04em;text-transform:uppercase}
+.nav{display:none;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;color:rgba(255,255,255,.8);transition:color .2s}
+.nav a:hover{color:var(--amber)}
+.top-phone{display:none;text-decoration:none;font-weight:700;white-space:nowrap}
+.top .btn-call{margin-left:auto;min-height:44px;padding:0 16px;font-size:15px}
+
+/* ---------- первый экран ---------- */
+.hero{position:relative;background:var(--pine);color:#fff;overflow:hidden;padding:36px 0 44px}
+.hero:before{content:"";position:absolute;inset:0;background:
+  radial-gradient(600px 380px at 85% 10%,rgba(127,214,194,.18),transparent 70%),
+  radial-gradient(500px 320px at 0% 100%,rgba(255,178,63,.14),transparent 70%);pointer-events:none}
+.traces{position:absolute;inset:0;opacity:.12;pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:32px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mint)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px rgba(255,178,63,.2);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(255,178,63,0)}}
+.hero h1{font-size:clamp(30px,8vw,50px);margin:14px 0 16px}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.lead{font-size:17px;color:rgba(255,255,255,.82);max-width:560px}
+.rating{display:flex;align-items:center;gap:14px;margin:24px 0;padding:14px 16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r-sm);text-decoration:none;max-width:420px;transition:background .2s}
+.rating:hover{background:rgba(255,255,255,.1)}
+.rating b{font-family:var(--head);font-size:34px;font-weight:600;line-height:1;color:var(--amber)}
+.stars{display:flex;gap:2px;color:var(--amber)}
+.stars svg{width:16px;height:16px}
+.rating span{font-size:14px;color:rgba(255,255,255,.75);line-height:1.35}
+.cta-box{display:grid;gap:10px;max-width:460px}
+.cta-note{font-size:13px;color:rgba(255,255,255,.6);text-align:center}
+.hero-art{position:relative;max-width:420px;width:100%;margin:0 auto}
+.hero-art .chip{position:absolute;background:var(--paper);color:var(--ink);border-radius:14px;padding:10px 14px;font-weight:700;font-size:13px;box-shadow:0 18px 40px -16px rgba(0,0,0,.5);display:flex;align-items:center;gap:8px;animation:float 6s ease-in-out infinite}
+.hero-art .chip svg{width:18px;height:18px;color:var(--pine-3)}
+.chip.c1{left:-4px;top:16%}
+.chip.c2{right:-4px;bottom:20%;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* ---------- полоса доверия ---------- */
+.trust{background:var(--paper);border-bottom:1px solid var(--line)}
+.trust ul{list-style:none;margin:0;padding:18px 0;display:grid;grid-template-columns:1fr 1fr;gap:16px 12px}
+.trust li{display:flex;align-items:center;gap:12px}
+.trust .ic{width:44px;height:44px;flex:none;border-radius:12px;background:var(--cream);display:grid;place-items:center;color:var(--pine-3)}
+.trust .ic svg{width:22px;height:22px}
+.trust b{display:block;font-family:var(--head);font-weight:600;font-size:15px;line-height:1.2}
+.trust span{font-size:13px;color:var(--muted);line-height:1.3}
+
+/* ---------- секции ---------- */
+section{padding:64px 0;scroll-margin-top:64px}
+.kicker{font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--pine-3);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.kicker:before{content:"";width:22px;height:3px;border-radius:3px;background:var(--amber)}
+h2{font-size:clamp(26px,6.4vw,42px);max-width:760px}
+.sub{color:var(--muted);font-size:17px;margin-top:12px;max-width:640px}
+
+/* услуги */
+.tabs{display:flex;gap:6px;margin:28px 0 20px;padding:6px;background:#EAE3D6;border-radius:999px;width:100%;max-width:520px}
+.tab{flex:1;min-height:46px;border:0;border-radius:999px;background:transparent;font:700 14px/1.1 var(--body);color:var(--muted);cursor:pointer;transition:background .25s,color .25s}
+.tab[aria-selected="true"]{background:var(--pine);color:#fff;box-shadow:0 6px 16px -8px rgba(11,53,51,.7)}
+.panel{display:grid;gap:12px}
+.panel[hidden]{display:none}
+.panel.show{animation:fadeup .45s ease both}
+@keyframes fadeup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.svc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;gap:16px;align-items:flex-start;transition:transform .25s ease,box-shadow .25s ease,border-color .25s}
+.svc:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#D6CCB8}
+.svc .ic{width:48px;height:48px;flex:none;border-radius:14px;background:var(--pine);color:var(--amber);display:grid;place-items:center}
+.svc .ic svg{width:24px;height:24px}
+.svc.gold .ic{background:#2A2211;color:var(--gold)}
+.svc h3{font-family:var(--body);font-weight:800;font-size:17px;margin-bottom:4px;letter-spacing:0}
+.svc p{font-size:15px;color:var(--muted);line-height:1.5}
+.price-note{margin-top:20px;display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border-radius:var(--r-sm);background:#FFF4DF;border:1px dashed #E9B65A;font-size:15px}
+.price-note svg{width:22px;height:22px;flex:none;color:#B87400;margin-top:1px}
+
+/* сложные случаи */
+.cases{background:var(--pine);color:#fff;position:relative;overflow:hidden}
+.cases .kicker{color:var(--mint)}
+.cases .sub{color:rgba(255,255,255,.72)}
+.case-grid{display:grid;gap:16px;margin-top:32px}
+.case{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,background .25s}
+.case:hover{transform:translateY(-4px);background:rgba(255,255,255,.08)}
+.case .art{aspect-ratio:16/9;position:relative;display:grid;place-items:center;background:linear-gradient(135deg,var(--pine-3),#0A2B29)}
+.case .art svg{width:46%;height:auto}
+.photo-tag{position:absolute;left:12px;bottom:12px;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;background:rgba(0,0,0,.35);color:rgba(255,255,255,.85);padding:5px 9px;border-radius:999px;border:1px dashed rgba(255,255,255,.35)}
+.case .body{padding:20px}
+.case .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);margin-bottom:8px}
+.case h3{font-size:19px;margin-bottom:10px}
+.case p{color:rgba(255,255,255,.78);font-size:15px}
+
+/* почему */
+.why-grid{display:grid;gap:12px;margin-top:32px}
+.why{background:var(--paper);border-radius:var(--r);padding:24px;border:1px solid var(--line);position:relative;overflow:hidden}
+.why .n{font-family:var(--head);font-size:13px;font-weight:600;color:var(--amber-2);margin-bottom:14px;display:block}
+.why h3{font-size:20px;margin-bottom:8px}
+.why p{color:var(--muted);font-size:15px}
+.why:after{content:"";position:absolute;right:-30px;top:-30px;width:90px;height:90px;border-radius:50%;background:var(--cream);transition:transform .4s ease}
+.why:hover:after{transform:scale(1.5)}
+
+/* шаги */
+.steps{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:0;counter-reset:s}
+.step{display:grid;grid-template-columns:52px 1fr;gap:16px;padding-bottom:26px;position:relative}
+.step:not(:last-child):before{content:"";position:absolute;left:25px;top:52px;bottom:4px;width:2px;background:repeating-linear-gradient(var(--line) 0 6px,transparent 6px 12px)}
+.step .dot{width:52px;height:52px;border-radius:50%;background:var(--paper);border:2px solid var(--pine);display:grid;place-items:center;font-family:var(--head);font-weight:600;color:var(--pine)}
+.step h3{font-family:var(--body);font-weight:800;font-size:18px;margin:12px 0 4px;letter-spacing:0}
+.step p{color:var(--muted);font-size:15px}
+
+/* отзывы */
+.reviews{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rv-head{display:grid;gap:24px;align-items:end}
+.score{display:flex;align-items:center;gap:18px;background:var(--cream);border-radius:var(--r);padding:20px;max-width:420px}
+.score b{font-family:var(--head);font-size:52px;line-height:1;font-weight:600;color:var(--pine)}
+.score .stars{color:var(--amber-2)}
+.score .stars svg{width:20px;height:20px}
+.score span{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+.rv-grid{display:grid;gap:12px;margin-top:28px}
+.rv{background:var(--cream);border-radius:var(--r);padding:22px;position:relative}
+.rv svg.q{width:28px;height:28px;color:var(--amber-2);margin-bottom:10px}
+.rv p{font-size:16px;line-height:1.55}
+.rv small{display:block;margin-top:12px;font-size:13px;color:var(--muted);font-weight:600}
+.rv-note{margin-top:16px;font-size:13px;color:var(--muted)}
+.rv-cta{margin-top:24px}
+
+/* акция */
+.promo{padding:56px 0}
+.promo-card{position:relative;border-radius:28px;padding:30px 22px;background:linear-gradient(120deg,#FFB23F,#FF8A1F);color:#1D1300;overflow:hidden;display:grid;gap:18px}
+.promo-card:after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;border:30px solid rgba(255,255,255,.22)}
+.promo-card .badge{display:inline-block;font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:#1D1300;color:var(--amber);padding:6px 12px;border-radius:999px;justify-self:start}
+.promo-card h2{font-size:clamp(22px,5.6vw,34px);position:relative;z-index:1}
+.promo-card p{font-weight:600;position:relative;z-index:1;max-width:620px}
+.promo-card .btn{background:#1D1300;color:#fff;justify-self:start;position:relative;z-index:1}
+.promo-card .btn:hover{transform:translateY(-2px)}
+
+/* контакты */
+.contact-grid{display:grid;gap:16px;margin-top:32px}
+.c-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.c-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.c-row:first-child{padding-top:0}
+.c-row:last-of-type{border-bottom:0}
+.c-row .ic{width:40px;height:40px;flex:none;border-radius:12px;background:var(--cream);display:grid;place-items:center;color:var(--pine-3)}
+.c-row .ic svg{width:20px;height:20px}
+.c-row b{display:block;font-size:13px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+.c-row a{text-decoration:none;font-weight:700}
+.c-row a:hover{color:var(--pine-3)}
+.c-row div{font-weight:600}
+.c-actions{display:grid;gap:10px;margin-top:18px}
+.c-actions .btn{padding:0 14px;white-space:nowrap}
+.vk-link{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none}
+.vk-link:hover{color:var(--pine-3)}
+.vk-link svg{width:18px;height:18px}
+.map-card{border-radius:var(--r);overflow:hidden;position:relative;min-height:300px;background:#E2EAE4;border:1px solid var(--line);display:flex;flex-direction:column}
+.map-card svg.map{position:absolute;inset:0;width:100%;height:100%}
+.map-card .pin-label{position:absolute;left:50%;top:44%;transform:translate(-50%,-130%);background:var(--pine);color:#fff;font-weight:700;font-size:13px;padding:8px 12px;border-radius:12px;white-space:nowrap;box-shadow:var(--shadow)}
+.map-card .pin-label:after{content:"";position:absolute;left:50%;bottom:-6px;margin-left:-6px;border:6px solid transparent;border-bottom:0;border-top-color:var(--pine)}
+.map-card .map-btn{position:relative;margin:auto 14px 14px;z-index:2}
+.photo-slot{border-radius:var(--r);border:2px dashed #CFC4AE;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(200,160,74,.07) 14px 28px),var(--paper);min-height:180px;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted);font-size:14px;font-weight:600}
+.photo-slot svg{width:34px;height:34px;margin:0 auto 8px;color:#B9AC92}
+
+/* подвал */
+footer{background:#08201F;color:rgba(255,255,255,.7);padding:36px 0 30px;font-size:14px}
+footer .wrap{display:grid;gap:18px}
+footer .brand{color:#fff}
+footer a{text-decoration:none}
+footer a:hover{color:var(--amber)}
+.foot-links{display:flex;flex-wrap:wrap;gap:10px 22px}
+.demo-mark{font-size:12px;color:rgba(255,255,255,.4);border-top:1px solid rgba(255,255,255,.08);padding-top:16px}
+
+/* липкая кнопка */
+.sticky-call{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:flex;gap:8px;padding-bottom:env(safe-area-inset-bottom);transition:transform .3s ease}
+.sticky-call .btn{flex:1;min-height:56px;font-size:17px;box-shadow:0 14px 34px -10px rgba(0,0,0,.45)}
+.sticky-call.hide{transform:translateY(140%)}
+
+/* toast */
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);opacity:0;background:var(--ink);color:#fff;padding:12px 18px;border-radius:12px;font-size:14px;font-weight:600;z-index:60;transition:opacity .25s,transform .25s;pointer-events:none;max-width:calc(100% - 32px);text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* появление */
+.js .rv-in{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .rv-in.in{opacity:1;transform:none}
+
+@media (min-width:600px){
+  .trust ul{grid-template-columns:repeat(4,1fr)}
+  .panel{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr 1fr}
+  .c-actions{grid-template-columns:1fr 1fr}
+}
+@media (min-width:768px){
+  .wrap{padding:0 28px}
+  section{padding:88px 0}
+  .case-grid{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(4,1fr);gap:20px}
+  .step{grid-template-columns:1fr;gap:0}
+  .step:not(:last-child):before{left:60px;right:-14px;top:25px;bottom:auto;width:auto;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 6px,transparent 6px 12px)}
+  .promo-card{padding:44px 48px}
+  .rv-head{grid-template-columns:1fr auto}
+}
+@media (min-width:960px){
+  body{padding-bottom:0}
+  .sticky-call{display:none}
+  .nav{display:flex}
+  .top-phone{display:block}
+  .top .btn-call{margin-left:0}
+  .hero{padding:72px 0 88px}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center;gap:48px}
+  .panel{grid-template-columns:repeat(3,1fr)}
+  .why-grid{grid-template-columns:repeat(4,1fr)}
+  .rv-grid{grid-template-columns:repeat(3,1fr)}
+  .contact-grid{grid-template-columns:1fr 1.1fr}
+  .contact-side{display:grid;gap:16px;grid-template-rows:1fr auto}
+  .promo-card{padding:44px 48px;grid-template-columns:1fr auto;align-items:center}
+  .promo-card .badge,.promo-card h2,.promo-card p{grid-column:1}
+  .promo-card .btn{grid-column:2;grid-row:1 / span 3;align-self:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv-in{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Иконки -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.7 19.4c-.2 1-.9 1.3-1.7.8l-4.8-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.5 13.2l-4.7-1.5c-1-.3-1-1 .2-1.5L20.5 3c.9-.3 1.6.2 1.4 1.3z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+    <symbol id="i-max" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 0-7.6 13.8L3 21l4.4-1.3A9 9 0 1 0 12 3z"/><path d="M8 15V9l4 4 4-4v6"/></symbol>
+    <symbol id="i-vk" viewBox="0 0 24 24" fill="currentColor"><path d="M12.8 18C6.4 18 2.7 13.6 2.6 6.3h3.2c.1 5.4 2.5 7.6 4.4 8.1V6.3h3v4.6c1.9-.2 3.8-2.3 4.5-4.6h3a8.9 8.9 0 0 1-4.1 5.8 9.2 9.2 0 0 1 4.8 5.9h-3.3a5.8 5.8 0 0 0-4.9-4.2V18z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9 21l-2-4M15 21l2-4"/><circle cx="9" cy="14" r=".6" fill="currentColor"/><circle cx="15" cy="14" r=".6" fill="currentColor"/></symbol>
+    <symbol id="i-screen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="m9 8 3 3-2 2 4 3"/></symbol>
+    <symbol id="i-tablet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M11 18h2"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></symbol>
+    <symbol id="i-bat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2M11 9l-2 3h4l-2 3"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v5M15 2v5M6 7h12v4a6 6 0 0 1-12 0zM12 17v5"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3l4 4-4 4M21 7H8M7 21l-4-4 4-4M3 17h13"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-ring" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="6.5"/><path d="m9 5 1.5-2.5h3L15 5l-3 3.5z"/></symbol>
+    <symbol id="i-glasses" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="15" r="3.8"/><circle cx="17.5" cy="15" r="3.8"/><path d="M10.3 15h3.4M2.7 15 4 7M21.3 15 20 7"/></symbol>
+    <symbol id="i-toy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="5.5" r="2.5"/><circle cx="17" cy="5.5" r="2.5"/><circle cx="12" cy="13" r="7"/><circle cx="12" cy="15" r="2"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16l-1 13H5z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6M12 7.5v.1"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M4 18v-5.5C4 8.4 6.2 5.7 10 5l.6 1.8C8.6 7.5 7.6 9 7.5 11H10v7zm10 0v-5.5c0-4.1 2.2-6.8 6-7.5l.6 1.8c-2 .7-3 2.2-3.1 4.2H20v7z"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="15" rx="2.5"/><circle cx="12" cy="12.5" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="5" r="2.5"/><path d="M8.5 19H16a3.5 3.5 0 0 0 0-7H8a3.5 3.5 0 0 1 0-7h7.5"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2.5"/><path d="M2 10h20M16 15h2"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M3 17v-4l2.5-5.5h13L21 13v4"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="logo" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#FFB23F"/><path d="M22 46V18h22" stroke="#0B3533" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="42" cy="42" r="5" fill="#0B3533"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Гуру Мобил, наверх">
+      <svg aria-hidden="true"><use href="#logo"/></svg>
+      <span>Гуру Мобил<small>с 2003 года</small></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#cases">Сложные случаи</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top-phone" href="tel:+73512302777">+7 (351) 230-27-77</a>
+    <a class="btn btn-call" href="tel:+73512302777"><svg><use href="#i-phone"/></svg>Позвонить</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- ===== Первый экран ===== -->
+<section class="hero" aria-labelledby="h1">
+  <svg class="traces" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#7FD6C2" stroke-width="1.5">
+      <path d="M0 120h160l40 40h220l30-30h350"/><path d="M0 420h120l60-60h180l40 40h400"/>
+      <path d="M520 0v80l40 40v200l-30 30v250"/><path d="M260 600v-90l30-30v-120"/>
+    </g>
+    <g fill="#7FD6C2"><circle cx="200" cy="160" r="4"/><circle cx="450" cy="130" r="4"/><circle cx="360" cy="360" r="4"/><circle cx="560" cy="120" r="4"/><circle cx="290" cy="480" r="4"/></g>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><i></i>Челябинск, 100 м от ж/д вокзала</span>
+      <h1 id="h1">Ремонт телефонов и техники <em>у вокзала</em>, без долгого ожидания</h1>
+      <p class="lead">Меняем экраны, стёкла и аккумуляторы, часто за 1-2 часа. Берёмся за сложные ремонты, от которых отказываются другие. Работаем с 2003 года.</p>
+
+      <a class="rating" href="https://2gis.ru/chelyabinsk/firm/70000001032669485/tab/reviews" target="_blank" rel="noopener">
+        <b>4.9</b>
+        <div>
+          <div class="stars" aria-label="Рейтинг 4.9 из 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <span>137 оценок и 115 отзывов в 2ГИС</span>
+        </div>
+      </a>
+
+      <div class="cta-box">
+        <a class="btn btn-call xl" href="tel:+73512302777"><svg><use href="#i-phone"/></svg>Позвонить</a>
+        <div class="msgr on-dark" data-msgr></div>
+        <p class="cta-note">Ежедневно с 10:00 до 19:00 · ул. Разина, 2</p>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 400 440" fill="none">
+        <defs>
+          <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B5C57"/><stop offset="1" stop-color="#0A2B29"/></linearGradient>
+          <linearGradient id="amb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFC56A"/><stop offset="1" stop-color="#FF8A1F"/></linearGradient>
+        </defs>
+        <circle cx="200" cy="220" r="170" stroke="#7FD6C2" stroke-opacity=".25" stroke-dasharray="4 10"/>
+        <circle cx="200" cy="220" r="120" stroke="#FFB23F" stroke-opacity=".25"/>
+        <!-- задняя плата -->
+        <g transform="rotate(-10 200 220)">
+          <rect x="132" y="70" width="150" height="300" rx="28" fill="#0E3F3C" stroke="#7FD6C2" stroke-opacity=".4"/>
+          <g stroke="#7FD6C2" stroke-opacity=".7" stroke-width="2">
+            <path d="M160 120h40v30h50"/><path d="M160 200h30l20 20h40"/><path d="M250 280h-40v40"/>
+          </g>
+          <rect x="190" y="160" width="44" height="44" rx="6" fill="#123F3C" stroke="#7FD6C2" stroke-opacity=".8"/>
+          <rect x="160" y="300" width="40" height="40" rx="6" fill="url(#amb)" opacity=".9"/>
+        </g>
+        <!-- телефон -->
+        <g transform="rotate(6 220 230)">
+          <rect x="150" y="80" width="150" height="300" rx="30" fill="#FFFDF9"/>
+          <rect x="160" y="92" width="130" height="276" rx="22" fill="url(#scr)"/>
+          <rect x="205" y="100" width="40" height="10" rx="5" fill="#0A2B29"/>
+          <circle cx="225" cy="215" r="42" stroke="#FFB23F" stroke-width="8" stroke-opacity=".25"/>
+          <path d="M225 173a42 42 0 1 1-40 54" stroke="#FFB23F" stroke-width="8" stroke-linecap="round"/>
+          <path d="m208 216 12 12 24-26" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="184" y="292" width="82" height="10" rx="5" fill="#fff" fill-opacity=".85"/>
+          <rect x="196" y="312" width="58" height="8" rx="4" fill="#fff" fill-opacity=".35"/>
+        </g>
+        <!-- отвёртка -->
+        <g transform="rotate(38 320 120)">
+          <rect x="300" y="40" width="22" height="70" rx="10" fill="url(#amb)"/>
+          <rect x="308" y="108" width="6" height="64" rx="3" fill="#E6EDEB"/>
+        </g>
+        <!-- камень -->
+        <path d="m82 330 18-18h28l18 18-32 36z" fill="#C8A04A"/><path d="M100 312l14 54 14-54M82 330h64" stroke="#0B3533" stroke-opacity=".35" stroke-width="2"/>
+      </svg>
+      <div class="chip c1"><svg><use href="#i-check"/></svg>Экран заменён</div>
+      <div class="chip c2"><svg><use href="#i-clock"/></svg>Часто 1-2 часа</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Полоса доверия ===== -->
+<div class="trust">
+  <ul class="wrap">
+    <li><span class="ic"><svg><use href="#i-shield"/></svg></span><div><b>С 2003 года</b><span>более 20 лет в ремонте</span></div></li>
+    <li><span class="ic"><svg><use href="#i-star"/></svg></span><div><b>4.9 в 2ГИС</b><span>137 оценок</span></div></li>
+    <li><span class="ic"><svg><use href="#i-tool"/></svg></span><div><b>Ремонт на месте</b><span>своя мастерская</span></div></li>
+    <li><span class="ic"><svg><use href="#i-train"/></svg></span><div><b>1 минута от вокзала</b><span>рядом есть парковка</span></div></li>
+  </ul>
+</div>
+
+<!-- ===== Услуги ===== -->
+<section id="services" aria-labelledby="h-services">
+  <div class="wrap">
+    <p class="kicker">Услуги</p>
+    <h2 id="h-services" class="rv-in">Чиним, продаём и восстанавливаем</h2>
+    <p class="sub rv-in">Один адрес для телефона, ноутбука, видеокамеры, аккумулятора от шуруповёрта и даже любимого кольца.</p>
+
+    <div class="tabs" role="tablist" aria-label="Группы услуг">
+      <button class="tab" role="tab" id="t-tech" aria-controls="p-tech" aria-selected="true">Техника</button>
+      <button class="tab" role="tab" id="t-com" aria-controls="p-com" aria-selected="false" tabindex="-1">Комиссионка</button>
+      <button class="tab" role="tab" id="t-work" aria-controls="p-work" aria-selected="false" tabindex="-1">Мастерская</button>
+    </div>
+
+    <div class="panel" id="p-tech" role="tabpanel" aria-labelledby="t-tech">
+      <article class="svc"><span class="ic"><svg><use href="#i-screen"/></svg></span><div><h3>Ремонт телефонов</h3><p>iPhone и Android: экраны, стёкла, тачскрины, ремонт после падений и влаги.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-gear"/></svg></span><div><h3>Ошибки и сбои iPhone, iPad</h3><p>Устраняем программные ошибки, зависания и проблемы с включением.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-tablet"/></svg></span><div><h3>Планшеты и ноутбуки</h3><p>Замена экранов и стёкол, восстановление после залития, диагностика.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-chip"/></svg></span><div><h3>Компонентный ремонт</h3><p>Сложная пайка и ремонт плат, когда простая замена модуля не помогает.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-cam"/></svg></span><div><h3>Видеокамеры и цифровая техника</h3><p>Берём в работу редкие и профессиональные устройства.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-bat"/></svg></span><div><h3>Восстановление аккумуляторов</h3><p>Новое направление: меняем элементы внутри батарей инструмента, видеокамер и другой техники.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-plug"/></svg></span><div><h3>Бытовая техника и электроинструмент</h3><p>Пылесосы, электроинструмент и другая техника для дома.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-check"/></svg></span><div><h3>Настройка и помощь</h3><p>Поможем настроить телефон, приложения, сообщения и навигатор.</p></div></article>
+    </div>
+
+    <div class="panel" id="p-com" role="tabpanel" aria-labelledby="t-com" hidden>
+      <article class="svc"><span class="ic"><svg><use href="#i-tag"/></svg></span><div><h3>Продажа телефонов</h3><p>Выбор новых и б/у телефонов. Проверенные устройства, поможем подобрать.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-swap"/></svg></span><div><h3>Покупка и обмен</h3><p>Покупаем телефоны и технику. Старый телефон можно сдать при покупке нового.</p></div></article>
+      <article class="svc"><span class="ic"><svg><use href="#i-lock"/></svg></span><div><h3>Залог техники</h3><p>Деньги под залог телефона или техники. Условия уточняйте по телефону.</p></div></article>
+    </div>
+
+    <div class="panel" id="p-work" role="tabpanel" aria-labelledby="t-work" hidden>
+      <article class="svc gold"><span class="ic"><svg><use href="#i-ring"/></svg></span><div><h3>Ювелирные изделия</h3><p>Ремонт и реставрация золота, серебра и бижутерии, в том числе старинных и сложных изделий.</p></div></article>
+      <article class="svc gold"><span class="ic"><svg><use href="#i-ring"/></svg></span><div><h3>Украшения на заказ</h3><p>Изготовим новое украшение из вашего материала, например из старых колец.</p></div></article>
+      <article class="svc gold"><span class="ic"><svg><use href="#i-glasses"/></svg></span><div><h3>Ремонт очков</h3><p>Восстановим оправу, дужки и крепления.</p></div></article>
+      <article class="svc gold"><span class="ic"><svg><use href="#i-toy"/></svg></span><div><h3>Ремонт игрушек</h3><p>Вернём к жизни любимую игрушку, в том числе электронную.</p></div></article>
+      <article class="svc gold"><span class="ic"><svg><use href="#i-bag"/></svg></span><div><h3>Кожа и кожгалантерея</h3><p>Ремонт сумок, ремней и других изделий из кожи.</p></div></article>
+    </div>
+
+    <div class="price-note rv-in"><svg><use href="#i-info"/></svg><p><b>Стоимость называем после диагностики.</b> Сначала смотрим устройство, затем согласуем цену и срок с вами. Начинаем работу только после вашего согласия.</p></div>
+  </div>
+</section>
+
+<!-- ===== Сложные случаи ===== -->
+<section id="cases" class="cases" aria-labelledby="h-cases">
+  <div class="wrap">
+    <p class="kicker">Сложные случаи</p>
+    <h2 id="h-cases" class="rv-in">Берёмся, когда другие разводят руками</h2>
+    <p class="sub rv-in">Несколько историй из нашей мастерской.</p>
+
+    <div class="case-grid">
+      <article class="case rv-in">
+        <div class="art">
+          <svg viewBox="0 0 120 80" fill="none"><rect x="8" y="18" width="72" height="48" rx="8" stroke="#FFB23F" stroke-width="4"/><path d="m80 34 30-14v40L80 46" stroke="#FFB23F" stroke-width="4" stroke-linejoin="round"/><circle cx="44" cy="42" r="13" stroke="#7FD6C2" stroke-width="4"/><path d="M20 10h20" stroke="#7FD6C2" stroke-width="4" stroke-linecap="round"/></svg>
+          <span class="photo-tag">Место для фото работы</span>
+        </div>
+        <div class="body">
+          <span class="tag">Техника</span>
+          <h3>Видеокамера театра оперы и балета</h3>
+          <p>От ремонта уже отказывались: редкие детали, сложная пайка, повреждённый корпус. Мы нашли нужные модули за границей, дождались их, перепаяли картридеры и восстановили корпус лазером.</p>
+        </div>
+      </article>
+      <article class="case rv-in">
+        <div class="art">
+          <svg viewBox="0 0 120 80" fill="none"><circle cx="34" cy="44" r="16" stroke="#C8A04A" stroke-width="4"/><circle cx="56" cy="44" r="16" stroke="#C8A04A" stroke-width="4"/><path d="M80 44h8" stroke="#7FD6C2" stroke-width="4" stroke-linecap="round"/><path d="m84 38 6 6-6 6" stroke="#7FD6C2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M98 14c-4 16-4 30 0 46" stroke="#FFB23F" stroke-width="4" stroke-dasharray="3 5" stroke-linecap="round"/><path d="m94 62 4 8 4-8z" fill="#FFB23F"/></svg>
+          <span class="photo-tag">Место для фото работы</span>
+        </div>
+        <div class="body">
+          <span class="tag">Ювелирная мастерская</span>
+          <h3>Цепочка из двух старых колец</h3>
+          <p>Два кольца лет 15 лежали в шкатулке. Из этого золота мы сделали цепочку ручной работы с алмазной огранкой и подвеской.</p>
+        </div>
+      </article>
+      <article class="case rv-in">
+        <div class="art">
+          <svg viewBox="0 0 120 80" fill="none"><circle cx="60" cy="48" r="22" stroke="#E6EDEB" stroke-width="5"/><rect x="48" y="10" width="24" height="18" rx="4" stroke="#FFB23F" stroke-width="4"/><path d="M60 15v8M56 19h8" stroke="#FFB23F" stroke-width="3" stroke-linecap="round"/></svg>
+          <span class="photo-tag">Место для фото работы</span>
+        </div>
+        <div class="body">
+          <span class="tag">На заказ</span>
+          <h3>Серебряное кольцо-тайник</h3>
+          <p>Кольцо с влагозащищённым отсеком, чтобы нужное лекарство всегда было при себе. Сделано по задаче клиента.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Почему к нам ===== -->
+<section aria-labelledby="h-why">
+  <div class="wrap">
+    <p class="kicker">Почему к нам</p>
+    <h2 id="h-why" class="rv-in">За что нас ценят клиенты</h2>
+    <div class="why-grid">
+      <div class="why rv-in"><span class="n">01</span><h3>Быстро</h3><p>Замену экрана, стекла или аккумулятора часто делаем за 1-2 часа, пока вы занимаетесь своими делами.</p></div>
+      <div class="why rv-in"><span class="n">02</span><h3>Честные цены</h3><p>Называем цену до начала работ. Если поломка простая, так и скажем.</p></div>
+      <div class="why rv-in"><span class="n">03</span><h3>Берёмся за сложное</h3><p>Компонентный ремонт, редкие детали, техника, от которой отказались в других сервисах.</p></div>
+      <div class="why rv-in"><span class="n">04</span><h3>Помогаем по-человечески</h3><p>Объясним, настроим, подскажем. Особенно внимательно относимся к старшему поколению.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Как это работает ===== -->
+<section style="padding-top:0" aria-labelledby="h-steps">
+  <div class="wrap">
+    <p class="kicker">Как это работает</p>
+    <h2 id="h-steps" class="rv-in">Четыре простых шага</h2>
+    <ol class="steps">
+      <li class="step rv-in"><span class="dot">1</span><div><h3>Позвоните или напишите</h3><p>Опишите проблему, подскажем, что можно сделать.</p></div></li>
+      <li class="step rv-in"><span class="dot">2</span><div><h3>Привезите устройство</h3><p>Ул. Разина, 2, минута пешком от вокзала.</p></div></li>
+      <li class="step rv-in"><span class="dot">3</span><div><h3>Согласуем цену и срок</h3><p>После диагностики, до начала работ.</p></div></li>
+      <li class="step rv-in"><span class="dot">4</span><div><h3>Забираете готовое</h3><p>Проверяете устройство при нас и уходите довольным.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== Отзывы ===== -->
+<section id="reviews" class="reviews" aria-labelledby="h-rv">
+  <div class="wrap">
+    <div class="rv-head">
+      <div>
+        <p class="kicker">Отзывы</p>
+        <h2 id="h-rv" class="rv-in">Что говорят клиенты</h2>
+      </div>
+      <a class="score rv-in" href="https://2gis.ru/chelyabinsk/firm/70000001032669485/tab/reviews" target="_blank" rel="noopener" style="text-decoration:none">
+        <b>4.9</b>
+        <div>
+          <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <span>137 оценок, 115 отзывов в 2ГИС</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="rv-grid">
+      <div class="rv rv-in"><svg class="q"><use href="#i-quote"/></svg><p>Экран поменяли за пару часов, успел погулять по центру. Цена оказалась ниже, чем в других сервисах.</p><small>Замена экрана</small></div>
+      <div class="rv rv-in"><svg class="q"><use href="#i-quote"/></svg><p>В двух местах сказали, что камеру не починить. Здесь сделали, и всё работает.</p><small>Ремонт камеры iPhone</small></div>
+      <div class="rv rv-in"><svg class="q"><use href="#i-quote"/></svg><p>Помогли маме настроить телефон: приложения, сообщения, навигатор. Всё спокойно объяснили.</p><small>Настройка телефона</small></div>
+      <div class="rv rv-in"><svg class="q"><use href="#i-quote"/></svg><p>Мелкую поломку исправили бесплатно. Приятно, когда не пытаются заработать на каждой мелочи.</p><small>Мелкий ремонт</small></div>
+      <div class="rv rv-in"><svg class="q"><use href="#i-quote"/></svg><p>Купил б/у телефон, старый сдал в зачёт. Нашёл небольшой недостаток, поменяли без вопросов.</p><small>Покупка телефона</small></div>
+      <div class="rv rv-in"><svg class="q"><use href="#i-quote"/></svg><p>Приехали из другого города специально сюда, и не зря. Сделали быстро и аккуратно.</p><small>Клиенты из других городов</small></div>
+    </div>
+    <p class="rv-note">Пересказ по мотивам отзывов в 2ГИС, без имён. Оригиналы можно прочитать в карточке компании.</p>
+    <div class="rv-cta"><a class="btn btn-ghost" href="https://2gis.ru/chelyabinsk/firm/70000001032669485/tab/reviews" target="_blank" rel="noopener">Все отзывы в 2ГИС</a></div>
+  </div>
+</section>
+
+<!-- ===== Акция ===== -->
+<section class="promo" aria-labelledby="h-promo">
+  <div class="wrap">
+    <div class="promo-card rv-in">
+      <span class="badge">Подарок</span>
+      <h2 id="h-promo">При ремонте: чистка динамиков или золота в подарок</h2>
+      <p>Условия акции уточняйте по телефону.</p>
+      <a class="btn" href="tel:+73512302777"><svg><use href="#i-phone"/></svg>Уточнить условия</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Контакты ===== -->
+<section id="contacts" style="padding-top:0" aria-labelledby="h-contacts">
+  <div class="wrap">
+    <p class="kicker">Контакты</p>
+    <h2 id="h-contacts" class="rv-in">Приходите, мы рядом с вокзалом</h2>
+
+    <div class="contact-grid">
+      <div class="c-card rv-in">
+        <div class="c-row"><span class="ic"><svg><use href="#i-pin"/></svg></span><div><b>Адрес</b>Челябинск, ул. Разина, 2<br><span style="font-weight:500;color:var(--muted);font-size:14px">Советский район, около 100 м от ж/д вокзала</span></div></div>
+        <div class="c-row"><span class="ic"><svg><use href="#i-clock"/></svg></span><div><b>Режим работы</b>Ежедневно с 10:00 до 19:00</div></div>
+        <div class="c-row"><span class="ic"><svg><use href="#i-phone"/></svg></span><div><b>Телефоны</b><a href="tel:+73512302777">+7 (351) 230-27-77</a><br><a href="tel:+73512312677">+7 (351) 231-26-77</a></div></div>
+        <div class="c-row"><span class="ic"><svg><use href="#i-wallet"/></svg></span><div><b>Оплата</b>Наличными или через банк</div></div>
+        <div class="c-row"><span class="ic"><svg><use href="#i-car"/></svg></span><div><b>Выезд на дом</b>Есть, подробности по телефону</div></div>
+
+        <div class="c-actions">
+          <a class="btn btn-call" href="tel:+73512302777"><svg><use href="#i-phone"/></svg>Позвонить</a>
+          <a class="btn btn-ghost" href="https://2gis.ru/chelyabinsk/firm/70000001032669485" target="_blank" rel="noopener"><svg><use href="#i-route"/></svg>Проложить маршрут</a>
+        </div>
+        <div class="msgr on-light" data-msgr style="margin-top:10px"></div>
+        <a class="vk-link" href="https://vk.com/gurumobil" target="_blank" rel="noopener"><svg><use href="#i-vk"/></svg>Мы ВКонтакте</a>
+      </div>
+
+      <div class="contact-side">
+        <a class="map-card rv-in" href="https://2gis.ru/chelyabinsk/firm/70000001032669485" target="_blank" rel="noopener" aria-label="Открыть карточку на карте 2ГИС" style="text-decoration:none">
+          <svg class="map" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="400" height="300" fill="#E5ECE6"/>
+            <g fill="#D3DED6"><rect x="20" y="20" width="110" height="70" rx="8"/><rect x="150" y="20" width="90" height="70" rx="8"/><rect x="260" y="20" width="120" height="50" rx="8"/><rect x="20" y="200" width="80" height="80" rx="8"/><rect x="260" y="200" width="120" height="80" rx="8"/><rect x="120" y="210" width="110" height="70" rx="8"/></g>
+            <path d="M0 120h400M0 175h400M140 0v300M250 0v300" stroke="#fff" stroke-width="16"/>
+            <g stroke="#9DB2A6" stroke-width="3" stroke-dasharray="12 8"><path d="M0 104h400"/></g>
+            <rect x="270" y="80" width="110" height="26" rx="6" fill="#0B3533" opacity=".85"/>
+            <text x="325" y="98" text-anchor="middle" font-family="Manrope,sans-serif" font-size="12" font-weight="700" fill="#fff">Ж/Д вокзал</text>
+            <circle cx="200" cy="148" r="26" fill="#FFB23F" opacity=".25"/>
+            <circle cx="200" cy="148" r="10" fill="#FF8A1F" stroke="#fff" stroke-width="4"/>
+          </svg>
+          <span class="pin-label">Гуру Мобил, Разина, 2</span>
+          <span class="btn btn-call map-btn"><svg><use href="#i-route"/></svg>Открыть в 2ГИС</span>
+        </a>
+        <div class="photo-slot rv-in"><div><svg><use href="#i-photo"/></svg>Здесь будет фото входа и вывески,<br>чтобы вас было легко найти</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><svg aria-hidden="true"><use href="#logo"/></svg><span>Гуру Мобил<small>с 2003 года</small></span></a>
+    <div class="foot-links">
+      <a href="tel:+73512302777">+7 (351) 230-27-77</a>
+      <a href="tel:+73512312677">+7 (351) 231-26-77</a>
+      <a href="https://vk.com/gurumobil" target="_blank" rel="noopener">ВКонтакте</a>
+      <a href="https://2gis.ru/chelyabinsk/firm/70000001032669485" target="_blank" rel="noopener">2ГИС</a>
+    </div>
+    <p>Челябинск, ул. Разина, 2 · ежедневно с 10:00 до 19:00</p>
+    <p class="demo-mark">Демо-версия сайта. Тексты и оформление предварительные.</p>
+  </div>
+</footer>
+
+<div class="sticky-call" id="sticky">
+  <a class="btn btn-call" href="tel:+73512302777"><svg><use href="#i-phone"/></svg>Позвонить</a>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+// ===== Ссылки на мессенджеры =====
+// TODO: заменить на реальные ссылки клиента (пока неизвестны).
+var TELEGRAM_URL = ""; // например "https://t.me/username"
+var MAX_URL = "";      // ссылка на профиль или чат в MAX
+var WHATSAPP_URL = "https://wa.me/79080812677";
+
+(function(){
+  document.documentElement.classList.add("js");
+
+  // Три равные кнопки мессенджеров
+  var items = [
+    {name:"Telegram", icon:"i-tg", url:TELEGRAM_URL},
+    {name:"WhatsApp", icon:"i-wa", url:WHATSAPP_URL},
+    {name:"MAX", icon:"i-max", url:MAX_URL}
+  ];
+  var toast = document.getElementById("toast"), tt;
+  function say(msg){toast.textContent=msg;toast.classList.add("on");clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove("on")},2600)}
+  document.querySelectorAll("[data-msgr]").forEach(function(box){
+    items.forEach(function(it){
+      var a = document.createElement("a");
+      a.innerHTML = '<svg aria-hidden="true"><use href="#'+it.icon+'"/></svg>'+it.name;
+      if(it.url){a.href=it.url;a.target="_blank";a.rel="noopener"}
+      else{a.href="#";a.addEventListener("click",function(e){e.preventDefault();say("Ссылка на "+it.name+" появится после подключения")})}
+      box.appendChild(a);
+    });
+  });
+
+  // Вкладки услуг
+  var tabs = [].slice.call(document.querySelectorAll(".tab"));
+  function select(t){
+    tabs.forEach(function(x){
+      var on = x===t, p = document.getElementById(x.getAttribute("aria-controls"));
+      x.setAttribute("aria-selected",on);x.tabIndex=on?0:-1;p.hidden=!on;
+      if(on){p.classList.remove("show");void p.offsetWidth;p.classList.add("show")}
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener("click",function(){select(t)});
+    t.addEventListener("keydown",function(e){
+      var d = e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;
+      if(d){var n=tabs[(i+d+tabs.length)%tabs.length];select(n);n.focus()}
+    });
+  });
+
+  // Появление блоков
+  var els = document.querySelectorAll(".rv-in");
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}});
+    },{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+    els.forEach(function(el,i){el.style.transitionDelay=(i%4)*70+"ms";io.observe(el)});
+  } else els.forEach(function(el){el.classList.add("in")});
+
+  // Липкая кнопка: прячем, пока на экране главная кнопка или контакты
+  var sticky = document.getElementById("sticky");
+  var watch = [document.querySelector(".cta-box"),document.querySelector(".c-actions")];
+  var visible = new Set();
+  if("IntersectionObserver" in window){
+    var so = new IntersectionObserver(function(es){
+      es.forEach(function(e){e.isIntersecting?visible.add(e.target):visible.delete(e.target)});
+      sticky.classList.toggle("hide",visible.size>0);
+    });
+    watch.forEach(function(w){w&&so.observe(w)});
+  }
+})();
+</script>
+</body>
+</html>
