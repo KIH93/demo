@@ -55,35 +55,40 @@ function toast(text) {
   toastTimer = setTimeout(() => el.classList.remove('is-on'), 3200);
 }
 
-/* ---------- Zone chips (picker + brief share one state) ---------- */
-function renderZoneChips() {
+/* ---------- Zones: picker switches + chat answers share one state ---------- */
+function renderZoneControls() {
+  $('[data-toggles]').innerHTML = ZONES.map((z) => `
+    <li><button type="button" class="toggle" role="switch" data-zone="${z.id}" aria-checked="false">
+      <span class="toggle__label">${z.label}${PROMO_ZONES.includes(z.id) ? '<span class="toggle__mark">акция</span>' : ''}</span>
+      <span class="toggle__sw" aria-hidden="true"></span>
+    </button></li>`).join('');
   $$('[data-zones]').forEach((box) => {
-    box.innerHTML = ZONES.map((z) => `
-      <button type="button" class="chip" data-zone="${z.id}" aria-pressed="${state.zones.has(z.id)}">
-        <svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>${z.label}
-      </button>`).join('');
+    box.innerHTML = ZONES.map((z) => `<button type="button" class="ans" data-zone="${z.id}" aria-pressed="false">${z.label}</button>`).join('');
   });
 }
 
-function syncZoneChips() {
-  $$('[data-zone]').forEach((b) => b.setAttribute('aria-pressed', state.zones.has(b.dataset.zone)));
+function syncZoneControls() {
+  $$('[data-zone]').forEach((b) => {
+    const on = String(state.zones.has(b.dataset.zone));
+    b.setAttribute(b.getAttribute('role') === 'switch' ? 'aria-checked' : 'aria-pressed', on);
+  });
 }
 
 document.addEventListener('click', (e) => {
-  const chip = e.target.closest('[data-zone]');
-  if (!chip) return;
-  const id = chip.dataset.zone;
+  const btn = e.target.closest('[data-zone]');
+  if (!btn) return;
+  const id = btn.dataset.zone;
   state.zones.has(id) ? state.zones.delete(id) : state.zones.add(id);
   update();
 });
 
 $$('[data-single]').forEach((group) => {
   group.addEventListener('click', (e) => {
-    const chip = e.target.closest('.chip');
-    if (!chip) return;
+    const btn = e.target.closest('.ans');
+    if (!btn) return;
     const key = group.dataset.single;
-    state[key] = state[key] === chip.dataset.value ? '' : chip.dataset.value;
-    $$('.chip', group).forEach((c) => c.setAttribute('aria-pressed', c.dataset.value === state[key]));
+    state[key] = state[key] === btn.dataset.value ? '' : btn.dataset.value;
+    $$('.ans', group).forEach((b) => b.setAttribute('aria-pressed', b.dataset.value === state[key]));
     renderMessage();
   });
 });
@@ -93,49 +98,51 @@ $('#name').addEventListener('input', (e) => {
   renderMessage();
 });
 
-/* ---------- Picker result ---------- */
+/* ---------- Picker verdict ---------- */
 function renderPicker() {
   const box = $('#picker-result');
   const selected = [...state.zones];
   const promo = selected.filter((z) => PROMO_ZONES.includes(z));
   const other = selected.filter((z) => !PROMO_ZONES.includes(z));
   const match = matchComplex();
-  box.classList.toggle('is-match', Boolean(match));
 
   if (!selected.length) {
     box.innerHTML = `
-      <p class="res__title">Отметьте одну или несколько зон</p>
-      <p class="res__text">Подскажем, какой акционный комплекс подходит, или предложим консультацию.</p>`;
+      <p class="v__kicker">Подсказка</p>
+      <p class="v__title">Включите одну или несколько зон</p>
+      <p class="v__text">Зоны с отметкой "акция" входят в акционные комплексы. Подскажем подходящий или предложим консультацию.</p>`;
     return;
   }
 
   let html = '';
   if (match) {
     html += `
-      <p class="res__title">Вам подходит Комплекс ${match.id}</p>
-      <p class="res__text">${zonesText(match.zones)}</p>
-      <p class="res__price"><strong>${match.price}</strong><s>вместо ${match.old}</s></p>`;
+      <p class="v__kicker">Подходит</p>
+      <p class="v__title">Комплекс ${match.id}: ${zonesText(match.zones).toLowerCase()}</p>
+      <p class="v__price"><strong>${match.price}</strong><s>вместо ${match.old}</s></p>`;
   } else if (promo.length === 3) {
     html += `
-      <p class="res__title">Все три зоны есть в акциях</p>
-      <p class="res__text">Одним комплексом их нет. Например, Комплекс 03 (бикини глубокое + голени) за 2 450 руб., а стоимость подмышек отдельно уточните у администратора.</p>`;
+      <p class="v__kicker">Почти</p>
+      <p class="v__title">Все три зоны есть в акциях, но одним комплексом их нет</p>
+      <p class="v__text">Например, Комплекс 03 (бикини глубокое + голени) за 2 450 руб., а стоимость подмышек отдельно уточните у администратора.</p>`;
   } else if (promo.length === 1) {
     const options = COMPLEXES.filter((c) => c.zones.includes(promo[0]));
     html += `
-      <p class="res__title">Зона "${zoneLabel(promo[0]).toLowerCase()}" есть в акционных комплексах</p>
-      <p class="res__text">Добавьте вторую зону, чтобы получить цену комплекса:</p>
-      <div class="res__actions">${options.map((c) => `<button type="button" class="res__link" data-apply="${c.id}">Комплекс ${c.id}: ${zonesText(c.zones).toLowerCase()}, ${c.price}</button>`).join('')}</div>`;
+      <p class="v__kicker">Добавьте вторую зону</p>
+      <p class="v__title">Зона "${zoneLabel(promo[0]).toLowerCase()}" есть в акционных комплексах</p>
+      <div class="v__opts">${options.map((c) => `<button type="button" class="v__opt" data-apply="${c.id}">Комплекс ${c.id}: ${zonesText(c.zones).toLowerCase()}, ${c.price}</button>`).join('')}</div>`;
   } else {
     html += `
-      <p class="res__title">Подберём на консультации</p>
-      <p class="res__text">Для этих зон акционного комплекса сейчас нет. Мастер подскажет оптимальный вариант.</p>`;
+      <p class="v__kicker">Консультация</p>
+      <p class="v__title">Для этих зон акционного комплекса сейчас нет</p>
+      <p class="v__text">Мастер подскажет оптимальный вариант на консультации.</p>`;
   }
 
   if (other.length) {
-    html += `<ul class="res__list">${other.map((id) => `<li><span>${zoneLabel(id)}</span><span>стоимость уточняйте</span></li>`).join('')}</ul>`;
+    html += `<ul class="v__list">${other.map((id) => `<li><span>${zoneLabel(id)}</span><span>стоимость уточняйте</span></li>`).join('')}</ul>`;
   }
 
-  html += `<div class="res__actions"><a class="btn btn--call" href="#contact" data-goto-contact>Записаться с этим выбором</a></div>`;
+  html += `<a class="v__go" href="#contact" data-goto-contact>Записаться с этим выбором</a>`;
   box.innerHTML = html;
 }
 
@@ -158,7 +165,7 @@ function buildMessage() {
   } else if (selected.length) {
     lines.push(`Интересуют зоны: ${selected.map((id) => zoneLabel(id).toLowerCase()).join(', ')}.`);
   }
-  if (state.before === 'yes') lines.push('Раньше уже делала лазерную эпиляцию.');
+  if (state.before === 'yes') lines.push('Опыт лазерной эпиляции уже был.');
   if (state.before === 'no') lines.push('Лазерную эпиляцию буду делать впервые.');
   if (state.time) lines.push(`Удобное время: ${state.time}.`);
   if (state.name) lines.push(`Меня зовут ${state.name}.`);
@@ -172,13 +179,13 @@ function renderMessage() {
 
 function highlightCards() {
   const match = matchComplex();
-  $$('[data-complex]').forEach((card) => {
+  $$('.medal').forEach((card) => {
     card.classList.toggle('is-picked', Boolean(match && state.zones.size === 2 && card.dataset.complex === match.id));
   });
 }
 
 function update() {
-  syncZoneChips();
+  syncZoneControls();
   renderPicker();
   renderMessage();
   highlightCards();
@@ -190,7 +197,6 @@ function goToContact() {
   target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   setTimeout(() => $('#contact h2').focus({ preventScroll: true }), 500);
 }
-$('#contact h2').setAttribute('tabindex', '-1');
 
 $$('[data-book]').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -269,17 +275,11 @@ $$('[data-link]').forEach((a) => { a.href = links[a.dataset.link] || '#'; });
 $$('[data-text="address"]').forEach((el) => { el.textContent = CONFIG.address; });
 $$('[data-text="hours"]').forEach((el) => { el.textContent = CONFIG.hours || 'Уточняйте по телефону'; });
 
-/* ---------- Mobile menu ---------- */
-const burger = $('.burger');
-const nav = $('#nav');
-function setMenu(open) {
-  nav.classList.toggle('is-open', open);
-  burger.setAttribute('aria-expanded', open);
-  burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-}
-burger.addEventListener('click', () => setMenu(!nav.classList.contains('is-open')));
-nav.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+/* ---------- Floating call button ---------- */
+const fab = $('.fab');
+const onScroll = () => fab.classList.toggle('is-on', window.scrollY > window.innerHeight * 0.9);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
 /* ---------- Reveal on scroll ---------- */
 if ('IntersectionObserver' in window) {
@@ -296,5 +296,5 @@ if ('IntersectionObserver' in window) {
   $$('.reveal').forEach((el) => el.classList.add('is-visible'));
 }
 
-renderZoneChips();
+renderZoneControls();
 update();
