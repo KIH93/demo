@@ -45,16 +45,13 @@
     });
   }
 
-  // Скролл: плотная шапка, расхождение слова в hero, заполнение линии ритуала
-  var bar = $('.bar'), lines = reduce ? [] : $$('[data-drift]');
+  // Скролл: плотная шапка, появление заголовков, заполнение линии ритуала
+  var bar = $('.bar');
   var path = $('.path'), stops = $$('.stop'), ticking = false;
   function onScroll() {
     var y = window.scrollY, vh = window.innerHeight;
     bar.classList.toggle('is-solid', y > 40);
     reveal(vh);
-    if (y < vh * 1.2) lines.forEach(function (l) {
-      l.style.transform = 'translateX(' + (y * parseFloat(l.dataset.drift)) + 'px)';
-    });
     var r = path.getBoundingClientRect();
     var p = Math.min(1, Math.max(0, (vh * 0.6 - r.top) / r.height));
     path.style.setProperty('--p', p);

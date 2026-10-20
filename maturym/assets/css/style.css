@@ -87,11 +87,18 @@ ul,ol{margin:0;padding:0;list-style:none}
   radial-gradient(90% 60% at 80% 110%,rgba(196,113,63,.35),transparent 60%),
   radial-gradient(60% 50% at 0 0,rgba(34,73,58,.55),transparent 70%),var(--smoke)}
 .hero__kicker{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:500 12px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--milk-dim);border-top:1px solid var(--rule);padding-top:14px;margin:0}
-.hero__word{display:flex;flex-direction:column;font:400 clamp(100px,min(31vw,31svh),440px)/.8 var(--serif);letter-spacing:-.03em;margin:3vh 0 auto;position:relative;z-index:1}
-.hero__line{display:block;will-change:transform}
-.hero__line--r{align-self:flex-end;color:var(--honey);margin-top:.04em}
-.seal{display:block;position:absolute;z-index:2;width:clamp(100px,min(17vw,22svh),220px);aspect-ratio:1;left:0;bottom:0;line-height:0}
-@media(min-width:700px){.seal{left:47%;bottom:auto;top:36%}}
+.hero__word{margin:auto 0 0;font:400 min(24.5vw,42svh)/.86 var(--serif);letter-spacing:-.035em;white-space:nowrap;position:relative;z-index:1}
+.hero__letters{display:block;margin-left:-.04em}
+.hero__letters i{font-style:normal;display:inline-block}
+.js .hero__letters i{animation:letter 1.1s cubic-bezier(.2,.8,.2,1) both}
+.hero__letters i:nth-child(2){animation-delay:.06s}.hero__letters i:nth-child(3){animation-delay:.12s}.hero__letters i:nth-child(4){animation-delay:.18s}
+.hero__letters i:nth-child(5){animation-delay:.24s}.hero__letters i:nth-child(6){animation-delay:.30s}.hero__letters i:nth-child(7){animation-delay:.36s}
+@keyframes letter{from{opacity:0;transform:translateY(.25em)}}
+.hero__mid{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:14px 0;margin-top:clamp(10px,2vh,24px)}
+.hero__dict{margin:0;font:400 clamp(18px,2.2vw,28px)/1.25 var(--serif);color:var(--milk-dim)}
+.hero__dict-w{color:var(--honey)}
+.hero__dict-t{font:500 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--copper);vertical-align:middle;margin-left:6px}
+.seal{display:block;position:relative;flex:none;width:clamp(84px,min(11vw,16svh),150px);aspect-ratio:1;line-height:0}
 .seal__ring{width:100%;height:100%;animation:spin 28s linear infinite}
 .seal__ring text{font:500 13.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;fill:var(--milk)}
 .seal__tulip{position:absolute;inset:30%;width:40%;height:40%;color:var(--honey)}
