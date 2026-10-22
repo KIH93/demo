@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Арт-Казани: ремонт и отделка под ключ в Казани (демо)</title>
+<meta name="description" content="Демо-сайт компании Арт-Казани: ремонт квартир, домов и офисов под ключ, декоративная штукатурка, микробетон, натяжные потолки. Казань.">
+<meta name="theme-color" content="#2a2520">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Фильтры фактур: оригинальные процедурные текстуры, без фото -->
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="f-marble" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.004 0.011" numOctaves="6" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0" result="a"/>
+      <feComponentTransfer in="a" result="veins"><feFuncA type="table" tableValues="0 0 0 0 0 0 0 .9 0 0 0 0 0 0 0"/></feComponentTransfer>
+      <feFlood flood-color="#7a6c5e" result="vc"/>
+      <feComposite in="vc" in2="veins" operator="in" result="v"/>
+      <feGaussianBlur in="v" stdDeviation="0.5" result="vb"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" seed="2" result="c"/>
+      <feColorMatrix in="c" type="matrix" values="0 0 0 0 .78  0 0 0 0 .74  0 0 0 0 .69  .5 0 0 0 -.15" result="cloud"/>
+      <feFlood flood-color="#f2ede6" result="base"/>
+      <feMerge><feMergeNode in="base"/><feMergeNode in="cloud"/><feMergeNode in="vb"/></feMerge>
+    </filter>
+    <filter id="f-venetian" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.004 0.01" numOctaves="4" seed="3" result="n"/>
+      <feDiffuseLighting in="n" surfaceScale="6" lighting-color="#d9a77f" result="l">
+        <feDistantLight azimuth="225" elevation="48"/>
+      </feDiffuseLighting>
+      <feSpecularLighting in="n" surfaceScale="5" specularConstant="0.9" specularExponent="22" lighting-color="#fff4e6" result="s">
+        <feDistantLight azimuth="225" elevation="40"/>
+      </feSpecularLighting>
+      <feComposite in="s" in2="l" operator="arithmetic" k1="0" k2="0.35" k3="1" k4="0"/>
+    </filter>
+    <filter id="f-concrete" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="11" result="grain"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="5" result="cloud"/>
+      <feComposite in="grain" in2="cloud" operator="arithmetic" k1="0" k2="0.35" k3="0.65" k4="0" result="mix"/>
+      <feColorMatrix in="mix" type="saturate" values="0" result="g"/>
+      <feComponentTransfer in="g"><feFuncR type="linear" slope="0.5" intercept="0.36"/><feFuncG type="linear" slope="0.5" intercept="0.35"/><feFuncB type="linear" slope="0.5" intercept="0.33"/><feFuncA type="linear" slope="0" intercept="1"/></feComponentTransfer>
+    </filter>
+    <filter id="f-stone" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="turbulence" baseFrequency="0.035" numOctaves="3" seed="21" result="n"/>
+      <feDiffuseLighting in="n" surfaceScale="9" lighting-color="#cdbfae" result="l">
+        <feDistantLight azimuth="135" elevation="38"/>
+      </feDiffuseLighting>
+    </filter>
+    <filter id="f-stencil" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" seed="9" result="n"/>
+      <feDiffuseLighting in="n" surfaceScale="3" lighting-color="#bfc7bd" result="l">
+        <feDistantLight azimuth="200" elevation="55"/>
+      </feDiffuseLighting>
+    </filter>
+    <filter id="f-wood" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.004 0.18" numOctaves="3" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0.55 0.42  0 0 0 0.38 0.28  0 0 0 0.25 0.17  0 0 0 0 1"/>
+    </filter>
+    <pattern id="p-stencil" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M32 6c6 10 6 16 0 26-6-10-6-16 0-26zM32 32c6 10 6 16 0 26-6-10-6-16 0-26zM6 32c10-6 16-6 26 0-10 6-16 6-26 0zM32 32c10-6 16-6 26 0-10 6-16 6-26 0z" fill="#8f9a8c" opacity=".55"/>
+    </pattern>
+  </defs>
+</svg>
+
+<div class="demo-bar"><b>Демо-версия сайта.</b> Цены, сроки, телефон и примеры работ условные, иллюстрации нарисованы для демо.</div>
+
+<header class="header" id="top">
+  <div class="wrap header-in">
+    <a href="#top" class="logo" aria-label="Арт-Казани, на главную">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="#2a2520"/><path d="M9 30 L20 9 L31 30" fill="none" stroke="#efe6da" stroke-width="2.4" stroke-linejoin="round"/><path d="M13.5 23h13" stroke="#c0643b" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span class="logo-text">Арт-Казани<small>ремонт и отделка</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#textures">Фактуры</a>
+      <a href="#process">Этапы</a>
+      <a href="#works">Работы</a>
+      <a href="#prices">Цены</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="tel:+79395050000" class="header-phone">+7 939 505-00-00<small>пример номера</small></a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- 1. Первый экран -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Казань · ремонт под ключ с 08:00 до 20:00</p>
+      <h1>Ремонт, в котором <em>видна фактура</em></h1>
+      <p class="lead">Квартиры, дома и офисы под ключ. Делаем ровную базу и стены, которые хочется потрогать: венецианская штукатурка, микробетон, мрамор, колотый камень.</p>
+      <div class="hero-actions">
+        <a href="#calc" class="btn btn-accent">Рассчитать стоимость</a>
+        <a href="#textures" class="btn btn-ghost">Смотреть фактуры</a>
+      </div>
+      <ul class="hero-facts">
+        <li><b>5,0</b><span>рейтинг в 2ГИС,<br>115 оценок</span></li>
+        <li><b>1 день</b><span>до выезда на замер<br>(пример)</span></li>
+        <li><b>свои</b><span>мастера и доставка<br>материалов</span></li>
+      </ul>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="swatch s1"><svg><rect width="100%" height="100%" filter="url(#f-venetian)"/></svg><span>Венецианская</span></div>
+      <div class="swatch s2"><svg><rect width="100%" height="100%" filter="url(#f-marble)"/></svg><span>Мрамор</span></div>
+      <div class="swatch s3"><svg><rect width="100%" height="100%" filter="url(#f-concrete)"/></svg><span>Микробетон</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Услуги -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Услуги</p>
+      <h2>Берём объект целиком или отдельную комнату</h2>
+    </div>
+    <div class="services">
+      <article class="svc svc-big">
+        <span class="svc-num">01</span>
+        <h3>Квартиры и новостройки</h3>
+        <p>Черновые и чистовые работы, электрика, сантехника, отделка. В новостройке начинаем с выравнивания и стяжки, заканчиваем уборкой.</p>
+        <span class="svc-price">от 7 000 руб.</span>
+      </article>
+      <article class="svc">
+        <span class="svc-num">02</span>
+        <h3>Дома и коттеджи</h3>
+        <p>Отделка внутри частного дома, в том числе камины и лестничные зоны.</p>
+      </article>
+      <article class="svc">
+        <span class="svc-num">03</span>
+        <h3>Офисы</h3>
+        <p>Отделка рабочих помещений по согласованному графику, чтобы не мешать работе.</p>
+      </article>
+      <article class="svc">
+        <span class="svc-num">04</span>
+        <h3>Балконы и лоджии</h3>
+        <p>Утепление, обшивка, отделка. Превращаем балкон в кабинет или зону отдыха.</p>
+        <span class="svc-price">от 5 000 руб.</span>
+      </article>
+      <article class="svc">
+        <span class="svc-num">05</span>
+        <h3>Санузлы</h3>
+        <p>Плитка, сантехника, освещение. Скрытые коммуникации и аккуратные швы.</p>
+      </article>
+    </div>
+    <p class="note">Цены "от" указаны по данным 2ГИС, не являются офертой. Точная стоимость после замера.</p>
+  </div>
+</section>
+
+<!-- 3. Фактуры -->
+<section class="section section-dark" id="textures">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Стены, потолки, полы</p>
+      <h2>Галерея фактур</h2>
+      <p class="sec-lead">То, за что нас чаще всего хвалят в отзывах. Выберите фактуру, и мастер привезёт образцы на замер.</p>
+    </div>
+    <div class="tex-grid" id="texGrid">
+      <button class="tex active" data-t="venetian">
+        <svg><rect width="100%" height="100%" filter="url(#f-venetian)"/></svg>
+        <span>Венецианская штукатурка</span>
+      </button>
+      <button class="tex" data-t="marble">
+        <svg><rect width="100%" height="100%" filter="url(#f-marble)"/></svg>
+        <span>Имитация мрамора</span>
+      </button>
+      <button class="tex" data-t="concrete">
+        <svg><rect width="100%" height="100%" filter="url(#f-concrete)"/></svg>
+        <span>Микробетон</span>
+      </button>
+      <button class="tex" data-t="stone">
+        <svg><rect width="100%" height="100%" filter="url(#f-stone)"/></svg>
+        <span>Колотый камень</span>
+      </button>
+      <button class="tex" data-t="stencil">
+        <svg><rect width="100%" height="100%" filter="url(#f-stencil)"/><rect width="100%" height="100%" fill="url(#p-stencil)"/></svg>
+        <span>Штукатурка с трафаретом</span>
+      </button>
+      <button class="tex" data-t="gloss">
+        <div class="gloss"></div>
+        <span>Глянцевый натяжной потолок</span>
+      </button>
+      <button class="tex" data-t="wood">
+        <svg><rect width="100%" height="100%" filter="url(#f-wood)"/></svg>
+        <span>Полы: ламинат и доска</span>
+      </button>
+      <button class="tex" data-t="marmorin">
+        <svg><rect width="100%" height="100%" filter="url(#f-venetian)" style="filter:url(#f-venetian) hue-rotate(160deg) saturate(.35)"/></svg>
+        <span>Марморин</span>
+      </button>
+    </div>
+    <div class="tex-info" id="texInfo" aria-live="polite">
+      <h3>Венецианская штукатурка</h3>
+      <p>Многослойное покрытие с глубиной и мягким блеском. Подходит для гостиной, прихожей, спальни. Каждый слой полируется вручную.</p>
+      <dl><div><dt>Где уместна</dt><dd>гостиная, холл, спальня</dd></div><div><dt>Срок работ</dt><dd>3 до 5 дней на комнату (пример)</dd></div></dl>
+    </div>
+    <p class="note note-light">Фактуры на этой странице нарисованы программно для демонстрации, это не фото объектов компании.</p>
+  </div>
+</section>
+
+<!-- 4. Этапы -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Как мы работаем</p>
+      <h2>Пять шагов, и цена не растёт по ходу</h2>
+    </div>
+    <ol class="steps">
+      <li><span>1</span><h3>Замер</h3><p>Приезжаем, часто уже на следующий день. Смотрим объект, обсуждаем пожелания.</p></li>
+      <li><span>2</span><h3>Смета</h3><p>Считаем работы и материалы по замерам. Без строк "прочее".</p></li>
+      <li><span>3</span><h3>Договор</h3><p>Фиксируем стоимость, сроки и материалы до начала работ.</p></li>
+      <li><span>4</span><h3>Ремонт</h3><p>Свои мастера и своя доставка. Присылаем фото этапов.</p></li>
+      <li><span>5</span><h3>Сдача</h3><p>Проходим объект вместе, убираем за собой. Вы заезжаете в чистоту.</p></li>
+    </ol>
+    <div class="delivery">
+      <div class="delivery-art" aria-hidden="true">
+        <svg viewBox="0 0 220 110"><rect x="10" y="30" width="120" height="56" rx="4" fill="#2a2520"/><path d="M130 46h40l26 20v20h-66z" fill="#c0643b"/><path d="M146 52h22l14 12h-36z" fill="#efe6da"/><circle cx="48" cy="88" r="12" fill="#efe6da" stroke="#2a2520" stroke-width="6"/><circle cx="168" cy="88" r="12" fill="#efe6da" stroke="#2a2520" stroke-width="6"/><rect x="24" y="42" width="22" height="30" fill="#c9b8a3"/><rect x="52" y="48" width="22" height="24" fill="#a59382"/><rect x="80" y="38" width="36" height="34" fill="#d9cdbd"/><path d="M0 102h220" stroke="#c9b8a3" stroke-width="2" stroke-dasharray="10 8"/></svg>
+      </div>
+      <div>
+        <h3>Своя доставка материалов</h3>
+        <p>Закупаем и привозим материалы сами, по графику работ. Вам не нужно ездить по строительным рынкам и разгружать мешки со смесью.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. До и после -->
+<section class="section section-sand" id="works">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Наши работы</p>
+      <h2>До и после</h2>
+      <p class="sec-lead">Потяните ползунок. Иллюстрации условные: в полной версии здесь будут реальные фото объектов компании.</p>
+    </div>
+    <div class="ba-tabs" role="tablist">
+      <button class="ba-tab active" data-case="0" role="tab" aria-selected="true">Гостиная в новостройке</button>
+      <button class="ba-tab" data-case="1" role="tab" aria-selected="false">Санузел</button>
+      <button class="ba-tab" data-case="2" role="tab" aria-selected="false">Балкон</button>
+    </div>
+    <div class="ba" id="ba">
+      <div class="ba-layer ba-after" id="baAfter"></div>
+      <div class="ba-layer ba-before" id="baBefore"></div>
+      <div class="ba-handle" id="baHandle"><span></span></div>
+      <input type="range" min="0" max="100" value="50" class="ba-range" id="baRange" aria-label="Сравнить до и после">
+      <b class="ba-label l">До</b><b class="ba-label r">После</b>
+    </div>
+    <p class="ba-caption" id="baCaption">Гостиная 24 м²: стяжка, выравнивание стен, венецианская штукатурка, глянцевый потолок. Срок 5 недель (пример).</p>
+  </div>
+</section>
+
+<!-- 6. Отзывы -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="sec-head row">
+      <div>
+        <p class="eyebrow">Отзывы</p>
+        <h2>Что говорят клиенты</h2>
+      </div>
+      <div class="rating">
+        <b>5,0</b>
+        <span class="stars" aria-label="5 из 5">★★★★★</span>
+        <span>115 оценок и 108 отзывов в 2ГИС</span>
+      </div>
+    </div>
+    <div class="reviews">
+      <blockquote><p>Сроки выдержали, итоговая сумма совпала со сметой. Отдельно порадовало, что после работ было чисто.</p><cite>Пересказ отзыва, ремонт квартиры</cite></blockquote>
+      <blockquote><p>Замерщик приехал на следующий день после звонка. Материалы и сроки обсудили заранее, всё по договорённости.</p><cite>Пересказ отзыва, новостройка</cite></blockquote>
+      <blockquote><p>Сделали декоративную штукатурку с имитацией мрамора и микробетон в гостиной. Гости первым делом трогают стены.</p><cite>Пересказ отзыва, отделка стен</cite></blockquote>
+      <blockquote><p>Цены средние, а по сравнению с другими предложениями даже ниже. Материалы привезли сами.</p><cite>Пересказ отзыва, санузел и балкон</cite></blockquote>
+    </div>
+    <p class="note">Отзывы пересказаны своими словами по открытым отзывам в 2ГИС, имена не указаны.</p>
+  </div>
+</section>
+
+<!-- 7. Цены и калькулятор -->
+<section class="section section-dark" id="prices">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Цены</p>
+      <h2>Сколько стоит ремонт</h2>
+    </div>
+    <div class="price-cards">
+      <div class="pcard"><span>Ремонт и отделка квартир</span><b>от 7 000 руб.</b><small>по данным 2ГИС</small></div>
+      <div class="pcard"><span>Балконы и лоджии</span><b>от 5 000 руб.</b><small>по данным 2ГИС</small></div>
+      <div class="pcard muted"><span>Декоративная штукатурка, потолки, полы, санузлы</span><b>по замеру</b><small>смета бесплатно (пример)</small></div>
+    </div>
+
+    <div class="calc" id="calc">
+      <form class="calc-form" id="calcForm" onsubmit="return false">
+        <h3>Предварительный расчёт</h3>
+        <fieldset>
+          <legend>Объект</legend>
+          <div class="chips">
+            <label><input type="radio" name="obj" value="flat" checked><span>Квартира</span></label>
+            <label><input type="radio" name="obj" value="new"><span>Новостройка</span></label>
+            <label><input type="radio" name="obj" value="house"><span>Дом</span></label>
+            <label><input type="radio" name="obj" value="office"><span>Офис</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Площадь: <output id="areaOut">55</output> м²</legend>
+          <input type="range" id="area" min="10" max="250" value="55" step="1" aria-label="Площадь">
+        </fieldset>
+        <fieldset>
+          <legend>Вид ремонта</legend>
+          <div class="chips">
+            <label><input type="radio" name="lvl" value="cosm"><span>Косметический</span></label>
+            <label><input type="radio" name="lvl" value="cap" checked><span>Капитальный</span></label>
+            <label><input type="radio" name="lvl" value="key"><span>Под ключ с дизайном</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <div class="chips">
+            <label><input type="checkbox" name="opt" value="decor"><span>Декоративная штукатурка</span></label>
+            <label><input type="checkbox" name="opt" value="ceil"><span>Натяжные потолки</span></label>
+            <label><input type="checkbox" name="opt" value="bath"><span>Санузел под ключ</span></label>
+          </div>
+        </fieldset>
+      </form>
+      <div class="calc-result">
+        <span>Ориентировочно</span>
+        <b id="calcSum">0 руб.</b>
+        <small id="calcTerm">срок около 0 недель</small>
+        <p>Пример расчёта для демо. Реальную смету составим после бесплатного замера.</p>
+        <a href="#request" class="btn btn-accent">Заказать замер</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Заявка и контакты -->
+<section class="section" id="request">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow">Заявка</p>
+      <h2>Приедем на замер и привезём образцы фактур</h2>
+      <form class="req" id="reqForm" novalidate>
+        <label>Имя<input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
+        <label>Телефон<input type="tel" name="phone" autocomplete="tel" placeholder="+7 ___ ___-__-__" required></label>
+        <label>Что нужно сделать<textarea name="msg" rows="3" placeholder="Например: квартира 60 м² в новостройке, хочу микробетон в гостиной"></textarea></label>
+        <button class="btn btn-accent" type="submit">Отправить заявку</button>
+        <p class="form-note" id="reqNote">Демо: форма ничего не отправляет.</p>
+      </form>
+    </div>
+    <div class="contacts" id="contacts">
+      <dl>
+        <div><dt>Адрес</dt><dd>Казань, Академическая улица, 2, офис 217, 2 этаж</dd></div>
+        <div><dt>График</dt><dd>Ежедневно с 08:00 до 20:00, по предварительному звонку</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79395050000">+7 939 505-00-00</a> <small>(пример)</small></dd></div>
+        <div><dt>ВКонтакте</dt><dd><a href="https://vk.com/art_kazani" target="_blank" rel="noopener">vk.com/art_kazani</a></dd></div>
+      </dl>
+      <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=49.154735%2C55.79068&amp;z=16&amp;pt=49.154735%2C55.79068%2Cpm2rdm" title="Карта: Академическая улица, 2" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span>© Арт-Казани, Казань</span>
+    <span>Демо-версия сайта. Цены, сроки, телефон и иллюстрации условные.</span>
+    <a href="#top">Наверх ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
