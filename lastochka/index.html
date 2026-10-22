@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ласточка: тату-студия в центре Казани (демо)</title>
+<meta name="description" content="Демо-сайт тату-студии Ласточка: татуировки на заказ и пирсинг, бесплатная разработка эскиза, онлайн-запись. Казань, ул. Пушкина, 12.">
+<meta name="theme-color" content="#141113">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Силуэт ласточки: оригинальный знак, нарисован для этого демо -->
+<svg class="defs" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="swallow" viewBox="-100 -60 200 120">
+      <path d="M0 -44C5 -44 8 -40 8 -34C9 -28 10 -24 14 -22C40 -30 70 -34 96 -46C76 -26 50 -10 22 -4C18 4 14 14 10 20L26 56C18 46 10 36 0 30C-10 36 -18 46 -26 56L-10 20C-14 14 -18 4 -22 -4C-50 -10 -76 -26 -96 -46C-70 -34 -40 -30 -14 -22C-10 -24 -9 -28 -8 -34C-8 -40 -5 -44 0 -44Z"/>
+    </symbol>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0"/>
+    </filter>
+  </defs>
+</svg>
+
+<div class="demo-bar">Демо-версия сайта. Данные из открытых источников, примеры помечены отдельно.</div>
+
+<header class="header" id="top">
+  <a class="logo" href="#top" aria-label="Ласточка, на главную">
+    <svg class="logo__mark"><use href="#swallow"/></svg>
+    <span class="logo__text">Ласточка<small>tattoo &amp; piercing</small></span>
+  </a>
+  <nav class="nav" id="nav" aria-label="Разделы">
+    <a href="#about">О студии</a>
+    <a href="#works">Работы</a>
+    <a href="#prices">Цены</a>
+    <a href="#masters">Мастера</a>
+    <a href="#process">Как проходит</a>
+    <a href="#contacts">Контакты</a>
+    <a class="btn btn--sm nav__cta" href="https://n2571525.yclients.ru/company/913217" target="_blank" rel="noopener">Записаться</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+</header>
+
+<main>
+
+<section class="hero">
+  <svg class="hero__flight" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path id="flight" class="hero__path" d="M-60 560C180 600 300 380 520 420S820 640 960 420S1120 140 1280 120" fill="none"/>
+    <g class="hero__bird">
+      <g transform="rotate(90)"><use href="#swallow" x="-45" y="-27" width="90" height="54"/></g>
+      <animateMotion dur="14s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="spline" keySplines=".45 0 .55 1">
+        <mpath href="#flight"/>
+      </animateMotion>
+    </g>
+  </svg>
+  <div class="hero__inner">
+    <p class="eyebrow">Тату-студия в центре Казани</p>
+    <h1 class="hero__title">Ласточка<span>возвращается</span></h1>
+    <p class="hero__lead">В тату-культуре ласточка значит возвращение, удачу и надежду. Мы делаем татуировки, к которым хочется возвращаться взглядом через годы: от миленьких цветочков до работ во всю спину.</p>
+    <div class="hero__actions">
+      <a class="btn" href="https://n2571525.yclients.ru/company/913217" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn btn--ghost" href="#calc">Рассчитать стоимость</a>
+    </div>
+    <ul class="hero__facts">
+      <li><b>5,0</b><span>рейтинг в 2ГИС,<br>151 оценка</span></li>
+      <li><b>от 2500</b><span>руб. за<br>татуировку</span></li>
+      <li><b>0 руб.</b><span>разработка<br>эскиза</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="wrap about__grid">
+    <div>
+      <p class="eyebrow">О студии</p>
+      <h2>Уютное собрание тату-мастеров</h2>
+      <p class="muted">Студия в самом центре Казани, на 4 этаже БЦ "Кредитный дом Центральный" на ул. Пушкина. Делаем татуировки на заказ, а последние два года ещё и украшаем людей пирсингом.</p>
+    </div>
+    <ul class="values">
+      <li>
+        <span class="values__num">01</span>
+        <h3>Ваша идея в центре</h3>
+        <p>Подробно обсуждаем желания и помогаем доработать идею, не навязывая своё мнение.</p>
+      </li>
+      <li>
+        <span class="values__num">02</span>
+        <h3>Стерильно и безопасно</h3>
+        <p>Одноразовые расходники, дезинфекция рабочих мест, гипоаллергенные краски.</p>
+      </li>
+      <li>
+        <span class="values__num">03</span>
+        <h3>Комфорт на сеансе</h3>
+        <p>Чай и конфеты, перерыв по первой просьбе. Не стесняйтесь говорить, если устали.</p>
+      </li>
+      <li>
+        <span class="values__num">04</span>
+        <h3>Фотосессия в подарок</h3>
+        <p>Снимаем готовую работу, красивые фото останутся у вас в галерее.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section works" id="works">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Портфолио</p>
+        <h2>Работы и эскизы</h2>
+      </div>
+      <div class="filters" role="tablist" aria-label="Стили">
+        <button class="chip is-active" data-filter="all">Все</button>
+        <button class="chip" data-filter="fine">Fine line</button>
+        <button class="chip" data-filter="graphic">Графика</button>
+        <button class="chip" data-filter="old">Олдскул</button>
+      </div>
+    </div>
+    <p class="note">Пример: на демо вместо реальных работ стоят иллюстрации, нарисованные для макета. На рабочем сайте здесь будут фото работ студии.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section class="section prices" id="prices">
+  <div class="wrap">
+    <p class="eyebrow">Услуги и цены</p>
+    <h2>Сколько стоит татуировка</h2>
+    <p class="muted prices__lead">Точную цену называем после обсуждения эскиза: она зависит от размера, детализации и зоны. Эскиз разрабатываем бесплатно.</p>
+    <div class="price-list">
+      <article class="price">
+        <h3>Мини-тату</h3>
+        <p>Надписи, символы, небольшие цветы до 5 см</p>
+        <b>от 2500 руб.</b>
+      </article>
+      <article class="price">
+        <h3>Средняя работа <em class="tag">пример</em></h3>
+        <p>Графика, fine line, ботаника 10 - 15 см</p>
+        <b>от 6000 руб.</b>
+      </article>
+      <article class="price">
+        <h3>Крупный проект <em class="tag">пример</em></h3>
+        <p>Рукав, спина, бедро. Работаем по сеансам</p>
+        <b>от 12000 руб. / сеанс</b>
+      </article>
+      <article class="price">
+        <h3>Перекрытие <em class="tag">пример</em></h3>
+        <p>Перекрытие или обновление старой татуировки</p>
+        <b>от 5000 руб.</b>
+      </article>
+      <article class="price">
+        <h3>Пирсинг <em class="tag">пример</em></h3>
+        <p>Мочка, хрящ, нос. Украшение подбираем вместе</p>
+        <b>от 1500 руб.</b>
+        <a class="link" href="https://b983396.yclients.com/" target="_blank" rel="noopener">Запись на пирсинг →</a>
+      </article>
+      <article class="price price--accent">
+        <h3>Эскиз</h3>
+        <p>Индивидуальная отрисовка под вас и вашу идею</p>
+        <b>бесплатно</b>
+      </article>
+    </div>
+    <p class="note">Цены с пометкой "пример" условные, для макета. "От 2500 руб." и бесплатный эскиз взяты из описания студии в VK.</p>
+  </div>
+</section>
+
+<section class="section calc" id="calc">
+  <div class="wrap calc__grid">
+    <div>
+      <p class="eyebrow">Калькулятор</p>
+      <h2>Прикиньте бюджет за минуту</h2>
+      <p class="muted">Выберите параметры, и мы покажем ориентир. Итоговую цену мастер назовёт после консультации.</p>
+    </div>
+    <form class="calc__form" id="calcForm">
+      <fieldset>
+        <legend>Размер</legend>
+        <div class="seg">
+          <label><input type="radio" name="size" value="2500" checked><span>до 5 см</span></label>
+          <label><input type="radio" name="size" value="4500"><span>5 - 10</span></label>
+          <label><input type="radio" name="size" value="7000"><span>10 - 15</span></label>
+          <label><input type="radio" name="size" value="10000"><span>15 - 20</span></label>
+          <label><input type="radio" name="size" value="14000"><span>больше</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Детализация</legend>
+        <div class="seg">
+          <label><input type="radio" name="detail" value="1" checked><span>минимализм</span></label>
+          <label><input type="radio" name="detail" value="1.3"><span>средняя</span></label>
+          <label><input type="radio" name="detail" value="1.7"><span>высокая</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Цвет</legend>
+        <div class="seg">
+          <label><input type="radio" name="color" value="1" checked><span>чёрно-белая</span></label>
+          <label><input type="radio" name="color" value="1.25"><span>цветная</span></label>
+        </div>
+      </fieldset>
+      <div class="calc__result">
+        <span>Ориентир</span>
+        <output id="calcOut">от 2500 руб.</output>
+        <small>Условный расчёт для демо, пример</small>
+      </div>
+      <a class="btn btn--block" href="https://n2571525.yclients.ru/company/913217" target="_blank" rel="noopener">Записаться на консультацию</a>
+    </form>
+  </div>
+</section>
+
+<section class="section masters" id="masters">
+  <div class="wrap">
+    <p class="eyebrow">Команда</p>
+    <h2>Мастера</h2>
+    <div class="master-list">
+      <article class="master">
+        <div class="master__pic" aria-hidden="true"><svg><use href="#swallow"/></svg></div>
+        <h3>Русалина</h3>
+        <p class="master__role">Тату-мастер и пирсер, основательница студии</p>
+        <p>Работает в своей студии в коллективе мастеров. Ведёт запись на тату и проколы.</p>
+      </article>
+      <article class="master">
+        <div class="master__pic master__pic--2" aria-hidden="true"><svg><use href="#swallow"/></svg></div>
+        <h3>Мастер <em class="tag">пример</em></h3>
+        <p class="master__role">Графика, орнаментал</p>
+        <p>Карточка для макета: фото, стиль, стаж и ссылка на портфолио мастера.</p>
+      </article>
+      <article class="master">
+        <div class="master__pic master__pic--3" aria-hidden="true"><svg><use href="#swallow"/></svg></div>
+        <h3>Мастер <em class="tag">пример</em></h3>
+        <p class="master__role">Fine line, ботаника</p>
+        <p>Карточка для макета: фото, стиль, стаж и ссылка на портфолио мастера.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section process" id="process">
+  <div class="wrap">
+    <p class="eyebrow">Как проходит</p>
+    <h2>Путь к татуировке</h2>
+    <ol class="steps">
+      <li>
+        <h3>Обсуждение</h3>
+        <p>Подробно обсуждаем идею, место и размер, чтобы разработать эскиз под вас.</p>
+      </li>
+      <li>
+        <h3>Эскиз и цена</h3>
+        <p>Рисуем эскиз бесплатно, считаем стоимость и записываем на удобную дату.</p>
+      </li>
+      <li>
+        <h3>Сеанс</h3>
+        <p>Примеряем эскиз на тело, смотрим вживую и только потом начинаем.</p>
+      </li>
+      <li>
+        <h3>Заживление</h3>
+        <p>Рассказываем, как ухаживать, и остаёмся на связи после сеанса.</p>
+      </li>
+    </ol>
+    <details class="care">
+      <summary>Памятка по уходу после сеанса <em class="tag">пример</em></summary>
+      <ul>
+        <li>Первые дни держите плёнку столько, сколько сказал мастер.</li>
+        <li>Мойте татуировку тёплой водой с мягким мылом, промакивайте одноразовым полотенцем.</li>
+        <li>Две недели без бани, бассейна, солярия и открытого солнца.</li>
+        <li>Не сдирайте корочки, даже если чешется.</li>
+        <li>Если что-то беспокоит, просто напишите мастеру.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Отзывы</p>
+        <h2>5,0 в 2ГИС</h2>
+      </div>
+      <a class="link" href="https://2gis.ru/kazan/firm/70000001077870082" target="_blank" rel="noopener">Все 151 оценка в 2ГИС →</a>
+    </div>
+    <p class="note">Пример: тексты ниже условные, для макета. На рабочем сайте здесь будут настоящие отзывы клиентов или виджет 2ГИС.</p>
+    <div class="review-list">
+      <blockquote class="review"><p>"Делала первую татуировку и очень переживала. Всё объяснили, сделали перерыв, когда попросила. Заживает отлично."</p><cite>Клиентка, пример</cite></blockquote>
+      <blockquote class="review"><p>"Пришёл с очень сырой идеей, ушёл с эскизом, который нравится больше, чем то, что я себе представлял."</p><cite>Клиент, пример</cite></blockquote>
+      <blockquote class="review"><p>"Чисто, спокойно, вкусный чай. И фотографии работы скинули сразу после сеанса."</p><cite>Клиентка, пример</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section contacts" id="contacts">
+  <div class="wrap contacts__grid">
+    <div class="contacts__info">
+      <p class="eyebrow">Контакты</p>
+      <h2>Прилетайте в гости</h2>
+      <dl>
+        <dt>Адрес</dt>
+        <dd>Казань, ул. Пушкина, 12, офис 400, 4 этаж<br><span class="muted">БЦ "Кредитный дом Центральный"</span></dd>
+        <dt>Телефон</dt>
+        <dd><a href="tel:+79174716203">+7 (917) 471-62-03</a></dd>
+        <dt>Режим работы</dt>
+        <dd>По записи, до 22:00 <em class="tag">уточнить</em></dd>
+      </dl>
+      <div class="contacts__actions">
+        <a class="btn" href="https://n2571525.yclients.ru/company/913217" target="_blank" rel="noopener">Записаться онлайн</a>
+        <a class="btn btn--ghost" href="https://vk.ru/tattoo_lastochka" target="_blank" rel="noopener">Написать в VK</a>
+        <a class="btn btn--ghost" href="https://go.2gis.com/rC2N9" target="_blank" rel="noopener">Маршрут в 2ГИС</a>
+      </div>
+      <p class="note">Татуировки делаем с 18 лет.</p>
+    </div>
+    <div class="map">
+      <iframe title="Карта: Казань, ул. Пушкина, 12" src="https://yandex.ru/map-widget/v1/?text=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0%2C%2012&amp;z=16" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <a class="logo" href="#top"><svg class="logo__mark"><use href="#swallow"/></svg><span class="logo__text">Ласточка</span></a>
+    <p>Тату-студия, Казань. Демо-версия сайта, не является публичной офертой.</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://n2571525.yclients.ru/company/913217" target="_blank" rel="noopener">Записаться</a>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" aria-label="Закрыть">×</button>
+  <figure><div class="lightbox__art"></div><figcaption></figcaption></figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
