@@ -138,6 +138,7 @@ p { margin: 0 0 1em; }
 .stats div:last-child { border-right: 0; }
 .stats b { display: block; font-family: var(--serif); font-size: 2.2rem; font-weight: 500; color: var(--pine); line-height: 1.1; }
 .stats span { font-size: .92rem; color: var(--ink-2); }
+.stats b span { font-size: inherit; color: inherit; font-variant-numeric: tabular-nums; }
 
 /* cards */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -284,7 +285,49 @@ p { margin: 0 0 1em; }
 /* reveal */
 .rv { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
 .rv.is-in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+.grid-3 > .rv:nth-child(3n+2), .docs > .rv:nth-child(4n+2), .reviews > .rv:nth-child(2), .steps > .rv:nth-child(2) { transition-delay: .1s; }
+.grid-3 > .rv:nth-child(3n), .docs > .rv:nth-child(4n+3), .reviews > .rv:nth-child(3), .steps > .rv:nth-child(3) { transition-delay: .2s; }
+.docs > .rv:nth-child(4n), .steps > .rv:nth-child(4) { transition-delay: .3s; }
+.steps > .rv:nth-child(5) { transition-delay: .4s; }
+
+/* hero: появление текста и плиток */
+.in { opacity: 0; animation: up .8s cubic-bezier(.2,.7,.2,1) forwards; }
+.in1 { animation-delay: .05s; } .in2 { animation-delay: .15s; } .in3 { animation-delay: .3s; } .in4 { animation-delay: .45s; } .in5 { animation-delay: .6s; }
+@keyframes up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+.hero__art .tile { transform-box: fill-box; transform-origin: center; opacity: 0; animation: pop .9s cubic-bezier(.2,.8,.2,1.15) forwards; }
+.hero__art .t1 { animation-delay: .2s; } .hero__art .t2 { animation-delay: .4s; } .hero__art .t3 { animation-delay: .55s; } .hero__art .t4 { animation-delay: .7s; }
+@keyframes pop { from { opacity: 0; transform: scale(.82) translateY(30px); } to { opacity: 1; transform: none; } }
+.hero__art .bob { animation: bob 5s ease-in-out 1.2s infinite; }
+@keyframes bob { 50% { transform: translateY(-10px); } }
+.hero__art .sun { transform-box: fill-box; transform-origin: center; animation: sun 6s ease-in-out infinite; }
+@keyframes sun { 50% { transform: scale(1.12) translate(-6px, 4px); } }
+.hero__art .sway { transform-box: fill-box; transform-origin: 50% 100%; animation: sway 4.5s ease-in-out infinite; }
+.hero__art .sway--slow { animation-duration: 7s; animation-delay: -2s; }
+@keyframes sway { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg) translateY(-4px); } }
+.hero__art svg { transition: transform .4s ease; }
+
+/* бегущая лента */
+.ribbon { overflow: hidden; background: var(--pine); color: #eef3ee; padding: 16px 0; margin-top: 56px; transform: rotate(-1.2deg) scale(1.02); }
+.ribbon__track { display: flex; align-items: center; gap: 28px; width: max-content; animation: run 38s linear infinite; }
+.ribbon span { font-family: var(--serif); font-size: 1.35rem; font-style: italic; white-space: nowrap; }
+.ribbon i { width: 10px; height: 10px; border-radius: 50%; background: var(--apricot); flex: none; }
+@keyframes run { to { transform: translateX(-50%); } }
+
+/* карточки: свечение под курсором */
+.card { position: relative; }
+.svc::before { content: ""; position: absolute; inset: 0; background: radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), rgba(226,135,90,.16), transparent 70%); opacity: 0; transition: opacity .3s; pointer-events: none; }
+.svc:hover::before { opacity: 1; }
+.card__ic { transition: transform .4s cubic-bezier(.2,.8,.2,1.3), background .3s; }
+.card:hover .card__ic { transform: rotate(-8deg) scale(1.08); background: var(--apricot); color: #fff; }
+.btn--main { position: relative; overflow: hidden; }
+.btn--main::after { content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.35), transparent); transform: skewX(-20deg); animation: shine 4.5s ease-in-out 2s infinite; }
+@keyframes shine { 0%, 70% { left: -60%; } 100% { left: 130%; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rv, .in, .hero__art .tile { opacity: 1; transform: none; transition: none; animation: none; }
+  .hero__art *, .ribbon__track, .btn--main::after { animation: none !important; }
+  html { scroll-behavior: auto; }
+}
 
 @media (max-width: 1060px) {
   .nav, .header__phone { display: none; }
