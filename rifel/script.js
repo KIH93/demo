@@ -6,19 +6,6 @@
   // Первый экран появляется по очереди
   doc.classList.add('loaded');
 
-  // Лента лет 2000...2026, дублируем для бесшовной прокрутки
-  var track = document.getElementById('yearsTrack');
-  if (track) {
-    var html = '';
-    for (var y = 2000; y <= 2026; y++) {
-      var cls = 'yr', label = '';
-      if (y === 2000) { cls += ' yr--key'; label = '<small>открытие</small>'; }
-      if (y === 2026) { cls += ' yr--now'; label = '<small>сегодня</small>'; }
-      html += '<span class="' + cls + '">' + y + label + '</span>';
-    }
-    track.innerHTML = html + html;
-  }
-
   // Счётчик лет
   function countUp(el) {
     var end = +el.getAttribute('data-count');
