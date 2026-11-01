@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Клиника мудрого стоматолога: стоматология для взрослых и детей в Казани (демо)</title>
+<meta name="description" content="Демо-сайт Клиники мудрого стоматолога в Казани, ул. Баки Урманче, 7 (ЖК Солнечный город): лечение, хирургия, имплантация, брекеты, протезирование, детский стоматолог.">
+<meta name="theme-color" content="#2f5d50">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="demo-bar">Демо-версия сайта. Цены, график, врачи и часть текстов условные, помечены "пример".</div>
+
+<header class="head" id="top">
+  <div class="wrap head__in">
+    <a class="logo" href="#top" aria-label="Клиника мудрого стоматолога, на главную">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="currentColor"/>
+        <path d="M12 17c0-4 3.5-6 8-6s8 2 8 6c0 3-1 4.5-1.6 8-.5 3-1.2 5-2.7 5-1.6 0-1.9-4.4-3.7-4.4S17.9 30 16.3 30c-1.5 0-2.2-2-2.7-5-.6-3.5-1.6-5-1.6-8z" fill="#f6f0e6"/>
+        <circle cx="16.6" cy="17.4" r="1.6" fill="currentColor"/><circle cx="23.4" cy="17.4" r="1.6" fill="currentColor"/>
+      </svg>
+      <span>Клиника мудрого стоматолога<small>Казань · знак-пример</small></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#kids">Детям</a>
+      <a href="#doctors">Врачи</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="head__phone" href="tel:+78432250464">+7 (843) 225-04-64</a>
+    <a class="btn btn--sm" href="#form">Записаться</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ПЕРВЫЙ ЭКРАН: крупная типографика по центру + отрывной календарь "совет дня" -->
+<section class="hero">
+  <div class="wrap hero__in">
+    <p class="hero__kicker" data-step="1">Приволжский район · ЖК "Солнечный город" · м. "Проспект Победы"</p>
+    <h1 class="hero__title" data-step="2">
+      <span class="hero__line">Лечим зубы</span>
+      <span class="hero__line"><em>спокойно</em> и без спешки</span>
+    </h1>
+    <p class="hero__lead" data-step="3">Семейная стоматология у дома: лечение, хирургия, имплантация, брекеты и протезирование для взрослых, отдельный приём для детей.</p>
+
+    <div class="hero__stage">
+      <a class="hero__tile hero__tile--rate" data-step="4" href="#reviews">
+        <b><span data-count="4.8" data-dec="1">4.8</span></b>
+        <span>рейтинг на Яндекс Картах и в 2ГИС</span>
+        <small>по данным карт</small>
+      </a>
+
+      <div class="calendar" data-step="5" aria-label="Совет дня от мудрого стоматолога">
+        <div class="calendar__rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="calendar__head">Совет дня</div>
+        <div class="calendar__stack" id="tips" aria-live="polite">
+          <article class="sheet"><span class="sheet__num">1</span><p>Чистите зубы 2 раза в день по 2 минуты. Мягкая щётка бережёт эмаль и дёсны.</p></article>
+          <article class="sheet"><span class="sheet__num">2</span><p>Кровят дёсны при чистке? Это повод показаться врачу, а не сменить пасту.</p></article>
+          <article class="sheet"><span class="sheet__num">3</span><p>Профессиональная гигиена раз в полгода дешевле, чем лечение запущенного кариеса.</p></article>
+          <article class="sheet"><span class="sheet__num">4</span><p>Первый визит ребёнка к стоматологу лучше сделать знакомством, а не лечением.</p></article>
+          <article class="sheet"><span class="sheet__num">5</span><p>Нить и ирригатор чистят там, куда щётка не достаёт. Хватает одного раза в день.</p></article>
+        </div>
+        <button class="calendar__next" type="button" id="tipNext">Оторвать листок</button>
+      </div>
+
+      <div class="hero__tile hero__tile--cta" data-step="6">
+        <a class="btn" href="#form">Записаться на приём</a>
+        <a class="btn btn--ghost" href="#messengers">Написать в мессенджер</a>
+        <small>пн-пт 9:00-20:00, сб по записи</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Лечение кариеса</span><span>Детская стоматология</span><span>Имплантация</span><span>Брекеты</span><span>Протезирование</span><span>Удаление зубов</span><span>Гигиена</span><span>Отбеливание</span><span>Виниры</span><span>Пародонтология</span><span>Прицельные снимки</span>
+      <span>Лечение кариеса</span><span>Детская стоматология</span><span>Имплантация</span><span>Брекеты</span><span>Протезирование</span><span>Удаление зубов</span><span>Гигиена</span><span>Отбеливание</span><span>Виниры</span><span>Пародонтология</span><span>Прицельные снимки</span>
+    </div>
+  </div>
+</section>
+
+<!-- РЕЙТИНГ И ОТЗЫВЫ -->
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Отзывы</p>
+      <h2>Нас выбирают по отзывам соседей</h2>
+      <p class="muted">Оценки взяты с карт на момент подготовки демо. Перед запуском сайта их стоит сверить.</p>
+    </div>
+    <div class="rates">
+      <div class="rate reveal">
+        <span class="rate__src">Яндекс Карты</span>
+        <b class="rate__num"><span data-count="4.8" data-dec="1">4.8</span></b>
+        <span class="rate__stars" aria-hidden="true">★★★★★</span>
+        <span class="rate__meta"><span data-count="83">83</span> оценки · 43 отзыва</span>
+      </div>
+      <div class="rate reveal">
+        <span class="rate__src">2ГИС</span>
+        <b class="rate__num"><span data-count="4.8" data-dec="1">4.8</span></b>
+        <span class="rate__stars" aria-hidden="true">★★★★★</span>
+        <span class="rate__meta"><span data-count="56">56</span> оценок · 34 отзыва</span>
+      </div>
+      <div class="rate rate--note reveal">
+        <p>Отзывы на сайте можно подтягивать с карт или публиковать с разрешения пациентов. Ниже условные примеры, как это будет выглядеть.</p>
+      </div>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal"><blockquote>"Пришла с острой болью, приняли в тот же день. Врач всё объяснил и показал снимок, больше не страшно ходить."</blockquote><figcaption>Пациентка, пример отзыва</figcaption></figure>
+      <figure class="quote reveal"><blockquote>"Водим сюда обоих детей. Сыну сначала дали посидеть в кресле и посмотреть инструменты, на втором визите спокойно вылечили зуб."</blockquote><figcaption>Мама двоих детей, пример отзыва</figcaption></figure>
+      <figure class="quote reveal"><blockquote>"Удобно, что клиника прямо в нашем дворе. Записываюсь через WhatsApp, отвечают быстро."</blockquote><figcaption>Житель "Солнечного города", пример отзыва</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section class="section section--tint" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Услуги</p>
+      <h2>Всё лечение в одной клинике</h2>
+      <p class="muted">Не нужно искать отдельно хирурга, ортодонта и детского врача: план лечения ведётся в одном месте.</p>
+    </div>
+    <div class="services">
+      <article class="svc reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 18c0-6 4.5-9 10-9s10 3 10 9c0 4-1.3 6-2 11-.6 4-1.5 7-3.4 7-2 0-2.4-6-4.6-6s-2.6 6-4.6 6c-1.9 0-2.8-3-3.4-7-.7-5-2-7-2-11z"/><circle cx="28" cy="18" r="3"/></svg>
+        <h3>Лечение зубов</h3><p>Кариес, пульпит, лечение каналов под контролем снимков.</p>
+      </article>
+      <article class="svc reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 10h16M24 10v10M18 20h12l-2 18h-8z"/></svg>
+        <h3>Хирургия</h3><p>Удаление зубов, в том числе зубов мудрости, синуслифтинг, вестибулопластика.</p>
+      </article>
+      <article class="svc reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M16 12c0-3 3.5-4 8-4s8 1 8 4c0 3-2 5-8 5s-8-2-8-5zM24 17v23M19 22h10M19 27h10M20 32h8M21 37h6"/></svg>
+        <h3>Имплантация</h3><p>Восстановление утраченных зубов на имплантах.</p>
+      </article>
+      <article class="svc reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24h36"/><rect x="9" y="19" width="6" height="10" rx="1.5"/><rect x="21" y="19" width="6" height="10" rx="1.5"/><rect x="33" y="19" width="6" height="10" rx="1.5"/></svg>
+        <h3>Ортодонтия</h3><p>Брекеты для подростков и взрослых, исправление прикуса.</p>
+      </article>
+      <article class="svc reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 20c0-5 6-8 14-8s14 3 14 8v4H10z"/><path d="M14 24v8M20 24v10M26 24v10M32 24v8"/></svg>
+        <h3>Протезирование</h3><p>Коронки, мосты и съёмные протезы, виниры.</p>
+      </article>
+      <article class="svc reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="13"/><circle cx="19" cy="22" r="1.6"/><circle cx="29" cy="22" r="1.6"/><path d="M18.5 28c3 3 8 3 11 0"/></svg>
+        <h3>Детская стоматология</h3><p>Лечение молочных зубов, гигиена и профилактика.</p>
+      </article>
+      <article class="svc reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8v6M24 34v6M8 24h6M34 24h6M13 13l4 4M31 31l4 4M35 13l-4 4M17 31l-4 4"/><circle cx="24" cy="24" r="6"/></svg>
+        <h3>Гигиена и эстетика</h3><p>Профессиональная чистка в 6 этапов, отбеливание.</p>
+      </article>
+      <article class="svc reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 30c3-8 6-14 10-14s7 6 10 14"/><path d="M10 34h28"/><path d="M18 22c-3-2-5-6-4-10M30 22c3-2 5-6 4-10"/></svg>
+        <h3>Пародонтология</h3><p>Лечение дёсен и профилактика их воспаления.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ЦЕНЫ -->
+<section class="section" id="prices">
+  <div class="wrap prices">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Цены</p>
+      <h2>Популярные услуги</h2>
+      <p class="muted">Стоимость условная, взята из открытых карточек клиники. Точную цену врач назовёт после осмотра. Оплата картой, наличными или по QR-коду.</p>
+      <span class="tag">пример</span>
+    </div>
+    <div class="price-list reveal">
+      <div class="price-tabs" role="tablist">
+        <button class="is-active" type="button" data-tab="adult" role="tab" aria-selected="true">Взрослым</button>
+        <button type="button" data-tab="kids" role="tab" aria-selected="false">Детям</button>
+      </div>
+      <ul class="price-group is-active" data-group="adult">
+        <li><span>Комплексная гигиена, 6 этапов</span><b>от 4900 руб.</b></li>
+        <li><span>Лечение поверхностного кариеса</span><b>от 5000 руб.</b></li>
+        <li><span>Лечение среднего кариеса</span><b>от 6000 руб.</b></li>
+        <li><span>Лечение глубокого кариеса</span><b>от 6500 руб.</b></li>
+        <li><span>Удаление зуба</span><b>от 1500 руб.</b></li>
+        <li><span>Удаление зуба мудрости</span><b>от 2800 руб.</b></li>
+      </ul>
+      <ul class="price-group" data-group="kids">
+        <li><span>Гигиена для детей</span><b>от 3200 руб.</b></li>
+        <li><span>Лечение кариеса молочного зуба</span><b>от 4200 руб.</b></li>
+        <li><span>Осмотр и знакомство с врачом</span><b>по прайсу клиники</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ДЕТСКАЯ СТОМАТОЛОГИЯ -->
+<section class="section kids" id="kids">
+  <div class="wrap kids__in">
+    <div class="kids__art reveal" aria-hidden="true">
+      <!-- Оригинальная SVG-иллюстрация: зубик с щёткой, нарисована для демо -->
+      <svg viewBox="0 0 320 300">
+        <circle class="kids__bubble b1" cx="60" cy="70" r="14"/>
+        <circle class="kids__bubble b2" cx="262" cy="56" r="10"/>
+        <circle class="kids__bubble b3" cx="250" cy="220" r="16"/>
+        <circle class="kids__bubble b4" cx="48" cy="210" r="9"/>
+        <g class="kids__tooth">
+          <path d="M100 110c0-34 26-50 60-50s60 16 60 50c0 24-8 36-12 66-4 24-10 44-22 44-13 0-15-36-26-36s-13 36-26 36c-12 0-18-20-22-44-4-30-12-42-12-66z" fill="#fff" stroke="#1f2a2e" stroke-width="5" stroke-linejoin="round"/>
+          <circle cx="140" cy="118" r="7" fill="#1f2a2e"/><circle cx="180" cy="118" r="7" fill="#1f2a2e"/>
+          <circle cx="128" cy="138" r="8" fill="#f2b8a2" opacity=".8"/><circle cx="192" cy="138" r="8" fill="#f2b8a2" opacity=".8"/>
+          <path d="M146 144c8 8 20 8 28 0" fill="none" stroke="#1f2a2e" stroke-width="5" stroke-linecap="round"/>
+        </g>
+        <g class="kids__brush">
+          <rect x="216" y="150" width="78" height="14" rx="7" fill="#2f5d50"/>
+          <rect x="206" y="138" width="22" height="14" rx="3" fill="#c98b3a"/>
+          <path d="M209 138v-10M215 138v-12M221 138v-10M227 138v-12" stroke="#c98b3a" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+    <div class="kids__text reveal">
+      <p class="eyebrow">Детская стоматология</p>
+      <h2>Первый визит без слёз</h2>
+      <p>Детей принимают отдельно от взрослых потоков, с запасом времени. Сначала знакомство: ребёнок садится в кресло, трогает зеркальце, смотрит, как работает "водичка". Лечение только когда он готов.</p>
+      <ul class="checks">
+        <li>лечение молочных зубов и профилактика</li>
+        <li>детская гигиена от 3200 руб. (пример)</li>
+        <li>родитель может быть рядом на приёме</li>
+        <li>советы родителям, как чистить зубы малышу</li>
+      </ul>
+      <a class="btn" href="#form" data-service="Детская стоматология">Записать ребёнка</a>
+    </div>
+  </div>
+</section>
+
+<!-- КАК ПРОХОДИТ ПРИЁМ -->
+<section class="section section--tint" id="steps">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Как проходит приём</p>
+      <h2>Четыре шага, без сюрпризов</h2>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step__n">01</span><h3>Запись</h3><p>По телефону или в мессенджере: WhatsApp, Telegram, Viber, VK. Подберём удобное время.</p></li>
+      <li class="step reveal"><span class="step__n">02</span><h3>Осмотр</h3><p>Врач смотрит зубы, при необходимости делает прицельный снимок прямо в клинике.</p></li>
+      <li class="step reveal"><span class="step__n">03</span><h3>План и цена</h3><p>Объясняем варианты лечения и их стоимость до начала работы. Решение за вами.</p></li>
+      <li class="step reveal"><span class="step__n">04</span><h3>Лечение и контроль</h3><p>Лечим с анестезией, даём рекомендации и напоминаем о следующем визите.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ВРАЧИ -->
+<section class="section" id="doctors">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Врачи</p>
+      <h2>Команда клиники</h2>
+      <p class="muted">Карточки условные. На готовом сайте здесь будут реальные врачи с фото, стажем и специализацией.</p>
+      <span class="tag">пример</span>
+    </div>
+    <div class="docs">
+      <article class="doc reveal"><div class="doc__ph"><span>АИ</span></div><h3>Имя Фамилия</h3><p>Стоматолог-терапевт</p><small>стаж: уточняется</small></article>
+      <article class="doc reveal"><div class="doc__ph"><span>РМ</span></div><h3>Имя Фамилия</h3><p>Хирург, имплантолог</p><small>стаж: уточняется</small></article>
+      <article class="doc reveal"><div class="doc__ph"><span>ЛГ</span></div><h3>Имя Фамилия</h3><p>Ортодонт</p><small>стаж: уточняется</small></article>
+      <article class="doc reveal"><div class="doc__ph"><span>ЭС</span></div><h3>Имя Фамилия</h3><p>Детский стоматолог</p><small>стаж: уточняется</small></article>
+    </div>
+  </div>
+</section>
+
+<!-- ВОПРОСЫ -->
+<section class="section section--tint" id="faq">
+  <div class="wrap faq">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Вопросы</p>
+      <h2>Частые вопросы</h2>
+    </div>
+    <div class="faq__list reveal">
+      <details><summary>Нужна ли предварительная запись?</summary><p>Да, приём идёт по записи. Так врач выделит на вас достаточно времени. При острой боли напишите или позвоните, постараемся принять в тот же день.</p></details>
+      <details><summary>Будет ли больно?</summary><p>Лечение проводится с современной анестезией. Если вы волнуетесь, скажите об этом врачу, он заранее расскажет каждый этап.</p></details>
+      <details><summary>Со скольки лет принимаете детей?</summary><p>Возраст и формат первого визита уточняйте у администратора (пример ответа, данные уточняются у клиники).</p></details>
+      <details><summary>Как оплатить лечение?</summary><p>Картой, наличными или по QR-коду.</p></details>
+      <details><summary>Где вы находитесь?</summary><p>Ул. Баки Урманче, 7, 1 этаж, ЖК "Солнечный город". Ближайшее метро "Проспект Победы".</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ЗАПИСЬ И КОНТАКТЫ -->
+<section class="section" id="contacts">
+  <div class="wrap contacts">
+    <div class="contacts__info reveal">
+      <p class="eyebrow">Контакты</p>
+      <h2>Ждём в "Солнечном городе"</h2>
+      <dl class="info">
+        <dt>Адрес</dt><dd>Казань, ул. Баки Урманче, 7, 1 этаж<br>м. "Проспект Победы"</dd>
+        <dt>Телефон</dt><dd><a href="tel:+78432250464">+7 (843) 225-04-64</a></dd>
+        <dt>График</dt><dd>пн-пт 9:00-20:00<br>сб по записи (время уточняется, пример)<br>вс выходной</dd>
+      </dl>
+      <div class="msgs" id="messengers">
+        <a class="msg msg--wa" href="https://wa.me/79872250464" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="msg msg--tg" href="https://t.me/KlinikaMudrogoStomatologa" target="_blank" rel="noopener">Telegram</a>
+        <a class="msg msg--vb" href="viber://chat?number=%2B79872250464">Viber</a>
+        <a class="msg msg--vk" href="https://vk.ru/kds_116" target="_blank" rel="noopener">VK</a>
+      </div>
+    </div>
+
+    <form class="form reveal" id="form" novalidate>
+      <h3>Записаться на приём</h3>
+      <p class="muted">Администратор перезвонит и подберёт время.</p>
+      <label>Имя<input name="name" type="text" autocomplete="name" required></label>
+      <label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7" required></label>
+      <label>Услуга
+        <select name="service" id="serviceSelect">
+          <option>Консультация и осмотр</option>
+          <option>Лечение зубов</option>
+          <option>Удаление зуба</option>
+          <option>Имплантация</option>
+          <option>Брекеты</option>
+          <option>Протезирование</option>
+          <option>Гигиена</option>
+          <option>Детская стоматология</option>
+        </select>
+      </label>
+      <button class="btn" type="submit">Отправить заявку</button>
+      <p class="form__note">Демо: заявка никуда не отправляется.</p>
+      <p class="form__ok" role="status" hidden>Спасибо! На рабочем сайте заявка придёт администратору в мессенджер.</p>
+    </form>
+
+    <div class="map reveal">
+      <iframe title="Клиника на карте" src="https://yandex.ru/map-widget/v1/?text=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%91%D0%B0%D0%BA%D0%B8%20%D0%A3%D1%80%D0%BC%D0%B0%D0%BD%D1%87%D0%B5%2C%207&amp;z=16" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p>Клиника мудрого стоматолога, Казань, ул. Баки Урманче, 7</p>
+    <p class="muted">Демо-сайт. Юрлицо и лицензия будут указаны на рабочей версии. Имеются противопоказания, необходима консультация специалиста.</p>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="btn" href="#form">Записаться</a>
+  <a class="btn btn--ghost" href="https://wa.me/79872250464" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
