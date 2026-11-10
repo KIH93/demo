@@ -14,8 +14,8 @@
 
 ## Шрифты
 
-- Unbounded: Google Fonts, https://fonts.google.com/specimen/Unbounded, лицензия SIL Open Font License 1.1
-- Onest: Google Fonts, https://fonts.google.com/specimen/Onest, лицензия SIL Open Font License 1.1
+- Dela Gothic One: Google Fonts, https://fonts.google.com/specimen/Dela+Gothic+One, лицензия SIL Open Font License 1.1
+- Geologica: Google Fonts, https://fonts.google.com/specimen/Geologica, лицензия SIL Open Font License 1.1
 
 ## Карта
 
