@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Птица счастья: детский центр развития и творчества в Казани (демо)</title>
+  <meta name="description" content="Демо-сайт детского центра развития и творчества Птица счастья в Казани, Даурская улица, 44в, ЖК Журавли. Каллиграфия, творческие занятия, онлайн-формат.">
+  <meta name="theme-color" content="#FBF6EC">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Nunito:wght@600;700;800;900&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bird" viewBox="0 0 64 48"><path d="M2 30 26 22 40 2 44 24 62 20 44 34 30 46 28 32Z" fill="currentColor"/><path d="M26 22 28 32 44 24Z" fill="#000" opacity=".14"/><path d="M40 2 44 24 26 22Z" fill="#fff" opacity=".28"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M6.5 3.5h3l1.5 4-2 1.3a10 10 0 0 0 6.2 6.2l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="m4 7.5 8 5.5 8-5.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5c.6 5.3 4.2 8.9 9.5 9.5-5.3.6-8.9 4.2-9.5 9.5-.6-5.3-4.2-8.9-9.5-9.5 5.3-.6 8.9-4.2 9.5-9.5Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+</svg>
+
+<div class="demo-note" role="note">Демо-версия сайта. Направления, условия акций, педагоги, отзывы и иллюстрации условные, приведены как пример.</div>
+
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#top" aria-label="Птица счастья, на главную">
+      <svg class="logo__bird" aria-hidden="true"><use href="#bird"/></svg>
+      <span class="logo__txt">Птица счастья</span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#directions">Направления</a>
+      <a href="#promo">Акции</a>
+      <a href="#how">Как проходят</a>
+      <a href="#team">Педагоги</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--sm btn--sun" href="#signup">Записаться</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ПЕРВЫЙ ЭКРАН: тетрадный лист с прописью -->
+  <section class="page" aria-labelledby="hero-title">
+    <div class="page__sheet" aria-hidden="true"></div>
+
+    <svg class="flight" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
+      <path id="flightPath" class="flight__trail" d="M-40 420 C 180 300, 260 470, 440 360 S 700 120, 880 210 S 1120 120, 1260 60"/>
+    </svg>
+    <div class="flyer" aria-hidden="true"><svg><use href="#bird"/></svg></div>
+
+    <div class="wrap page__in">
+      <p class="page__kicker rise" style="--d:.1s">Детский центр развития и творчества <span>·</span> Казань, ЖК "Журавли"</p>
+
+      <h1 class="page__title" id="hero-title">
+        <span class="sr-only">Птица счастья</span>
+        <svg class="ink" viewBox="0 0 900 300" aria-hidden="true">
+          <text class="ink__w ink__w1" x="450" y="132" text-anchor="middle">Птица</text>
+          <text class="ink__w ink__w2" x="470" y="270" text-anchor="middle">счастья</text>
+        </svg>
+      </h1>
+
+      <p class="page__lead rise" style="--d:1.9s">Каллиграфия, творчество и развивающие занятия для детей рядом с домом. Небольшие группы, спокойный темп и педагоги, которые замечают каждого ребёнка.</p>
+
+      <div class="page__cta rise" style="--d:2.1s">
+        <a class="btn btn--lg btn--sun" href="#signup">Записаться на занятие <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--lg btn--line" href="#directions">Смотреть направления</a>
+      </div>
+
+      <ul class="page__facts rise" style="--d:2.3s">
+        <li><svg class="ico"><use href="#i-star"/></svg>Первое занятие в подарок по промокоду "Птица"</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Вход без ступеней, можно с коляской</li>
+        <li><svg class="ico"><use href="#i-clock"/></svg>По предварительной записи с 9:00</li>
+      </ul>
+    </div>
+
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon__track">
+        <span>Каллиграфия</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Рисование</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Лепка и поделки</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Онлайн-занятия</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Подготовка к школе</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Мастер-классы</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Каллиграфия</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Рисование</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Лепка и поделки</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Онлайн-занятия</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Подготовка к школе</span><svg class="ico"><use href="#i-star"/></svg>
+        <span>Мастер-классы</span><svg class="ico"><use href="#i-star"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЦИФРЫ -->
+  <section class="stats" aria-label="Коротко о центре">
+    <div class="wrap stats__in">
+      <div class="stat reveal"><b><span data-count="52">0</span></b><p>отзыва родителей в карточке 2ГИС</p></div>
+      <div class="stat reveal"><b><span data-count="9">0</span>:00</b><p>начало занятий, всё по записи</p></div>
+      <div class="stat reveal"><b><span data-count="0">0</span></b><p>ступенек на входе, пандус и место для коляски</p></div>
+      <div class="stat reveal"><b><span data-count="1">0</span> этаж</b><p>ЖК "Журавли", Даурская, 44в</p></div>
+    </div>
+  </section>
+
+  <!-- НАПРАВЛЕНИЯ -->
+  <section class="sec" id="directions" aria-labelledby="dir-title">
+    <div class="wrap">
+      <div class="sec__head reveal">
+        <p class="eyebrow">Направления</p>
+        <h2 id="dir-title">Чем заняться <em>в "Птице"</em></h2>
+        <p class="sec__note">Каллиграфия и онлайн-занятия есть в карточке центра. Остальные направления и возраст условные, приведены как пример, состав уточняется у центра.</p>
+      </div>
+
+      <div class="notes">
+        <article class="note note--teal reveal">
+          <div class="note__art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><path class="draw-on" d="M14 62c10-30 22-40 30-28s-6 30 6 28 14-34 26-30 0 26 12 26 14-18 22-20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M96 14 108 26 72 62 58 66 62 52Z" fill="#26344A"/><path d="M58 66 62 52 72 62Z" fill="#F6C343"/></svg>
+          </div>
+          <h3>Каллиграфия</h3>
+          <p>Красивый почерк, работа пером и кистью, буквицы и открытки. Развивает мелкую моторику, усидчивость и аккуратность.</p>
+          <p class="note__meta"><span>7-14 лет</span><em>возраст: пример</em></p>
+        </article>
+
+        <article class="note note--sun reveal">
+          <div class="note__art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><rect x="18" y="16" width="62" height="44" rx="6" fill="none" stroke="#26344A" stroke-width="4"/><path d="M38 70h22M49 60v10" stroke="#26344A" stroke-width="4" stroke-linecap="round"/><circle class="blink-dot" cx="49" cy="38" r="8" fill="#E8735A"/><path d="M84 28c8 4 8 16 0 20M92 22c13 7 13 25 0 32" fill="none" stroke="#26344A" stroke-width="3.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Онлайн-занятия</h3>
+          <p>Когда нет возможности приехать: занятия по видеосвязи из дома, материалы и задания педагог присылает заранее.</p>
+          <p class="note__meta"><span>формат по записи</span><em>пример</em></p>
+        </article>
+
+        <article class="note note--coral reveal">
+          <div class="note__art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><circle cx="40" cy="44" r="26" fill="none" stroke="#26344A" stroke-width="4"/><circle cx="30" cy="36" r="5" fill="#1E9C97"/><circle cx="46" cy="30" r="5" fill="#F6C343"/><circle cx="52" cy="46" r="5" fill="#26344A"/><circle cx="32" cy="54" r="7" fill="#fff" stroke="#26344A" stroke-width="3"/><path class="sway" d="M78 74 100 18" stroke="#26344A" stroke-width="5" stroke-linecap="round"/><path class="sway" d="M100 18l4-8 2 9Z" fill="#E8735A"/></svg>
+          </div>
+          <h3>Рисование</h3>
+          <p>Акварель, гуашь, пастель. Учимся смотреть, смешивать цвета и не бояться белого листа.</p>
+          <p class="note__meta"><span>5-12 лет</span><em>пример</em></p>
+        </article>
+
+        <article class="note note--sky reveal">
+          <div class="note__art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><path d="M24 70c0-16 10-26 26-26s26 10 26 26Z" fill="#F6C343" stroke="#26344A" stroke-width="4" stroke-linejoin="round"/><circle cx="50" cy="32" r="12" fill="#fff" stroke="#26344A" stroke-width="4"/><path d="M84 66l8-26 8 26Z" fill="#1E9C97" stroke="#26344A" stroke-width="3.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Лепка и поделки</h3>
+          <p>Пластилин, глина, бумага и природные материалы. Каждое занятие ребёнок уносит домой свою работу.</p>
+          <p class="note__meta"><span>4-9 лет</span><em>пример</em></p>
+        </article>
+
+        <article class="note note--mint reveal">
+          <div class="note__art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><path d="M20 24h36c6 0 10 4 10 10v38c0-6-4-10-10-10H20Z" fill="#fff" stroke="#26344A" stroke-width="4" stroke-linejoin="round"/><path d="M100 24H76c-6 0-10 4-10 10v38c0-6 4-10 10-10h24Z" fill="#fff" stroke="#26344A" stroke-width="4" stroke-linejoin="round"/><path d="M30 38h18M30 48h14M78 38h12M78 48h16" stroke="#1E9C97" stroke-width="3.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Подготовка к школе</h3>
+          <p>Буквы, счёт, логика и внимание в игровой форме. Мягкий переход от садика к первому классу.</p>
+          <p class="note__meta"><span>5-7 лет</span><em>пример</em></p>
+        </article>
+
+        <article class="note note--paper reveal">
+          <div class="note__art" aria-hidden="true">
+            <svg viewBox="0 0 120 90"><path d="M26 66 60 20l34 46Z" fill="#E8735A" stroke="#26344A" stroke-width="4" stroke-linejoin="round"/><path d="M60 20v46" stroke="#26344A" stroke-width="3"/><circle class="twinkle" cx="96" cy="22" r="5" fill="#F6C343"/><circle class="twinkle t2" cx="22" cy="28" r="4" fill="#1E9C97"/></svg>
+          </div>
+          <h3>Мастер-классы и праздники</h3>
+          <p>Разовые творческие встречи по выходным: открытки к праздникам, роспись, оригами, семейные мастерские.</p>
+          <p class="note__meta"><span>для всей семьи</span><em>пример</em></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- АКЦИИ -->
+  <section class="sec sec--teal" id="promo" aria-labelledby="promo-title">
+    <div class="wrap">
+      <div class="sec__head reveal">
+        <p class="eyebrow eyebrow--light">Акции</p>
+        <h2 id="promo-title">Начать проще, <em>чем кажется</em></h2>
+        <p class="sec__note sec__note--light">Сами акции указаны в карточках центра. Условия ниже условные, приведены как пример, точные правила уточняются у администратора.</p>
+      </div>
+
+      <div class="tickets">
+        <article class="ticket reveal">
+          <div class="ticket__main">
+            <p class="ticket__tag">Промокод</p>
+            <h3>Первое занятие в подарок</h3>
+            <p>Назовите промокод при записи, и первое занятие на выбранном направлении будет бесплатным. Так проще понять, понравится ли ребёнку.</p>
+            <button class="code" type="button" data-copy="Птица" aria-label="Скопировать промокод Птица">
+              <span class="code__word">Птица</span>
+              <span class="code__btn"><svg class="ico"><use href="#i-copy"/></svg><span class="code__label">скопировать</span></span>
+            </button>
+          </div>
+          <div class="ticket__stub" aria-hidden="true">
+            <svg><use href="#bird"/></svg>
+            <span>1-е занятие</span>
+          </div>
+          <p class="ticket__ex">условия: пример</p>
+        </article>
+
+        <article class="ticket ticket--sun reveal">
+          <div class="ticket__main">
+            <p class="ticket__tag">Постоянная акция</p>
+            <h3>Приведи друга</h3>
+            <p>Приходите вместе с другом или подругой. Новому ученику занятие в подарок, а вам скидка на следующий абонемент.</p>
+            <div class="friends" aria-hidden="true">
+              <svg class="friends__b1"><use href="#bird"/></svg>
+              <svg class="friends__b2"><use href="#bird"/></svg>
+            </div>
+          </div>
+          <div class="ticket__stub" aria-hidden="true">
+            <b>-10%</b>
+            <span>на абонемент</span>
+          </div>
+          <p class="ticket__ex">условия и скидка: пример</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- КАК ПРОХОДЯТ -->
+  <section class="sec" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="sec__head reveal">
+        <p class="eyebrow">Как проходят занятия</p>
+        <h2 id="how-title">От заявки <em>до первой работы</em></h2>
+      </div>
+
+      <ol class="route">
+        <svg class="route__line" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path d="M20 60 C 170 0, 300 120, 500 60 S 830 0, 980 60"/></svg>
+        <li class="route__step reveal">
+          <span class="route__num">1</span>
+          <h3>Заявка</h3>
+          <p>Оставьте заявку на сайте, позвоните или напишите в Viber, ВКонтакте или MAX.</p>
+        </li>
+        <li class="route__step reveal">
+          <span class="route__num">2</span>
+          <h3>Подбор группы</h3>
+          <p>Администратор уточнит возраст и интересы ребёнка и предложит удобное время.</p>
+        </li>
+        <li class="route__step reveal">
+          <span class="route__num">3</span>
+          <h3>Первое занятие</h3>
+          <p>Знакомство с педагогом и группой. Все материалы есть в центре, ничего покупать заранее не нужно.</p>
+        </li>
+        <li class="route__step reveal">
+          <span class="route__num">4</span>
+          <h3>Работа домой</h3>
+          <p>Ребёнок уносит свою работу, а родитель получает короткую обратную связь от педагога.</p>
+        </li>
+      </ol>
+      <p class="sec__note sec__note--c reveal">Порядок записи и детали занятий приведены как пример.</p>
+    </div>
+  </section>
+
+  <!-- ПЕДАГОГИ -->
+  <section class="sec sec--cream" id="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <div class="sec__head reveal">
+        <p class="eyebrow">Педагоги</p>
+        <h2 id="team-title">Те, кто <em>ведут занятия</em></h2>
+        <p class="sec__note">Имена и описания условные, приведены как пример. Здесь будут реальные педагоги центра с фото, если центр их предоставит.</p>
+      </div>
+
+      <div class="team">
+        <article class="person reveal">
+          <div class="person__ava person__ava--teal" aria-hidden="true"><span>А</span></div>
+          <h3>Анна</h3>
+          <p class="person__role">Каллиграфия и леттеринг</p>
+          <p>Учит держать перо и не торопиться. Начинаем с простых линий, заканчиваем открыткой своими руками.</p>
+          <em class="tag">пример</em>
+        </article>
+        <article class="person reveal">
+          <div class="person__ava person__ava--sun" aria-hidden="true"><span>М</span></div>
+          <h3>Марина</h3>
+          <p class="person__role">Рисование и мастер-классы</p>
+          <p>Помогает детям найти свой цвет и не бояться ошибок. Каждая работа уходит домой подписанной.</p>
+          <em class="tag">пример</em>
+        </article>
+        <article class="person reveal">
+          <div class="person__ava person__ava--coral" aria-hidden="true"><span>Л</span></div>
+          <h3>Лейла</h3>
+          <p class="person__role">Подготовка к школе</p>
+          <p>Превращает буквы и цифры в игру. Следит, чтобы ребёнку было интересно, а не скучно.</p>
+          <em class="tag">пример</em>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section class="sec" id="reviews" aria-labelledby="rev-title">
+    <div class="wrap">
+      <div class="sec__head sec__head--row reveal">
+        <div>
+          <p class="eyebrow">Отзывы</p>
+          <h2 id="rev-title">Что говорят <em>родители</em></h2>
+        </div>
+        <a class="link" href="https://2gis.ru/kazan/firm/70000001025556656" target="_blank" rel="noopener">52 отзыва в 2ГИС <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+      <p class="sec__note reveal">Тексты ниже условные, приведены как пример. Реальные отзывы можно перенести с разрешения авторов или подключить виджет 2ГИС.</p>
+
+      <div class="cards" tabindex="0" aria-label="Отзывы, пролистываются вбок">
+        <figure class="card reveal">
+          <blockquote>Дочка ходит на каллиграфию второй месяц, почерк в школьной тетради стал заметно ровнее. Ждёт занятий всю неделю.</blockquote>
+          <figcaption>Мама Сабины, 9 лет <em class="tag">пример</em></figcaption>
+        </figure>
+        <figure class="card reveal">
+          <blockquote>Удобно, что центр прямо в нашем ЖК. Заходим с коляской младшего без проблем, пока старший занимается.</blockquote>
+          <figcaption>Папа Тимура, 6 лет <em class="tag">пример</em></figcaption>
+        </figure>
+        <figure class="card reveal">
+          <blockquote>Пришли по промокоду на пробное занятие и остались. Педагоги внимательные, группы небольшие.</blockquote>
+          <figcaption>Мама Ани, 7 лет <em class="tag">пример</em></figcaption>
+        </figure>
+        <figure class="card reveal">
+          <blockquote>Когда сын болел, занимались онлайн. Задания пришли заранее, ничего не пропустили.</blockquote>
+          <figcaption>Мама Карима, 10 лет <em class="tag">пример</em></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗАПИСЬ -->
+  <section class="sec sec--sun" id="signup" aria-labelledby="signup-title">
+    <div class="wrap signup">
+      <div class="signup__copy reveal">
+        <p class="eyebrow">Запись</p>
+        <h2 id="signup-title">Запишите ребёнка <em>на первое занятие</em></h2>
+        <p>Оставьте телефон, и администратор свяжется с вами, чтобы подобрать направление и время. Или напишите сразу в удобный мессенджер.</p>
+        <div class="msg">
+          <a class="msg__btn msg__btn--viber" href="viber://chat?number=%2B79872651000">Viber</a>
+          <a class="msg__btn msg__btn--vk" href="https://vk.ru/ptitsa_schastya_kzn" target="_blank" rel="noopener">ВКонтакте</a>
+          <a class="msg__btn msg__btn--max" href="https://max.ru/join/IDBlkOh2v8JJX5bud70qQ-uDBonx2RGPPeltOXE05os" target="_blank" rel="noopener">MAX</a>
+        </div>
+      </div>
+
+      <form class="form reveal" id="form" novalidate>
+        <label>Имя родителя
+          <input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required>
+        </label>
+        <label>Телефон
+          <input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 ___ ___-__-__" required>
+        </label>
+        <div class="form__row">
+          <label>Возраст ребёнка
+            <input name="age" type="number" min="3" max="17" placeholder="лет">
+          </label>
+          <label>Направление
+            <select name="dir">
+              <option>Каллиграфия</option>
+              <option>Онлайн-занятия</option>
+              <option>Рисование</option>
+              <option>Лепка и поделки</option>
+              <option>Подготовка к школе</option>
+              <option>Пока не знаю</option>
+            </select>
+          </label>
+        </div>
+        <label class="form__promo">Промокод
+          <input name="promo" type="text" placeholder="например, Птица">
+        </label>
+        <button class="btn btn--lg btn--ink" type="submit">Отправить заявку</button>
+        <p class="form__small">Демо: заявка никуда не отправляется. На рабочем сайте она придёт администратору в мессенджер или на почту.</p>
+        <p class="form__ok" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section class="sec" id="contacts" aria-labelledby="ct-title">
+    <div class="wrap contacts">
+      <div class="contacts__info reveal">
+        <p class="eyebrow">Контакты</p>
+        <h2 id="ct-title">Мы <em>в ЖК "Журавли"</em></h2>
+        <ul class="clist">
+          <li><svg class="ico"><use href="#i-pin"/></svg><span>Казань, Даурская улица, 44в, 1 этаж<br><small>Советский район, ближайшее метро "Горки"</small></span></li>
+          <li><svg class="ico"><use href="#i-phone"/></svg><a href="tel:+79311058087">+7 931 105-80-87</a></li>
+          <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:ptitsakzn@yandex.ru">ptitsakzn@yandex.ru</a></li>
+          <li><svg class="ico"><use href="#i-clock"/></svg><span>По предварительной записи, с 9:00</span></li>
+        </ul>
+        <div class="access">
+          <h3>Доступная среда</h3>
+          <ul>
+            <li><svg class="ico"><use href="#i-check"/></svg>Вход без ступеней</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Пандус</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Можно с детской коляской</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Частично доступно для инвалидной коляски</li>
+          </ul>
+        </div>
+        <a class="link" href="https://2gis.ru/kazan/firm/70000001025556656" target="_blank" rel="noopener">Открыть в 2ГИС <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="map reveal">
+        <iframe title="Карта: Казань, Даурская улица, 44в" loading="lazy" src="https://yandex.ru/map-widget/v1/?text=%D0%9A%D0%B0%D0%B7%D0%B0%D0%BD%D1%8C%2C%20%D0%94%D0%B0%D1%83%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%2044%D0%B2&z=16"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="logo logo--light" href="#top">
+      <svg class="logo__bird" aria-hidden="true"><use href="#bird"/></svg>
+      <span class="logo__txt">Птица счастья</span>
+    </a>
+    <p>Детский центр развития и творчества, Казань, Даурская улица, 44в</p>
+    <p class="foot__small">Демо-версия сайта. Направления, условия акций, педагоги и отзывы условные. Иллюстрации оригинальные и не изображают реальных детей, педагогов или помещение центра.</p>
+  </div>
+</footer>
+
+<a class="sticky" href="#signup" aria-label="Записаться на занятие">
+  <svg class="ico"><use href="#bird"/></svg> Записаться
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
