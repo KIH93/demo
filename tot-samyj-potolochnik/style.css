@@ -82,7 +82,7 @@ svg use{pointer-events:none}
 .sheet__head{padding:0 4px 8px}
 
 .plan{position:relative;margin-top:14px}
-.plan__svg{width:100%;height:auto;overflow:visible}
+.plan__svg{width:100%;height:auto;max-height:72vh;overflow:visible}
 .mono-svg text{font-family:var(--mono);font-size:15px;fill:var(--ink)}
 .mono-svg .t-big{font-size:17px;font-weight:500;letter-spacing:.12em}
 .mono-svg .t-acc{fill:var(--amber-ink)}
@@ -120,6 +120,9 @@ svg use{pointer-events:none}
 .stamp__foot span{padding:8px 10px;border-right:1px solid var(--ink)}
 .stamp__foot span:last-child{border-right:0}
 
+@media(max-width:1199px){
+  .legend{display:none}
+}
 @media(max-width:959px){
   .mono-svg text{font-size:26px}
   .mono-svg .t-big{font-size:28px}
@@ -132,6 +135,8 @@ svg use{pointer-events:none}
   .sheet{padding:26px 0 48px}
   .sheet__frame{padding:34px 34px 30px}
   .sheet__head{padding:0 6px 0}
+}
+@media(min-width:1200px){
   .plan{margin-top:-6px}
   .stamp{position:absolute;right:0;bottom:0;width:340px;margin:0;box-shadow:-14px -14px 0 var(--paper)}
   .stamp__cta{grid-template-columns:1fr}

@@ -298,7 +298,7 @@
 
   /* ---------- план: на узком экране обрезаем легенду ---------- */
   var planSvg = document.querySelector(".plan__svg");
-  function fitPlan() { if (planSvg) planSvg.setAttribute("viewBox", window.innerWidth < 960 ? "0 0 850 520" : "0 0 1200 520"); }
+  function fitPlan() { if (planSvg) planSvg.setAttribute("viewBox", window.innerWidth < 1200 ? "0 0 850 520" : "0 0 1200 520"); }
   fitPlan();
 
   window.addEventListener("scroll", onScroll, { passive: true });
