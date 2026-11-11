@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>VetСовет · ветеринарная клиника в Казани (демо)</title>
+<meta name="description" content="Демо-сайт ветеринарной клиники VetСовет в Казани, Мирный, Онежская 2а. Терапия, вакцинация, УЗИ, рентген, хирургия по записи, оплата частями.">
+<meta name="theme-color" content="#2f6b63">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Иконки -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4 3.6 2.9 10.7c-1.3.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.4ZM8.3 13.4l9.9-6.3c.5-.3.9-.1.5.2l-8.4 7.6-.3 3.5-1.7-5Z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-paw" viewBox="0 0 32 32"><g fill="currentColor"><ellipse cx="16" cy="21" rx="7.5" ry="6.5"/><ellipse cx="6.5" cy="13.5" rx="3" ry="4"/><ellipse cx="12.3" cy="7.5" rx="3" ry="4.2"/><ellipse cx="19.7" cy="7.5" rx="3" ry="4.2"/><ellipse cx="25.5" cy="13.5" rx="3" ry="4"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/></symbol>
+  <symbol id="i-steth" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v8a6 6 0 0 0 12 0V4"/><path d="M13 18v3a6 6 0 0 0 12 0v-3"/><circle cx="25" cy="15" r="3"/></g></symbol>
+  <symbol id="i-syringe" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 4 6 6M25 7l-3 3M20 8l4 4L12 24l-4 0 0-4z"/><path d="M8 24l-4 4M14 14l2 2M11 17l2 2"/></g></symbol>
+  <symbol id="i-wave" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="24" height="17" rx="3"/><path d="M8 15c2-5 4 4 6 0s3-6 5 0 3 2 5-2"/><path d="M12 27h8M16 22v5"/></g></symbol>
+  <symbol id="i-xray" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="22" height="24" rx="3"/><path d="M16 8v16M11 11h10M10 15h12M11 19h10"/></g></symbol>
+  <symbol id="i-scalpel" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 28 18 14l3 3L9 28z"/><path d="M18 14c3-6 7-9 10-10-1 4-4 8-7 13"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="16" cy="16" r="12"/><path d="M16 10v12M10 16h12"/></g></symbol>
+  <symbol id="i-wallet" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h20a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h15"/><path d="M28 15h-6a3 3 0 0 0 0 6h6"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M16 27S4 20 4 11.5A6.5 6.5 0 0 1 16 8a6.5 6.5 0 0 1 12 3.5C28 20 16 27 16 27Z"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 4h10v10L15 26a2.8 2.8 0 0 1-4 0l-7-7a2.8 2.8 0 0 1 0-4z"/><circle cx="22" cy="9" r="1.6"/></g></symbol>
+
+  <!-- Иллюстрации для галереи (без анимации) -->
+  <symbol id="pet-cat" viewBox="0 0 240 220">
+    <path d="M168 182c40-4 52-52 30-76" fill="none" stroke="#d9824a" stroke-width="15" stroke-linecap="round"/>
+    <ellipse cx="120" cy="168" rx="58" ry="44" fill="#e8955a"/>
+    <ellipse cx="120" cy="178" rx="30" ry="26" fill="#f6d2b0"/>
+    <path d="M74 74 80 24l34 30z" fill="#e8955a"/><path d="M166 74 160 24l-34 30z" fill="#e8955a"/>
+    <path d="M84 62 86 38l16 15z" fill="#f4b6a6"/><path d="M156 62 154 38l-16 15z" fill="#f4b6a6"/>
+    <circle cx="120" cy="96" r="52" fill="#e8955a"/>
+    <path d="M100 52c6 8 14 8 20 0 6 8 14 8 20 0" fill="none" stroke="#c96f38" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="100" cy="96" rx="7" ry="10" fill="#2b2118"/><ellipse cx="140" cy="96" rx="7" ry="10" fill="#2b2118"/>
+    <circle cx="86" cy="114" r="8" fill="#f4a08a" opacity=".6"/><circle cx="154" cy="114" r="8" fill="#f4a08a" opacity=".6"/>
+    <path d="M114 110h12l-6 7z" fill="#c95a4a"/>
+    <path d="M120 117q-6 9-14 4M120 117q6 9 14 4" fill="none" stroke="#2b2118" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="98" cy="208" rx="15" ry="9" fill="#f6d2b0"/><ellipse cx="142" cy="208" rx="15" ry="9" fill="#f6d2b0"/>
+  </symbol>
+  <symbol id="pet-dog" viewBox="0 0 240 220">
+    <path d="M174 170c26-8 34-30 28-48" fill="none" stroke="#b3845a" stroke-width="14" stroke-linecap="round"/>
+    <ellipse cx="120" cy="168" rx="60" ry="42" fill="#c99b6d"/>
+    <ellipse cx="120" cy="178" rx="30" ry="26" fill="#f1dcc3"/>
+    <circle cx="120" cy="96" r="50" fill="#c99b6d"/>
+    <ellipse cx="74" cy="100" rx="17" ry="38" transform="rotate(18 74 100)" fill="#7d5034"/>
+    <ellipse cx="166" cy="100" rx="17" ry="38" transform="rotate(-18 166 100)" fill="#7d5034"/>
+    <circle cx="140" cy="86" r="17" fill="#a87650"/>
+    <circle cx="102" cy="90" r="6.5" fill="#2b2118"/><circle cx="138" cy="90" r="6.5" fill="#2b2118"/>
+    <ellipse cx="120" cy="120" rx="25" ry="18" fill="#f1dcc3"/>
+    <ellipse cx="120" cy="111" rx="9.5" ry="6.5" fill="#2b2118"/>
+    <ellipse cx="120" cy="135" rx="7" ry="9" fill="#f07f86"/>
+    <ellipse cx="98" cy="207" rx="15" ry="9" fill="#f1dcc3"/><ellipse cx="142" cy="207" rx="15" ry="9" fill="#f1dcc3"/>
+  </symbol>
+  <symbol id="pet-rabbit" viewBox="0 0 240 220">
+    <ellipse cx="102" cy="52" rx="13" ry="46" transform="rotate(-8 102 52)" fill="#bdb6cf"/>
+    <ellipse cx="102" cy="56" rx="6" ry="34" transform="rotate(-8 102 56)" fill="#f4b6c4"/>
+    <ellipse cx="140" cy="52" rx="13" ry="46" transform="rotate(10 140 52)" fill="#bdb6cf"/>
+    <ellipse cx="140" cy="56" rx="6" ry="34" transform="rotate(10 140 56)" fill="#f4b6c4"/>
+    <ellipse cx="120" cy="172" rx="54" ry="40" fill="#bdb6cf"/>
+    <circle cx="174" cy="182" r="12" fill="#fff"/>
+    <circle cx="120" cy="112" r="44" fill="#bdb6cf"/>
+    <circle cx="103" cy="108" r="6" fill="#2b2118"/><circle cx="137" cy="108" r="6" fill="#2b2118"/>
+    <ellipse cx="120" cy="124" rx="6" ry="4.5" fill="#e98a9c"/>
+    <rect x="115" y="132" width="10" height="9" rx="2" fill="#fff"/>
+    <ellipse cx="100" cy="206" rx="15" ry="9" fill="#e4e0ee"/><ellipse cx="140" cy="206" rx="15" ry="9" fill="#e4e0ee"/>
+  </symbol>
+</svg>
+
+<a class="skip" href="#main">К содержанию</a>
+
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#top" aria-label="VetСовет, на главную">
+      <svg class="logo__mark" viewBox="0 0 44 40" aria-hidden="true">
+        <path d="M6 2h32a6 6 0 0 1 6 6v18a6 6 0 0 1-6 6H18l-9 7v-7H6a6 6 0 0 1-6-6V8a6 6 0 0 1 6-6Z" fill="#2f6b63"/>
+        <g fill="#f6b27a"><ellipse cx="22" cy="21" rx="5.6" ry="4.8"/><ellipse cx="14.6" cy="15.6" rx="2.2" ry="2.9"/><ellipse cx="19" cy="11.2" rx="2.2" ry="3"/><ellipse cx="25" cy="11.2" rx="2.2" ry="3"/><ellipse cx="29.4" cy="15.6" rx="2.2" ry="2.9"/></g>
+      </svg>
+      <span class="logo__txt"><b>Vet</b>Совет</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#visit">Приём</a>
+      <a href="#doctors">Врачи</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top__phone" href="tel:+78432640107"><svg><use href="#i-phone"/></svg><span>264-01-07</span></a>
+    <a class="btn btn--accent btn--sm top__cta" href="https://wa.me/79376240107?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC" target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ПЕРВЫЙ ЭКРАН: заголовок по центру + горизонтальная лента "кто у вас?" из трёх живых иллюстраций -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero__head">
+    <p class="hero__kicker step" style="--s:0"><svg><use href="#i-pin"/></svg>Ветеринарная клиника · Казань, Мирный, Онежская 2а</p>
+    <h1 class="hero__title" id="hero-title">
+      <span class="step" style="--s:1">Качественно</span>
+      <span class="step hero__title-mid" style="--s:2">не значит</span>
+      <span class="step hero__title-accent" style="--s:3">дорого!</span>
+    </h1>
+    <p class="hero__lead step" style="--s:4">Терапия, прививки, УЗИ и рентген в одной клинике. Спокойно объясним, что делаем и сколько это стоит, ещё до начала приёма.</p>
+    <div class="hero__cta step" style="--s:5">
+      <a class="btn btn--accent" href="https://wa.me/79376240107?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Записаться в WhatsApp</a>
+      <a class="btn btn--ghost" href="https://t.me/Vet_Sovet_kzn" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a>
+      <a class="btn btn--ghost" href="tel:+78432640107"><svg><use href="#i-phone"/></svg>Позвонить</a>
+    </div>
+    <p class="hero__rating step" style="--s:6">
+      <span class="stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+      <b>4.9</b> по 342 оценкам в 2ГИС
+    </p>
+  </div>
+
+  <div class="lane" role="group" aria-label="Кто у вас? Выберите питомца, подберём услуги">
+    <p class="lane__ask step" style="--s:6">Кто у вас? <span>Нажмите, и мы покажем подходящие услуги</span></p>
+    <div class="lane__track">
+      <button class="pet pet--cat step" style="--s:7" type="button" data-pet="cat">
+        <svg class="pet__art" viewBox="0 0 240 230" aria-hidden="true">
+          <ellipse class="pet__shadow" cx="120" cy="218" rx="74" ry="9"/>
+          <path class="cat-tail" d="M168 182c40-4 52-52 30-76" fill="none" stroke="#d9824a" stroke-width="15" stroke-linecap="round"/>
+          <ellipse cx="120" cy="168" rx="58" ry="44" fill="#e8955a"/>
+          <ellipse cx="120" cy="178" rx="30" ry="26" fill="#f6d2b0"/>
+          <g class="cat-head">
+            <path class="cat-ear" d="M74 74 80 24l34 30z" fill="#e8955a"/><path d="M166 74 160 24l-34 30z" fill="#e8955a"/>
+            <path d="M84 62 86 38l16 15z" fill="#f4b6a6"/><path d="M156 62 154 38l-16 15z" fill="#f4b6a6"/>
+            <circle cx="120" cy="96" r="52" fill="#e8955a"/>
+            <path d="M100 52c6 8 14 8 20 0 6 8 14 8 20 0" fill="none" stroke="#c96f38" stroke-width="5" stroke-linecap="round"/>
+            <g class="blink"><ellipse cx="100" cy="96" rx="7" ry="10" fill="#2b2118"/><ellipse cx="140" cy="96" rx="7" ry="10" fill="#2b2118"/></g>
+            <circle cx="102.5" cy="92" r="2.4" fill="#fff"/><circle cx="142.5" cy="92" r="2.4" fill="#fff"/>
+            <circle cx="86" cy="114" r="8" fill="#f4a08a" opacity=".6"/><circle cx="154" cy="114" r="8" fill="#f4a08a" opacity=".6"/>
+            <path d="M114 110h12l-6 7z" fill="#c95a4a"/>
+            <path d="M120 117q-6 9-14 4M120 117q6 9 14 4" fill="none" stroke="#2b2118" stroke-width="3" stroke-linecap="round"/>
+            <path d="M60 104l26 4M60 116l26-1M180 104l-26 4M180 116l-26-1" stroke="#7a4a2a" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+          </g>
+          <ellipse cx="98" cy="208" rx="15" ry="9" fill="#f6d2b0"/><ellipse cx="142" cy="208" rx="15" ry="9" fill="#f6d2b0"/>
+        </svg>
+        <span class="pet__name">Кошка</span>
+        <span class="pet__go">Услуги для кошек<svg><use href="#i-arrow"/></svg></span>
+      </button>
+
+      <button class="pet pet--dog step" style="--s:8" type="button" data-pet="dog">
+        <svg class="pet__art" viewBox="0 0 240 230" aria-hidden="true">
+          <ellipse class="pet__shadow" cx="120" cy="218" rx="76" ry="9"/>
+          <path class="dog-tail" d="M174 170c26-8 34-30 28-48" fill="none" stroke="#b3845a" stroke-width="14" stroke-linecap="round"/>
+          <ellipse cx="120" cy="168" rx="60" ry="42" fill="#c99b6d"/>
+          <ellipse cx="120" cy="178" rx="30" ry="26" fill="#f1dcc3"/>
+          <g class="dog-head">
+            <circle cx="120" cy="96" r="50" fill="#c99b6d"/>
+            <ellipse class="dog-ear-l" cx="74" cy="100" rx="17" ry="38" transform="rotate(18 74 100)" fill="#7d5034"/>
+            <ellipse class="dog-ear-r" cx="166" cy="100" rx="17" ry="38" transform="rotate(-18 166 100)" fill="#7d5034"/>
+            <circle cx="140" cy="86" r="17" fill="#a87650"/>
+            <g class="blink"><circle cx="102" cy="90" r="6.5" fill="#2b2118"/><circle cx="138" cy="90" r="6.5" fill="#2b2118"/></g>
+            <circle cx="104" cy="87.5" r="2" fill="#fff"/><circle cx="140" cy="87.5" r="2" fill="#fff"/>
+            <ellipse class="dog-tongue" cx="120" cy="136" rx="7" ry="9" fill="#f07f86"/>
+            <ellipse cx="120" cy="120" rx="25" ry="18" fill="#f1dcc3"/>
+            <ellipse cx="120" cy="111" rx="9.5" ry="6.5" fill="#2b2118"/>
+            <path d="M120 117v8m0 0q-6 6-12 2m12-2q6 6 12 2" fill="none" stroke="#2b2118" stroke-width="2.6" stroke-linecap="round"/>
+          </g>
+          <ellipse cx="98" cy="207" rx="15" ry="9" fill="#f1dcc3"/><ellipse cx="142" cy="207" rx="15" ry="9" fill="#f1dcc3"/>
+        </svg>
+        <span class="pet__name">Собака</span>
+        <span class="pet__go">Услуги для собак<svg><use href="#i-arrow"/></svg></span>
+      </button>
+
+      <button class="pet pet--other step" style="--s:9" type="button" data-pet="other">
+        <svg class="pet__art" viewBox="0 0 240 230" aria-hidden="true">
+          <ellipse class="pet__shadow" cx="120" cy="218" rx="70" ry="9"/>
+          <g class="rab-ear-l"><ellipse cx="102" cy="52" rx="13" ry="46" transform="rotate(-8 102 52)" fill="#bdb6cf"/><ellipse cx="102" cy="56" rx="6" ry="34" transform="rotate(-8 102 56)" fill="#f4b6c4"/></g>
+          <g class="rab-ear-r"><ellipse cx="140" cy="52" rx="13" ry="46" transform="rotate(10 140 52)" fill="#bdb6cf"/><ellipse cx="140" cy="56" rx="6" ry="34" transform="rotate(10 140 56)" fill="#f4b6c4"/></g>
+          <ellipse cx="120" cy="172" rx="54" ry="40" fill="#bdb6cf"/>
+          <circle cx="174" cy="182" r="12" fill="#fff"/>
+          <g class="rab-head">
+            <circle cx="120" cy="112" r="44" fill="#bdb6cf"/>
+            <g class="blink"><circle cx="103" cy="108" r="6" fill="#2b2118"/><circle cx="137" cy="108" r="6" fill="#2b2118"/></g>
+            <circle cx="105" cy="105.5" r="1.8" fill="#fff"/><circle cx="139" cy="105.5" r="1.8" fill="#fff"/>
+            <circle cx="92" cy="124" r="7" fill="#f4a0b4" opacity=".55"/><circle cx="148" cy="124" r="7" fill="#f4a0b4" opacity=".55"/>
+            <ellipse class="rab-nose" cx="120" cy="124" rx="6" ry="4.5" fill="#e98a9c"/>
+            <rect x="115" y="132" width="10" height="9" rx="2" fill="#fff"/>
+          </g>
+          <ellipse cx="100" cy="206" rx="15" ry="9" fill="#e4e0ee"/><ellipse cx="140" cy="206" rx="15" ry="9" fill="#e4e0ee"/>
+        </svg>
+        <span class="pet__name">Другой питомец</span>
+        <span class="pet__go">Уточнить приём<svg><use href="#i-arrow"/></svg></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="trail" aria-hidden="true">
+    <svg style="--d:0"><use href="#i-paw"/></svg><svg style="--d:1"><use href="#i-paw"/></svg><svg style="--d:2"><use href="#i-paw"/></svg><svg style="--d:3"><use href="#i-paw"/></svg><svg style="--d:4"><use href="#i-paw"/></svg><svg style="--d:5"><use href="#i-paw"/></svg><svg style="--d:6"><use href="#i-paw"/></svg><svg style="--d:7"><use href="#i-paw"/></svg><svg style="--d:8"><use href="#i-paw"/></svg><svg style="--d:9"><use href="#i-paw"/></svg>
+  </div>
+</section>
+
+<!-- Бегущая лента -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__row">
+    <span>Терапия</span><i></i><span>Вакцинация</span><i></i><span>УЗИ</span><i></i><span>Рентген</span><i></i><span>Хирургия по записи</span><i></i><span>Оплата частями</span><i></i>
+    <span>Терапия</span><i></i><span>Вакцинация</span><i></i><span>УЗИ</span><i></i><span>Рентген</span><i></i><span>Хирургия по записи</span><i></i><span>Оплата частями</span><i></i>
+  </div>
+</div>
+
+<!-- СРОЧНО -->
+<section class="urgent reveal" aria-labelledby="urgent-title">
+  <div class="wrap urgent__in">
+    <div class="urgent__text">
+      <p class="eyebrow eyebrow--light">Если срочно</p>
+      <h2 id="urgent-title">Питомцу плохо прямо сейчас?</h2>
+      <p>Сразу свяжитесь с клиникой: администратор подскажет, когда можно приехать. Мы не даём медицинских советов по переписке, решение принимает врач на осмотре.</p>
+    </div>
+    <ol class="urgent__steps">
+      <li><b>1</b><span><strong>Позвоните или напишите</strong>, чтобы вас ждали</span></li>
+      <li><b>2</b><span><strong>Возьмите ветпаспорт</strong> и, если есть, прошлые анализы</span></li>
+      <li><b>3</b><span><strong>Везите в переноске</strong> или на поводке, так спокойнее всем</span></li>
+    </ol>
+    <div class="urgent__btns">
+      <a class="btn btn--accent" href="tel:+78432640107"><svg><use href="#i-phone"/></svg>+7 (843) 264-01-07</a>
+      <a class="btn btn--light" href="https://wa.me/79376240107" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+      <a class="btn btn--light" href="https://t.me/Vet_Sovet_kzn" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a>
+    </div>
+    <p class="urgent__note">Порядок действий на демо: пример, уточняется у клиники.</p>
+  </div>
+</section>
+
+<!-- УСЛУГИ с подбором по питомцу -->
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Услуги</p>
+      <h2 id="services-title">Что делаем в клинике</h2>
+      <p class="sec-head__lead">Выберите питомца, и мы подсветим подходящие услуги. Описания общие, на демо это пример.</p>
+    </div>
+
+    <div class="filter reveal" role="tablist" aria-label="Питомец">
+      <button class="filter__btn is-on" type="button" role="tab" aria-selected="true" data-filter="all">Все</button>
+      <button class="filter__btn" type="button" role="tab" aria-selected="false" data-filter="cat">Кошка</button>
+      <button class="filter__btn" type="button" role="tab" aria-selected="false" data-filter="dog">Собака</button>
+      <button class="filter__btn" type="button" role="tab" aria-selected="false" data-filter="other">Другой питомец</button>
+    </div>
+    <p class="filter__hint" id="filterHint" hidden>Приём кроликов, грызунов, птиц и рептилий пока не подтверждён. Напишите в WhatsApp или Telegram, администратор ответит, примут ли вашего питомца.</p>
+
+    <div class="cards">
+      <article class="card reveal" data-pets="cat dog other">
+        <span class="card__ico"><svg><use href="#i-steth"/></svg></span>
+        <h3>Терапия</h3>
+        <p>Осмотр, консультация, план обследования и лечения. Врач объяснит, что происходит, и что можно сделать.</p>
+        <span class="card__tag">Пример описания</span>
+      </article>
+      <article class="card reveal" data-pets="cat dog">
+        <span class="card__ico"><svg><use href="#i-syringe"/></svg></span>
+        <h3>Вакцинация</h3>
+        <p>Прививки по графику, отметки в ветпаспорте. Перед вакцинацией врач осмотрит питомца.</p>
+        <span class="card__tag">Пример описания</span>
+      </article>
+      <article class="card reveal" data-pets="cat dog other">
+        <span class="card__ico"><svg><use href="#i-wave"/></svg></span>
+        <h3>УЗИ</h3>
+        <p>Ультразвуковая диагностика в клинике, без поездок в другие центры. Результат врач разберёт на приёме.</p>
+        <span class="card__tag">Пример описания</span>
+      </article>
+      <article class="card reveal" data-pets="cat dog other">
+        <span class="card__ico"><svg><use href="#i-xray"/></svg></span>
+        <h3>Рентген</h3>
+        <p>Рентгенография на месте, когда врачу нужно посмотреть кости, суставы или грудную клетку.</p>
+        <span class="card__tag">Пример описания</span>
+      </article>
+      <article class="card card--mark reveal" data-pets="cat dog">
+        <span class="card__ico"><svg><use href="#i-scalpel"/></svg></span>
+        <h3>Хирургия <small>по записи</small></h3>
+        <p>Плановые операции, в том числе кастрация и стерилизация. Кабинет хирургии работает по предварительной записи.</p>
+        <span class="card__tag">Пример описания</span>
+      </article>
+      <article class="card card--more reveal" data-pets="cat dog other">
+        <span class="card__ico"><svg><use href="#i-plus"/></svg></span>
+        <h3>И другие услуги</h3>
+        <p>Полный список услуг уточняется. Спросите администратора, если не нашли нужное.</p>
+        <a class="card__link" href="https://t.me/Vet_Sovet_kzn" target="_blank" rel="noopener">Спросить в Telegram<svg><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ЦЕНЫ -->
+<section class="section section--tint" id="prices" aria-labelledby="prices-title">
+  <div class="wrap prices">
+    <div class="prices__intro reveal">
+      <p class="eyebrow">Цены</p>
+      <h2 id="prices-title">Цены без сюрпризов</h2>
+      <p>Стоимость называем до начала приёма. Если понадобится дополнительное обследование, сначала объясним, зачем оно и сколько стоит.</p>
+      <div class="split">
+        <span class="split__ico"><svg><use href="#i-wallet"/></svg></span>
+        <div>
+          <b>Можно оплатить частями</b>
+          <p>Удобно, если лечение или операция выходят дороже, чем планировали. Условия уточняйте у администратора.</p>
+        </div>
+      </div>
+    </div>
+    <div class="pricelist reveal">
+      <div class="pricelist__head"><span>Примерные цены</span><span class="pill">Пример</span></div>
+      <ul>
+        <li><span>Первичный приём терапевта</span><i></i><b>от 600 руб.</b></li>
+        <li><span>Повторный приём</span><i></i><b>от 400 руб.</b></li>
+        <li><span>Комплексная вакцинация</span><i></i><b>от 1 200 руб.</b></li>
+        <li><span>УЗИ брюшной полости</span><i></i><b>от 1 300 руб.</b></li>
+        <li><span>Рентген, 1 проекция</span><i></i><b>от 900 руб.</b></li>
+        <li><span>Кастрация кота</span><i></i><b>от 2 500 руб.</b></li>
+        <li><span>Стерилизация кошки</span><i></i><b>от 4 500 руб.</b></li>
+      </ul>
+      <p class="pricelist__note">Цены условные, на демо это пример. Актуальный прайс клиники будет здесь.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ПОЧЕМУ К НАМ -->
+<section class="section" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Почему к нам</p>
+      <h2 id="why-title">Совет врача, а не навязанные услуги</h2>
+    </div>
+    <div class="why">
+      <div class="why__item why__item--big reveal">
+        <b class="why__num"><span data-count="4.9" data-dec="1">0</span></b>
+        <p>средняя оценка в 2ГИС, <span data-count="342">0</span> оценок и <span data-count="226">0</span> отзывов</p>
+      </div>
+      <div class="why__item reveal">
+        <span class="why__ico"><svg><use href="#i-tag"/></svg></span>
+        <h3>Честная цена</h3>
+        <p>"Качественно не значит дорого": это наш принцип, а не акция на месяц.</p>
+      </div>
+      <div class="why__item reveal">
+        <span class="why__ico"><svg><use href="#i-wave"/></svg></span>
+        <h3>УЗИ и рентген на месте</h3>
+        <p>Диагностика в той же клинике, где проходит приём. Не нужно ехать в другой конец города.</p>
+      </div>
+      <div class="why__item reveal">
+        <span class="why__ico"><svg><use href="#i-wallet"/></svg></span>
+        <h3>Оплата частями</h3>
+        <p>Можно разделить сумму за лечение на несколько платежей.</p>
+      </div>
+      <div class="why__item reveal">
+        <span class="why__ico"><svg><use href="#i-heart"/></svg></span>
+        <h3>Спокойно и бережно</h3>
+        <p>Не торопим, объясняем каждое действие. Хозяин может быть рядом с питомцем.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КАК ПРОХОДИТ ПРИЁМ -->
+<section class="section section--deep" id="visit" aria-labelledby="visit-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--light reveal">
+      <p class="eyebrow eyebrow--light">Как проходит приём</p>
+      <h2 id="visit-title">Четыре шага от записи до рекомендаций</h2>
+      <p class="sec-head__lead">Условный порядок, на демо это пример.</p>
+    </div>
+    <ol class="steps">
+      <li class="steps__item reveal"><span class="steps__n">01</span><h3>Запись</h3><p>Звонок, WhatsApp или Telegram. Подберём удобное время.</p></li>
+      <li class="steps__item reveal"><span class="steps__n">02</span><h3>Осмотр</h3><p>Врач знакомится с питомцем и расспрашивает вас о самочувствии и привычках.</p></li>
+      <li class="steps__item reveal"><span class="steps__n">03</span><h3>Диагностика</h3><p>Если нужно, УЗИ или рентген прямо в клинике. Стоимость называем заранее.</p></li>
+      <li class="steps__item reveal"><span class="steps__n">04</span><h3>Рекомендации</h3><p>Понятный план: что делать дома, когда прийти снова. Можно задать любые вопросы.</p></li>
+    </ol>
+    <div class="steps__line" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<!-- ВРАЧИ -->
+<section class="section" id="doctors" aria-labelledby="doctors-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Врачи</p>
+      <h2 id="doctors-title">Команда клиники</h2>
+      <p class="sec-head__lead">Карточки условные: имена, фото и специализации врачей будут добавлены после согласования с клиникой.</p>
+    </div>
+    <div class="docs">
+      <article class="doc reveal">
+        <div class="doc__ph doc__ph--a" aria-hidden="true"><svg><use href="#i-steth"/></svg></div>
+        <h3>Имя Фамилия</h3>
+        <p class="doc__role">Ветеринарный врач, терапевт</p>
+        <p class="doc__txt">Стаж и образование будут указаны здесь.</p>
+        <span class="card__tag">Пример</span>
+      </article>
+      <article class="doc reveal">
+        <div class="doc__ph doc__ph--b" aria-hidden="true"><svg><use href="#i-scalpel"/></svg></div>
+        <h3>Имя Фамилия</h3>
+        <p class="doc__role">Ветеринарный хирург</p>
+        <p class="doc__txt">Стаж и образование будут указаны здесь.</p>
+        <span class="card__tag">Пример</span>
+      </article>
+      <article class="doc reveal">
+        <div class="doc__ph doc__ph--c" aria-hidden="true"><svg><use href="#i-wave"/></svg></div>
+        <h3>Имя Фамилия</h3>
+        <p class="doc__role">Врач ультразвуковой диагностики</p>
+        <p class="doc__txt">Стаж и образование будут указаны здесь.</p>
+        <span class="card__tag">Пример</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ГАЛЕРЕЯ -->
+<section class="section section--tint" aria-labelledby="gallery-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Галерея</p>
+      <h2 id="gallery-title">Наши гости</h2>
+      <p class="sec-head__lead">Иллюстрации, фото клиники будут добавлены.</p>
+    </div>
+    <div class="gallery">
+      <figure class="gal gal--sage reveal"><svg viewBox="0 0 240 230" aria-hidden="true"><use href="#pet-cat"/></svg><figcaption>Кошки</figcaption></figure>
+      <figure class="gal gal--peach gal--wide reveal">
+        <svg viewBox="0 0 480 230" aria-hidden="true"><use href="#pet-dog" x="20" width="240" height="230"/><use href="#pet-cat" x="220" y="40" width="200" height="190"/></svg>
+        <figcaption>Собаки и кошки</figcaption>
+      </figure>
+      <figure class="gal gal--lilac reveal"><svg viewBox="0 0 240 230" aria-hidden="true"><use href="#pet-rabbit"/></svg><figcaption>Другие питомцы</figcaption></figure>
+      <figure class="gal gal--paws gal--wide reveal">
+        <svg viewBox="0 0 480 230" aria-hidden="true">
+          <rect x="40" y="40" width="400" height="150" rx="20" fill="#fff" opacity=".55"/>
+          <path d="M70 120c40-50 60 40 100 0s60-60 100 0 60 30 100-10" fill="none" stroke="#2f6b63" stroke-width="5" stroke-linecap="round"/>
+          <g fill="#f0a35e"><use href="#i-paw" x="330" y="140" width="46" height="46"/><use href="#i-paw" x="380" y="110" width="38" height="38"/></g>
+        </svg>
+        <figcaption>Диагностика (условная иллюстрация)</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="section" id="reviews" aria-labelledby="reviews-title">
+  <div class="wrap reviews">
+    <div class="reviews__score reveal">
+      <p class="eyebrow">Отзывы</p>
+      <h2 id="reviews-title"><span data-count="4.9" data-dec="1">0</span><small>из 5</small></h2>
+      <span class="stars stars--big" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+      <p>342 оценки и 226 отзывов, по данным 2ГИС</p>
+      <a class="btn btn--ghost" href="https://2gis.ru/kazan/firm/2956015536937750/tab/reviews" target="_blank" rel="noopener">Читать в 2ГИС<svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="quotes">
+      <blockquote class="quote reveal">
+        <p>"Пришли с котом на прививку, всё спокойно объяснили, назвали цену сразу. Кот даже не успел испугаться."</p>
+        <footer>Анна, владелица кота <span class="card__tag">Пример отзыва</span></footer>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p>"Сделали УЗИ на месте, не пришлось никуда ехать. Удобно, что клиника рядом с домом."</p>
+        <footer>Олег, хозяин собаки <span class="card__tag">Пример отзыва</span></footer>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p>"Стерилизацию оплатили частями, это очень выручило. Врач на связи после операции."</p>
+        <footer>Марина <span class="card__tag">Пример отзыва</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ВОПРОСЫ -->
+<section class="section section--tint" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Совет перед визитом</p>
+      <h2 id="faq-title">Частые вопросы</h2>
+      <p class="sec-head__lead">Общие ответы, на демо это пример. Медицинские вопросы решает врач на приёме.</p>
+    </div>
+    <div class="faq__list reveal">
+      <details open>
+        <summary>Как записаться на приём?</summary>
+        <p>Позвоните по номеру +7 (843) 264-01-07 или напишите в WhatsApp и Telegram. Администратор предложит удобное время.</p>
+      </details>
+      <details>
+        <summary>Нужна ли запись на хирургию?</summary>
+        <p>Да, кабинет хирургии работает по предварительной записи. Перед операцией обычно нужен осмотр врача, точный порядок подскажет администратор.</p>
+      </details>
+      <details>
+        <summary>Можно ли оплатить лечение частями?</summary>
+        <p>Да, в клинике есть оплата частями. Условия и доступные суммы уточняйте у администратора.</p>
+      </details>
+      <details>
+        <summary>Что взять с собой?</summary>
+        <p>Ветпаспорт, результаты прошлых анализов и выписки, если они есть. Кошек и небольших животных удобнее везти в переноске, собак на поводке.</p>
+      </details>
+      <details>
+        <summary>Принимаете ли вы экзотических животных?</summary>
+        <p>Уточните у администратора перед визитом. На демо эта информация пока не подтверждена.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section class="section" id="contacts" aria-labelledby="contacts-title">
+  <div class="wrap contacts">
+    <div class="contacts__info reveal">
+      <p class="eyebrow">Контакты</p>
+      <h2 id="contacts-title">Ждём вас в Мирном</h2>
+      <ul class="clist">
+        <li><svg><use href="#i-pin"/></svg><span>Казань, Онежская улица, 2а<br><small>Приволжский район, Мирный микрорайон</small></span></li>
+        <li><svg><use href="#i-phone"/></svg><a href="tel:+78432640107">+7 (843) 264-01-07</a></li>
+        <li><svg><use href="#i-wa"/></svg><a href="https://wa.me/79376240107" target="_blank" rel="noopener">WhatsApp +7 937 624-01-07</a></li>
+        <li><svg><use href="#i-tg"/></svg><a href="https://t.me/Vet_Sovet_kzn" target="_blank" rel="noopener">t.me/Vet_Sovet_kzn</a></li>
+        <li><svg><use href="#i-mail"/></svg><a href="mailto:vetsovet@inbox.ru">vetsovet@inbox.ru</a></li>
+        <li><svg><use href="#i-clock"/></svg><span>Открываемся в 09:00<br><small>Полный график уточняется, на демо пример</small></span></li>
+      </ul>
+      <div class="contacts__btns">
+        <a class="btn btn--accent" href="https://wa.me/79376240107" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Записаться</a>
+        <a class="btn btn--ghost" href="https://2gis.ru/kazan/firm/2956015536937750" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Открыть в 2ГИС</a>
+      </div>
+    </div>
+    <a class="map reveal" href="https://2gis.ru/kazan/firm/2956015536937750" target="_blank" rel="noopener" aria-label="Открыть клинику VetСовет на карте 2ГИС">
+      <svg class="map__svg" viewBox="0 0 520 420" aria-hidden="true">
+        <rect width="520" height="420" fill="#e7efe9"/>
+        <g fill="#d6e4da"><rect x="20" y="24" width="150" height="110" rx="10"/><rect x="200" y="24" width="120" height="110" rx="10"/><rect x="350" y="24" width="150" height="70" rx="10"/><rect x="20" y="170" width="110" height="110" rx="10"/><rect x="350" y="130" width="150" height="150" rx="10"/><rect x="20" y="316" width="190" height="84" rx="10"/><rect x="240" y="316" width="260" height="84" rx="10"/></g>
+        <rect x="160" y="168" width="160" height="114" rx="10" fill="#cfe0d4"/>
+        <g fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"><path d="M0 150h520"/><path d="M185 0v420"/><path d="M335 0v420"/><path d="M0 298h520"/></g>
+        <path class="map__route" d="M40 400 L185 298 L185 150 L250 150 L250 205" fill="none" stroke="#2f6b63" stroke-width="5" stroke-dasharray="10 9" stroke-linecap="round"/>
+        <g class="map__pin"><circle cx="250" cy="222" r="34" fill="#f0a35e" opacity=".25"/><path d="M250 236s-22-20-22-36a22 22 0 0 1 44 0c0 16-22 36-22 36Z" fill="#2f6b63"/><circle cx="250" cy="200" r="8" fill="#fff"/></g>
+        <text x="200" y="146" font-family="Onest, sans-serif" font-size="13" fill="#5d6b66">Онежская ул.</text>
+      </svg>
+      <span class="map__label"><b>Онежская, 2а</b><span>Схема условная · открыть в 2ГИС</span></span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <a class="logo logo--light" href="#top"><span class="logo__txt"><b>Vet</b>Совет</span></a>
+      <p>Ветеринарная клиника в Казани. Качественно не значит дорого!</p>
+    </div>
+    <div class="foot__small">
+      <p>Реквизиты по запросу.</p>
+      <p>Демонстрационный сайт. Цены, описания услуг, врачи и отзывы на демо условные и приведены как пример. Иллюстрации оригинальные, фото клиники будут добавлены.</p>
+      <p>Информация на сайте не является медицинской консультацией.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Липкая кнопка записи на мобильном -->
+<div class="dock" id="dock">
+  <a class="dock__btn dock__btn--main" href="https://wa.me/79376240107?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B8%D1%91%D0%BC" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Записаться</a>
+  <a class="dock__btn" href="https://t.me/Vet_Sovet_kzn" target="_blank" rel="noopener" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
+  <a class="dock__btn" href="tel:+78432640107" aria-label="Позвонить"><svg><use href="#i-phone"/></svg></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
