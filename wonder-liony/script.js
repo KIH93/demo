@@ -27,6 +27,7 @@
   function setStep(i, hop){
     current = i;
     btns.forEach(function(b, k){ b.setAttribute('aria-selected', k === i); });
+    lion.dataset.stage = i;
     var w = btns[i].dataset.verb;
     if(verb.textContent !== w){
       if(reduce){ verb.textContent = w; }

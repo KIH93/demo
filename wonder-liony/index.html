@@ -90,7 +90,35 @@
   </div>
 
   <div class="stairs in" style="--i:5" id="stairs" role="tablist" aria-label="Ступени обучения">
-    <div class="lion" id="walker" aria-hidden="true"><svg class="lion__svg"><use href="#lion"/></svg></div>
+    <!-- Лев растёт по ступеням: котёнок, подросток с гривой, большой лев в короне -->
+    <div class="lion" id="walker" data-stage="1" aria-hidden="true"><div class="lion__grow">
+      <svg class="lion__svg" viewBox="0 0 120 130">
+        <g class="l-mane">
+          <circle cx="60" cy="62" r="40" fill="#E39B3E"/>
+          <circle cx="60" cy="62" r="40" fill="none" stroke="#E39B3E" stroke-width="18" stroke-linecap="round" stroke-dasharray="0 15.7"/>
+          <circle cx="60" cy="62" r="34" fill="#D98A2E" opacity=".55"/>
+        </g>
+        <g class="l-ears">
+          <circle cx="39" cy="44" r="8.5" fill="#F6D49A"/><circle cx="81" cy="44" r="8.5" fill="#F6D49A"/>
+          <circle cx="39" cy="44" r="4" fill="#EBB574"/><circle cx="81" cy="44" r="4" fill="#EBB574"/>
+        </g>
+        <circle cx="60" cy="64" r="28" fill="#F6D49A"/>
+        <g class="l-tuft" fill="#E39B3E"><circle cx="54" cy="38" r="4.5"/><circle cx="60" cy="35.5" r="5.5"/><circle cx="66" cy="38" r="4.5"/></g>
+        <g class="l-eyes"><g class="lion-eyes">
+          <ellipse cx="50" cy="60" rx="3.2" ry="3.8" fill="#1F3550"/>
+          <ellipse cx="70" cy="60" rx="3.2" ry="3.8" fill="#1F3550"/>
+          <circle class="l-shine" cx="51.3" cy="58.4" r="1.2" fill="#fff"/><circle class="l-shine" cx="71.3" cy="58.4" r="1.2" fill="#fff"/>
+        </g></g>
+        <circle cx="44" cy="71" r="4.5" fill="#F29C8C" opacity=".55"/><circle cx="76" cy="71" r="4.5" fill="#F29C8C" opacity=".55"/>
+        <path d="M55 67h10l-5 5z" fill="#8E4F33" stroke="#8E4F33" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M53 75q3.5 4 7 0q3.5 4 7 0" fill="none" stroke="#8E4F33" stroke-width="2" stroke-linecap="round"/>
+        <g class="l-crown">
+          <path d="M44 22 47 6 56 15 60 3 64 15 73 6 76 22z" fill="#F2B84B" stroke="#D99A26" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="60" cy="14" r="2.4" fill="#fff"/>
+        </g>
+        <g class="l-bow"><path d="M60 104 44 96v16zM60 104l16-8v16z" fill="#5E8BA3"/><circle cx="60" cy="104" r="4" fill="#3F6B86"/></g>
+      </svg>
+    </div></div>
     <button class="stair" role="tab" data-verb="sing" data-step="0" aria-selected="false">
       <span class="stair__no">0 ступень</span>
       <span class="stair__name">I can sing</span>
