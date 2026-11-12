@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Здоровая Улыбка · семейная стоматология в Казани (демо)</title>
+<meta name="description" content="Демо-сайт стоматологии Здоровая Улыбка, Казань, ул. Карбышева, 48.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="demo-bar">Демо-версия сайта. Цены, акции и отзывы условные, указаны как пример.</div>
+
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#top" aria-label="Здоровая Улыбка, на главную">
+      <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="4" class="logo__ring"/>
+        <path d="M15 18c0-4 3-6 6-5l3 1 3-1c3-1 6 1 6 5 0 5-2 7-3 12-.5 3-2 4-3 1l-1.5-5c-.4-1.4-2.6-1.4-3 0L21 31c-1 3-2.5 2-3-1-1-5-3-7-3-12z" fill="#ff7a59"/>
+      </svg>
+      <span class="logo__text"><b>Здоровая Улыбка</b><small>стоматология · Казань</small></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#prices">Цены</a>
+      <a href="#promo">Акции</a>
+      <a href="#doctors">Врачи</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="top__phone" href="tel:+79534924200">+7 953 492-42-00</a>
+    <a class="btn btn--coral btn--sm" href="#booking">Записаться</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ПЕРВЫЙ ЭКРАН: зубная формула -->
+<section class="chart" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="chart__head">
+      <p class="chart__kicker" data-in="1"><span class="dot"></span>Стоматология "Здоровая Улыбка" · Казань, ул. Карбышева, 48 · с 2003 года</p>
+      <h1 id="hero-title" data-in="2">Семейная стоматология <span class="hl">с доступными ценами</span></h1>
+      <div class="chart__side" data-in="3">
+        <p>Лечим, протезируем, ставим импланты и брекеты. Нажмите на любой зуб, и мы покажем, что с ним можно сделать и сколько это стоит.</p>
+        <div class="chart__cta">
+          <a class="btn btn--coral" href="#booking">Записаться на приём</a>
+          <a class="btn btn--ghost" href="#booking" data-service="Бесплатная консультация">Бесплатная консультация</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="formula" data-in="4">
+      <div class="formula__label formula__label--top"><span>Верхняя челюсть</span><span>справа · слева</span></div>
+      <div class="formula__row" id="jawTop" role="group" aria-label="Зубы верхней челюсти"></div>
+      <div class="formula__mid" aria-hidden="true"></div>
+      <div class="formula__row formula__row--low" id="jawLow" role="group" aria-label="Зубы нижней челюсти"></div>
+      <div class="formula__label"><span>Нижняя челюсть</span><span class="formula__hint">выберите зуб</span></div>
+
+      <div class="tooth-card" id="toothCard" aria-live="polite">
+        <div class="tooth-card__num" id="tcNum">16</div>
+        <div class="tooth-card__body">
+          <p class="tooth-card__type" id="tcType">Моляр, жевательный зуб</p>
+          <ul class="tooth-card__list" id="tcList"></ul>
+        </div>
+        <a class="btn btn--teal btn--sm" href="#booking" id="tcBtn">Записаться</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Лечение кариеса</span><span>Лечение каналов</span><span>Коронки из циркония</span><span>Импланты Osstem</span><span>Брекеты Damon Q</span><span>Комплексная чистка</span><span>Отбеливание Amazing White</span><span>Удаление зуба мудрости</span><span>Рентген-снимок</span><span>Виниры</span>
+    <span>Лечение кариеса</span><span>Лечение каналов</span><span>Коронки из циркония</span><span>Импланты Osstem</span><span>Брекеты Damon Q</span><span>Комплексная чистка</span><span>Отбеливание Amazing White</span><span>Удаление зуба мудрости</span><span>Рентген-снимок</span><span>Виниры</span>
+  </div>
+</div>
+
+<!-- УСЛУГИ -->
+<section class="sec" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="sec__head reveal">
+      <p class="eyebrow">Услуги</p>
+      <h2 id="services-title">Всё для зубов всей семьи в одной клинике</h2>
+    </div>
+    <div class="svc">
+      <article class="svc__card reveal">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 14c0-5 4-8 8-6l4 2 4-2c4-2 8 1 8 6 0 7-3 10-4 17-.6 4-3 5-4 1l-2-7c-.5-2-3.5-2-4 0l-2 7c-1 4-3.4 3-4-1-1-7-4-10-4-17z"/><circle cx="29" cy="17" r="3" class="acc"/></svg>
+        <h3>Терапия</h3>
+        <p>Безболезненное лечение кариеса, реставрация, замена старых пломб, лечение клиновидного дефекта.</p>
+        <a href="#prices" data-tab="ther">Цены</a>
+      </article>
+      <article class="svc__card reveal">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 10h16l-2 10H18z"/><path d="M22 20h4v4h-4zM21 26h6M21 30h6M21 34h6M22 38h4" class="line"/></svg>
+        <h3>Имплантация</h3>
+        <p>Импланты Osstem, хирургический шаблон по скану челюсти. Коронка из циркония "под ключ".</p>
+        <a href="#prices" data-tab="impl">Цены</a>
+      </article>
+      <article class="svc__card reveal">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 18h32v8c0 6-4 10-8 10H16c-4 0-8-4-8-10z"/><path d="M16 18v18M24 18v18M32 18v18" class="line"/></svg>
+        <h3>Протезирование</h3>
+        <p>Коронки из металлокерамики и диоксида циркония, мостовидные протезы, виниры.</p>
+        <a href="#prices" data-tab="prost">Цены</a>
+      </article>
+      <article class="svc__card reveal">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24h36" class="line"/><rect x="9" y="19" width="7" height="10" rx="2"/><rect x="20.5" y="19" width="7" height="10" rx="2"/><rect x="32" y="19" width="7" height="10" rx="2" class="acc"/></svg>
+        <h3>Ортодонтия</h3>
+        <p>Исправление прикуса у взрослых и детей, самолигирующие брекеты Damon Q.</p>
+        <a href="#prices" data-tab="orto">Цены</a>
+      </article>
+      <article class="svc__card reveal">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 16c0-4 3-7 7-5l3 1 3-1c4-2 7 1 7 5 0 6-3 9-4 15-.5 3-2.5 4-3 1l-2-6c-.4-1.5-1.6-1.5-2 0l-2 6c-.5 3-2.5 2-3-1-1-6-4-9-4-15z"/><path d="M38 8l1.5 3.5L43 13l-3.5 1.5L38 18l-1.5-3.5L33 13l3.5-1.5z" class="acc"/></svg>
+        <h3>Чистка и отбеливание</h3>
+        <p>Ультразвук, Air-Flow, полировка эмали и фторирование. Отбеливание Amazing White.</p>
+        <a href="#prices" data-tab="prof">Цены</a>
+      </article>
+      <article class="svc__card reveal">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 30c0-6 2-9 4-12l6 0 6 0c2 3 4 6 4 12" class="line"/><path d="M18 8h12v10H18z"/><path d="M20 30l-2 10M28 30l2 10" class="line acc-l"/></svg>
+        <h3>Хирургия</h3>
+        <p>Удаление зуба, корня и зуба мудрости. Хирург принимает и по субботам по записи.</p>
+        <a href="#prices" data-tab="surg">Цены</a>
+      </article>
+      <article class="svc__card reveal">
+        <svg class="svc__ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="32" height="26" rx="4"/><path d="M20 16c0-2 2-3 4-2 2-1 4 0 4 2 0 4-1.5 5-2 9-.3 2-1.5 2-2 0-.5 2-1.7 2-2 0-.5-4-2-5-2-9z" class="hole"/><path d="M16 40h16" class="line"/></svg>
+        <h3>Рентген</h3>
+        <p>Прицельный снимок зуба прямо в клинике, чтобы врач видел корни и каналы.</p>
+        <a href="#prices" data-tab="diag">Цены</a>
+      </article>
+      <article class="svc__card svc__card--cta reveal">
+        <h3>Не знаете, что нужно?</h3>
+        <p>Приходите на бесплатную консультацию. Врач осмотрит и составит план лечения с ценами.</p>
+        <a class="btn btn--coral btn--sm" href="#booking" data-service="Бесплатная консультация">Записаться</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ЦЕНЫ -->
+<section class="sec sec--tint" id="prices" aria-labelledby="prices-title">
+  <div class="wrap">
+    <div class="sec__head reveal">
+      <p class="eyebrow">Цены</p>
+      <h2 id="prices-title">Понятный прайс без сюрпризов</h2>
+      <p class="sec__note">Цены условные, указаны как пример. Точную стоимость врач называет после осмотра.</p>
+    </div>
+    <div class="tabs reveal" role="tablist" aria-label="Категории цен">
+      <button role="tab" class="tab is-on" data-f="all" aria-selected="true">Все</button>
+      <button role="tab" class="tab" data-f="prof" aria-selected="false">Профилактика</button>
+      <button role="tab" class="tab" data-f="ther" aria-selected="false">Терапия</button>
+      <button role="tab" class="tab" data-f="prost" aria-selected="false">Протезирование</button>
+      <button role="tab" class="tab" data-f="impl" aria-selected="false">Имплантация</button>
+      <button role="tab" class="tab" data-f="surg" aria-selected="false">Хирургия</button>
+      <button role="tab" class="tab" data-f="orto" aria-selected="false">Ортодонтия</button>
+      <button role="tab" class="tab" data-f="diag" aria-selected="false">Диагностика</button>
+    </div>
+    <div class="price reveal" id="priceList">
+      <div class="price__row" data-c="prof"><span>Консультация врача</span><b>бесплатно</b></div>
+      <div class="price__row" data-c="prof"><span>Комплексная чистка: ультразвук, Air-Flow, полировка, фторирование</span><b>4 500 руб.</b></div>
+      <div class="price__row" data-c="prof"><span>Отбеливание Amazing White</span><b>по запросу</b></div>
+      <div class="price__row" data-c="ther"><span>Лечение кариеса</span><b>от 3 500 руб.*</b></div>
+      <div class="price__row" data-c="ther"><span>Лечение каналов, один канал</span><b>от 4 000 руб.*</b></div>
+      <div class="price__row" data-c="ther"><span>Художественная реставрация зуба</span><b>от 5 000 руб.*</b></div>
+      <div class="price__row" data-c="prost"><span>Металлокерамическая коронка</span><b>9 500 руб.</b></div>
+      <div class="price__row" data-c="prost"><span>Коронка из диоксида циркония "под ключ": анестезия, обточка, слепок, изготовление, фиксация</span><b>20 500 руб.</b></div>
+      <div class="price__row" data-c="prost"><span>Винир из диоксида циркония</span><b>от 20 000 руб.*</b></div>
+      <div class="price__row" data-c="impl"><span>Имплант Osstem с циркониевой коронкой "под ключ"</span><b>49 500 руб.</b></div>
+      <div class="price__row" data-c="impl"><span>Хирургический шаблон по скану челюсти</span><b>по запросу</b></div>
+      <div class="price__row" data-c="surg"><span>Удаление зуба</span><b>от 2 500 руб.*</b></div>
+      <div class="price__row" data-c="surg"><span>Удаление зуба мудрости</span><b>от 5 000 руб.*</b></div>
+      <div class="price__row" data-c="orto"><span>Брекеты Damon Q, одна челюсть</span><b>62 000 руб.</b></div>
+      <div class="price__row" data-c="orto"><span>Брекеты Damon Q, обе челюсти</span><b>107 000 руб.</b></div>
+      <div class="price__row" data-c="diag"><span>Прицельный рентген-снимок зуба</span><b>от 400 руб.*</b></div>
+    </div>
+    <p class="price__foot reveal">* условная цена для примера. Итоговая стоимость зависит от клинической ситуации.</p>
+  </div>
+</section>
+
+<!-- АКЦИИ -->
+<section class="sec" id="promo" aria-labelledby="promo-title">
+  <div class="wrap">
+    <div class="sec__head reveal">
+      <p class="eyebrow">Акции</p>
+      <h2 id="promo-title">Скидки, которые работают постоянно</h2>
+      <p class="sec__note">Пример оформления. Актуальные условия уточняйте у администратора.</p>
+    </div>
+    <div class="promo">
+      <article class="promo__card promo__card--big reveal">
+        <p class="promo__tag">Будни, 09:30 до 13:00</p>
+        <p class="promo__val"><span class="count" data-to="15">0</span>%</p>
+        <h3>"Счастливые часы"</h3>
+        <p>Скидка на лечение кариеса в утренние часы будних дней.</p>
+        <svg class="promo__clock" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52"/><path class="hand hand--m" d="M60 60V22"/><path class="hand hand--h" d="M60 60h26"/><circle cx="60" cy="60" r="5" class="pin"/></svg>
+      </article>
+      <article class="promo__card reveal">
+        <p class="promo__val"><span class="count" data-to="10">0</span>%</p>
+        <h3>Студентам и семьям</h3>
+        <p>На лечение и удаление зубов для студентов, постоянных пациентов и по семейной скидке.</p>
+      </article>
+      <article class="promo__card reveal">
+        <p class="promo__val"><span class="count" data-to="10">0</span>%</p>
+        <h3>Пенсионерам</h3>
+        <p>На протезирование, лечение и удаление зубов.</p>
+      </article>
+      <article class="promo__card promo__card--teal reveal">
+        <p class="promo__val">0 руб.</p>
+        <h3>Консультация</h3>
+        <p>Осмотр и план лечения с ценами бесплатно.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ПОЧЕМУ МЫ -->
+<section class="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <h2 id="why-title" class="reveal">Почему нас выбирают</h2>
+    <div class="why__grid">
+      <div class="why__item reveal"><p class="why__num"><span class="count" data-to="20">0</span>+</p><p>лет работаем в Казани, с 2003 года</p></div>
+      <div class="why__item reveal"><p class="why__num"><span class="count" data-to="300000" data-sep="1">0</span>+</p><p>пациентов, по данным клиники</p></div>
+      <div class="why__item reveal"><p class="why__num"><span class="count" data-to="98.8" data-dec="1">0</span>%</p><p>заявленная приживаемость имплантов Osstem</p></div>
+      <div class="why__item reveal"><p class="why__num"><span class="count" data-to="4.8" data-dec="1">0</span></p><p>рейтинг в 2ГИС, 88 оценок</p></div>
+    </div>
+    <ul class="why__list reveal">
+      <li>Гарантия на работы</li>
+      <li>Врачи со стажем 30 и 35 лет</li>
+      <li>Фото "до" и "после" для каждого случая</li>
+      <li>Семейные скидки</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ВРАЧИ -->
+<section class="sec" id="doctors" aria-labelledby="doctors-title">
+  <div class="wrap">
+    <div class="sec__head reveal">
+      <p class="eyebrow">Врачи</p>
+      <h2 id="doctors-title">Команда, которой доверяют семьи</h2>
+      <p class="sec__note">Вместо фотографий условные плашки. Реальные фото появятся после согласования с клиникой.</p>
+    </div>
+    <div class="docs">
+      <article class="doc reveal"><div class="doc__plate" style="--h:172">ИЗ</div><h3>Зайнагиев Ильгиз Закиевич</h3><p>Ортопед · стаж более 35 лет</p></article>
+      <article class="doc reveal"><div class="doc__plate" style="--h:14">ЭК</div><h3>Куприянова Эмма Михайловна</h3><p>Терапевт · стаж более 30 лет</p></article>
+      <article class="doc reveal"><div class="doc__plate" style="--h:205">РШ</div><h3>Шабакаев Руслан Равилович</h3><p>Терапевт, хирург · стаж более 17 лет</p></article>
+      <article class="doc reveal"><div class="doc__plate" style="--h:340">МЕ</div><h3>Ермолаева Мария Павловна</h3><p>Ортодонт</p></article>
+      <article class="doc reveal"><div class="doc__plate" style="--h:40">ЭК</div><h3>Камалиева Элина Альбертовна</h3><p>Ортодонт</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="sec sec--tint" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <div class="sec__head reveal">
+      <p class="eyebrow">Отзывы</p>
+      <h2 id="reviews-title">Что говорят пациенты</h2>
+      <p class="sec__note">Блок-заглушка: тексты ниже написаны для примера. На готовом сайте здесь будут реальные отзывы с разрешения пациентов.</p>
+    </div>
+    <div class="revs">
+      <figure class="rev reveal"><span class="rev__tag">пример</span><blockquote>Ходим всей семьёй уже несколько лет. Всё объясняют, цены называют заранее.</blockquote><figcaption>Пациент, терапия</figcaption></figure>
+      <figure class="rev reveal"><span class="rev__tag">пример</span><blockquote>Поставили коронку за пару визитов, сидит удобно. Удобно, что клиника рядом с домом.</blockquote><figcaption>Пациент, протезирование</figcaption></figure>
+      <figure class="rev reveal"><span class="rev__tag">пример</span><blockquote>Дочь носит брекеты, врач каждый раз показывает, как меняется прикус.</blockquote><figcaption>Пациент, ортодонтия</figcaption></figure>
+    </div>
+    <a class="revs__link reveal" href="https://2gis.ru/kazan/firm/2956015536847718" target="_blank" rel="noopener">Читать отзывы в 2ГИС: 4,8 из 5</a>
+  </div>
+</section>
+
+<!-- ЗАПИСЬ И КОНТАКТЫ -->
+<section class="sec" id="contacts" aria-labelledby="contacts-title">
+  <div class="wrap book">
+    <div class="book__info reveal">
+      <p class="eyebrow">Контакты</p>
+      <h2 id="contacts-title">Ждём вас на Карбышева</h2>
+      <dl class="info">
+        <div><dt>Адрес</dt><dd>Казань, ул. Карбышева, 48, 1 этаж<br>Танкодром, Советский район</dd></div>
+        <div><dt>Телефоны</dt><dd><a href="tel:+78432470803">+7 (843) 247-08-03</a><br><a href="tel:+79534924200">+7 953 492-42-00</a></dd></div>
+        <div><dt>Режим работы</dt><dd>Пн-пт: 09:30 до 20:00<br>Сб: 09:30 до 14:00, хирург до 17:00 по записи<br><small>График указан как пример, уточняется</small></dd></div>
+        <div><dt>Почта</dt><dd><a href="mailto:dantist.karbusheva@yandex.ru">dantist.karbusheva@yandex.ru</a></dd></div>
+      </dl>
+      <div class="msg">
+        <a class="msg__btn msg__btn--wa" href="https://wa.me/79534924200" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="msg__btn msg__btn--tg" href="https://t.me/+79534924200" target="_blank" rel="noopener">Telegram</a>
+        <a class="msg__btn msg__btn--max" href="http://max.ru/id1656103869_biz" target="_blank" rel="noopener">MAX</a>
+        <a class="msg__btn msg__btn--vk" href="https://vk.ru/stom_zdor_ulibka" target="_blank" rel="noopener">ВКонтакте</a>
+      </div>
+      <a class="map" href="https://2gis.ru/kazan/firm/2956015536847718" target="_blank" rel="noopener" aria-label="Открыть клинику на карте 2ГИС">
+        <svg viewBox="0 0 400 180" aria-hidden="true">
+          <rect width="400" height="180" class="map__bg"/>
+          <path d="M0 120 L400 70" class="map__road map__road--main"/>
+          <path d="M120 0 L160 180" class="map__road"/>
+          <path d="M280 0 L250 180" class="map__road"/>
+          <path d="M0 40 L400 20" class="map__road map__road--thin"/>
+          <rect x="30" y="60" width="70" height="40" class="map__blk"/><rect x="180" y="110" width="50" height="50" class="map__blk"/><rect x="300" y="100" width="80" height="50" class="map__blk"/><rect x="180" y="20" width="60" height="45" class="map__blk"/>
+          <g class="map__pin" transform="translate(205 90)"><circle r="18" class="map__pulse"/><circle r="9"/></g>
+        </svg>
+        <span>Открыть в 2ГИС</span>
+      </a>
+    </div>
+
+    <form class="form reveal" id="booking" novalidate>
+      <h3>Запись на приём</h3>
+      <p class="form__sub">Оставьте телефон, администратор перезвонит и подберёт время.</p>
+      <label>Имя<input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required></label>
+      <label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__" required></label>
+      <label>Услуга
+        <select name="service" id="svcSelect">
+          <option>Бесплатная консультация</option>
+          <option>Лечение кариеса</option>
+          <option>Лечение каналов</option>
+          <option>Коронка, протезирование</option>
+          <option>Имплантация</option>
+          <option>Брекеты</option>
+          <option>Чистка и отбеливание</option>
+          <option>Удаление зуба</option>
+        </select>
+      </label>
+      <fieldset class="slots">
+        <legend>Удобное время</legend>
+        <label><input type="radio" name="time" value="утро" checked><span>Утро</span></label>
+        <label><input type="radio" name="time" value="день"><span>День</span></label>
+        <label><input type="radio" name="time" value="вечер"><span>Вечер</span></label>
+      </fieldset>
+      <button class="btn btn--coral btn--full" type="submit">Отправить заявку</button>
+      <p class="form__done" id="formDone" hidden>Это демо: заявка никуда не отправляется. На готовом сайте она придёт администратору.</p>
+      <p class="form__legal">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="foot__warn">Имеются противопоказания, необходима консультация специалиста.</p>
+    <p>ООО "Здоровая Улыбка" · лицензия ЛО-16-01-007284 от 21.12.2018 (данные для примера, сверить с реестром)</p>
+    <p>Демо-сайт. Логотип нарисован условно в цветах клиники. Изображения: оригинальные SVG-иллюстрации.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
