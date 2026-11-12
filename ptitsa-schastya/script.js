@@ -104,6 +104,36 @@
     });
   });
 
+  /* фильтр расписания */
+  const week = document.querySelector('.week');
+  document.querySelectorAll('.chip').forEach(chip => {
+    chip.setAttribute('aria-pressed', chip.classList.contains('is-on'));
+    chip.addEventListener('click', () => {
+      const f = chip.dataset.f;
+      document.querySelectorAll('.chip').forEach(c => {
+        c.classList.toggle('is-on', c === chip);
+        c.setAttribute('aria-pressed', c === chip);
+      });
+      week.classList.toggle('is-filtered', f !== 'all');
+      week.querySelectorAll('.slot').forEach(s => s.classList.toggle('is-match', s.dataset.k === f));
+    });
+  });
+
+  /* таймер акции */
+  const cd = document.querySelector('.ticket__cd');
+  if (cd) {
+    const end = new Date(cd.dataset.deadline).getTime();
+    const word = (n, a, b, c) => { const m = n % 10, h = n % 100; return m === 1 && h !== 11 ? a : m >= 2 && m <= 4 && (h < 12 || h > 14) ? b : c; };
+    const tick = () => {
+      let s = Math.max(0, Math.floor((end - Date.now()) / 1000));
+      if (!s) { cd.textContent = 'Акция завершена, следите за новыми в канале центра.'; return; }
+      const d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600), m = Math.floor(s % 3600 / 60);
+      cd.innerHTML = `<span><b>${d}</b>${word(d, 'день', 'дня', 'дней')}</span><span><b>${h}</b>${word(h, 'час', 'часа', 'часов')}</span><span><b>${m}</b>мин</span>`;
+      setTimeout(tick, 30000);
+    };
+    tick();
+  }
+
   /* форма (демо) */
   const form = document.getElementById('form');
   const ok = form.querySelector('.form__ok');

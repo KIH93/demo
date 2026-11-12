@@ -337,6 +337,73 @@ p{margin:0}
   .sticky{left:16px;right:16px;bottom:14px;justify-content:center}
 }
 
+
+/* ===== дополнения: данные из канала MAX ===== */
+.note p b{color:var(--ink);font-weight:600}
+.hop{transform-box:fill-box;animation:hop 2.2s ease-in-out infinite}
+
+/* расписание */
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.chip{font:800 14px var(--f-head);border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:9px 16px;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.chip:hover{transform:translateY(-2px)}
+.chip.is-on{background:var(--ink);color:#fff}
+.chip--school::before,.chip--eng::before,.chip--baby::before,.chip--mom::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:1px}
+.chip--school::before{background:var(--teal)}
+.chip--eng::before{background:#4C8DD6}
+.chip--baby::before{background:var(--sun-d)}
+.chip--mom::before{background:var(--coral)}
+.week{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.day{background:var(--paper);border-radius:18px;padding:16px 12px;min-height:220px;border:1px solid var(--line)}
+.day h3{font:400 32px/1 var(--f-hand);color:var(--teal-d);margin-bottom:12px;padding-bottom:10px;border-bottom:1.5px dashed var(--line)}
+.day--we h3{color:var(--coral)}
+.slot{border-radius:12px;padding:9px 10px;margin-bottom:8px;font-size:14px;line-height:1.35;border-left:4px solid;background:#fff;transition:opacity .35s,transform .35s,filter .35s}
+.slot b{display:block;font:900 17px var(--f-head)}
+.slot--school{border-color:var(--teal);background:#E3F3F1}
+.slot--eng{border-color:#4C8DD6;background:#E4EFFA}
+.slot--baby{border-color:var(--sun-d);background:#FFF3CF}
+.slot--mom{border-color:var(--coral);background:#FCE3DB}
+.slot:hover{transform:translateX(3px)}
+.week.is-filtered .slot{opacity:.22;filter:grayscale(1)}
+.week.is-filtered .slot.is-match{opacity:1;filter:none;transform:scale(1.03)}
+
+/* акция: таймер */
+.ticket__cd{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.ticket__cd span{background:var(--ink);color:#fff;border-radius:10px;padding:8px 10px;font:800 14px var(--f-head);min-width:62px;text-align:center}
+.ticket__cd span b{display:block;font-size:22px;line-height:1}
+
+/* педагоги: факты */
+.person h3{font-size:20px}
+.person__facts{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.person__facts li{font-size:15px;color:var(--ink-2);padding-left:20px;position:relative;line-height:1.45}
+.person__facts li::before{content:"";position:absolute;left:2px;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--sun)}
+.person__facts b{color:var(--ink)}
+
+/* для мам */
+.moms{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center;background:linear-gradient(135deg,#FCE3DB,#FFF0C4);border-radius:32px;padding:48px}
+.moms__copy>p:last-child{margin-top:14px;font-size:18px;color:var(--ink-2)}
+.moms h2 em{color:var(--coral)}
+.moms__cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.mcard{position:relative;background:var(--paper);border-radius:22px;padding:24px 22px;transition:transform .35s,box-shadow .35s}
+.mcard:hover{transform:translateY(-6px) rotate(-.8deg);box-shadow:var(--shadow)}
+.mcard h3{margin-bottom:8px}
+.mcard p{font-size:15px;color:var(--ink-2)}
+.mcard__when{display:flex;align-items:center;gap:8px;margin-top:14px;font:800 14px var(--f-head);color:var(--ink)!important}
+.mcard__when .ico{color:var(--coral)}
+.lemons{position:absolute;top:-22px;right:14px;width:72px}
+.lemons svg{width:100%;height:auto;animation:hop 3s ease-in-out infinite}
+
+@media (max-width:1020px){
+  .week{grid-template-columns:repeat(3,1fr)}
+  .moms{grid-template-columns:1fr;padding:36px 28px}
+}
+@media (max-width:640px){
+  .week{grid-template-columns:1fr 1fr;gap:10px}
+  .day{min-height:0}
+  .moms{padding:28px 18px;border-radius:24px}
+  .moms__cards{grid-template-columns:1fr}
+  .mcard--lemon{margin-top:12px}
+}
+
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   .ribbon__track{animation:none}
